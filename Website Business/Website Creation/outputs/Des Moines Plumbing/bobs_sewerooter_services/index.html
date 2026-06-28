@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bob's Sewerooter Services | Des Moines</title>
+  <meta name="description" content="Fast, Reliable Plumbing in Des Moines">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="nav-inner container">
+      <div class="nav-logo"><img src="assets/logo.jpg" alt="Bob's Sewerooter Services logo" class="nav-logo-img"></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:5152626520" class="nav-phone"><i class="fas fa-phone"></i> (515) 262-6520</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-logo-wrap"><img src="assets/logo.jpg" alt="Bob's Sewerooter Services" class="hero-logo"></div>
+      <h1 class="hero-headline">Fast, Reliable Plumbing in Des Moines</h1>
+      <p class="hero-sub">Licensed & Local — Honest Work, Fair Prices</p>
+      <div class="hero-cta-group">
+        <a href="tel:5152626520" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-sub">Here&rsquo;s how we can help you today.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-wrench"></i></div>
+          <h3 class="service-title">Plumbing Repair & Installation</h3>
+          <p class="service-desc">From leaky faucets to full pipe replacements, we handle all your plumbing needs quickly and correctly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Locally Owned &amp; Operated</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shield-halved"></i>
+          <p>Licensed &amp; Insured</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-handshake"></i>
+          <p>Honest, Upfront Pricing</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-clock"></i>
+          <p>Prompt, Reliable Service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner has-logo">
+        <div class="about-text">
+          <h2 class="section-title">About Bob's Sewerooter Services</h2>
+          <p>We're a locally owned plumbing company committed to fast response times, honest pricing, and work done right the first time.</p>
+          <p class="about-detail"><i class="fas fa-map-marker-alt"></i> 4677 NE 38th St, Des Moines, IA 50317</p>
+          <p class="about-detail"><i class="fas fa-phone"></i> <a href="tel:5152626520">(515) 262-6520</a></p>
+        </div>
+        <div class="about-logo"><img src="assets/logo.jpg" alt="Bob's Sewerooter Services"></div>
+      </div>
+    </div>
+  </section>
+  <section class="final-cta" id="contact">
+    <div class="container final-cta-inner">
+      <h2>Ready to Get Started?</h2>
+      <p>Give us a call — we&rsquo;re ready to help.</p>
+      <a href="tel:5152626520" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> (515) 262-6520</a>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Bob's Sewerooter Services</span>
+        <span class="footer-brand-city">Serving Des Moines</span>
+      </div>
+      <nav class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Bob's Sewerooter Services. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    var toggle = document.getElementById('navToggle');
+    var menu   = document.getElementById('navMenu');
+    toggle.addEventListener('click', function() {
+      menu.classList.toggle('nav-open');
+      this.setAttribute('aria-expanded', menu.classList.contains('nav-open'));
+    });
+  </script>
+</body>
+</html>

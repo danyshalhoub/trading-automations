@@ -1,0 +1,95 @@
+You are an elite conversion-focused web designer and copywriter.
+
+Create a clean, modern, high-converting landing page for a local business using ONLY the information provided below.
+
+The goal is to make visitors immediately:
+1. Understand what the business does
+2. Trust the business
+3. Contact the business quickly
+
+Do NOT overcomplicate the design.
+Keep it simple, professional, mobile-friendly, and conversion-focused.
+
+BUSINESS INFORMATION:
+Business Name: Bob's Sewerooter Services
+Phone: (515) 262-6520
+Category: Plumber
+Location: 4677 NE 38th St, Des Moines, IA 50317
+Services: Plumber
+Main Colors: #1A6DB5, #F0F4F8
+
+IMPORTANT RULES:
+- Use the business category and services to intelligently generate realistic copy
+- Make the business sound trustworthy, professional, and established
+- Do not use generic AI wording
+- Keep paragraphs short and readable
+- Prioritize mobile responsiveness
+- Make the phone number highly visible
+- Include multiple call-to-action buttons
+- Use strong spacing and visual hierarchy
+- Design should feel premium but simple
+- Fast-loading layout only
+- Avoid clutter
+
+REQUIRED SECTIONS:
+
+1. HERO SECTION
+- Strong headline focused on customer benefit
+- Short supporting text
+- Large call button using the phone number
+- Simple professional background/image suggestion
+
+2. SERVICES SECTION
+- Clean cards or list of services
+- Short benefit-focused descriptions
+
+3. WHY CHOOSE US
+Include 3-5 trust-focused points such as:
+- Reliable service
+- Fast response
+- Professional quality
+- Local expertise
+- Customer satisfaction
+
+4. SERVICE AREA
+Mention the location naturally for local trust and SEO.
+
+5. FINAL CTA SECTION
+- Strong closing headline
+- Repeat phone number
+- Encourage immediate contact
+
+6. FOOTER
+- Business name
+- Phone number
+- Location
+- Simple clean footer
+
+DESIGN REQUIREMENTS:
+- Modern UI
+- Mobile-first
+- React + Tailwind
+- Clean typography
+- Rounded cards/buttons
+- Subtle shadows
+- Professional color palette using the provided main colors
+- Sticky mobile call button
+- Clear spacing between sections
+- Minimal but polished animations
+
+COPYWRITING STYLE:
+- Direct
+- Clear
+- Confident
+- Benefit-focused
+- No fluff
+- No corporate jargon
+
+OUTPUT:
+Generate the complete landing page with:
+- Full copy
+- Layout structure
+- Styling
+- Responsive design
+- Components
+- CTA placement

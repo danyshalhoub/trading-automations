@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 lead_gen_apify.py)",
+      "Bash(pip3 install *)",
+      "Bash(python3 create_websites.py \"/Users/leilashalhoub/Documents/Dany AI Business/Lead Generation/outputs/leads_plumbing_companies_des_moines_iowa.csv\")",
+      "Bash(python3 \"/Users/leilashalhoub/Documents/Dany AI Business/Website Creation/execution/create_websites.py\" \"/Users/leilashalhoub/Documents/Dany AI Business/Lead Generation/outputs/leads_plumbers_helena_montana.csv\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 \"Website Prompt Generation/execution/generate_prompts.py\")",
+      "Bash(python3 \"/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/execution/generate_prompts.py\")",
+      "Bash(rm \"/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/outputs/\"*.txt && echo \"/tmp/test_leads.csv\" | python3 \"/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/execution/generate_prompts.py\" && ls \"/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/outputs/\")",
+      "Bash(rm \"/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/outputs/\"*.txt && ls \"/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/\")"
+    ],
+    "additionalDirectories": [
+      "/Users/leilashalhoub/Documents/Dany AI Business/Website Prompt Generation/outputs"
+    ]
+  }
+}
