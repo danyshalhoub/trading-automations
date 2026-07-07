@@ -79,14 +79,6 @@
     "shares": 241,
     "entry_price": 41.48
   },
-  "HON_buy_dip_200ma": {
-    "ticker": "HON",
-    "strategy": "buy_dip_200ma",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-07",
-    "shares": 43,
-    "entry_price": 227.8
-  },
   "ZTS_52w_low_bounce": {
     "ticker": "ZTS",
     "strategy": "52w_low_bounce",
