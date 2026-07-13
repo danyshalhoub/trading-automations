@@ -32,10 +32,21 @@ jobs:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: python "Trading Automations/paper_trader/trader.py"
 
-      - name: Save updated positions
+      - name: Run performance report
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python "Trading Automations/paper_trader/performance_report.py"
+
+      - name: Save updated positions and trade log
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "Trading Automations/paper_trader/positions.json"
+          git add "Trading Automations/paper_trader/positions.json" \
+                  "Trading Automations/paper_trader/performance_report.md"
+          # trade_log.csv only exists once the first trade has closed
+          if [ -f "Trading Automations/paper_trader/trade_log.csv" ]; then
+            git add "Trading Automations/paper_trader/trade_log.csv"
+          fi
           git diff --staged --quiet || git commit -m "positions: $(date -u +'%Y-%m-%d')"
           git push

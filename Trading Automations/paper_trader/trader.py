@@ -7,16 +7,26 @@ Scans 134 US stocks for 4 trading signals and places paper
 trades automatically on Alpaca.
 
 Strategies traded:
-  1. Buy Dip + 200-Day MA   — hold 5 trading days
-  2. 52-Week Low Bounce     — hold 20 trading days
-  3. RSI Oversold Bounce    — hold 10 trading days
-  4. Bollinger Band Lower   — hold 10 trading days
+  1. Buy Dip + 200-Day MA        — hold 5 trading days
+  2. 52-Week Low Bounce          — hold 20 trading days
+  3. RSI Oversold Bounce         — hold 10 trading days
+  4. MACD Bullish Cross (< 0)    — hold 20 trading days
+
+  (Bollinger Band Lower Touch was retired 2026-07-12 after failing its
+  train/test cheat-check in the tournament rerun — profitable 2019-2021,
+  lost money 2022-2024. Replaced with MACD Bullish Cross, which survived
+  the cheat-check in both halves. See round2_strategy_tournament.py.)
 
 SAFETY: This script uses Alpaca PAPER trading only.
         paper=True is hardcoded. No real money is ever at risk.
         This is a learning tool, not financial advice.
+
+Every closed trade is appended to trade_log.csv (ticker, strategy, entry/exit
+price, % gain, $ P&L). Run performance_report.py to summarize win rate and
+trade count from that log, and optionally email a weekly digest.
 """
 
+import csv
 import json
 import os
 from datetime import date
@@ -37,14 +47,19 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 POSITION_SIZE = 10_000   # Dollars per trade
 
 HOLD_DAYS = {
-    "buy_dip_200ma":  5,
-    "52w_low_bounce": 20,
-    "rsi_oversold":   10,
-    "bb_lower_touch": 10,
+    "buy_dip_200ma":    5,
+    "52w_low_bounce":   20,
+    "rsi_oversold":     10,
+    "macd_bull_cross":  20,
 }
 
-# positions.json lives in the same folder as this script
+# positions.json and trade_log.csv live in the same folder as this script
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions.json")
+TRADE_LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trade_log.csv")
+TRADE_LOG_FIELDS = [
+    "ticker", "strategy", "entry_date", "exit_date",
+    "entry_price", "exit_price", "shares", "pct_gain", "dollar_pnl",
+]
 
 # =============================================================================
 # TICKER UNIVERSE (same 134 stocks used in backtests)
@@ -85,13 +100,16 @@ def compute_rsi(series, period=14):
 
 def add_indicators(df):
     df = df.copy()
-    df["ret"]      = df["Close"].pct_change()
-    df["ma200"]    = df["Close"].rolling(200).mean()
-    df["ma20"]     = df["Close"].rolling(20).mean()
-    bb_std         = df["Close"].rolling(20).std()
-    df["bb_lower"] = df["ma20"] - 2 * bb_std
-    df["low_52w"]  = df["Close"].shift(1).rolling(252, min_periods=200).min()
-    df["rsi"]      = compute_rsi(df["Close"])
+    df["ret"]     = df["Close"].pct_change()
+    df["ma200"]   = df["Close"].rolling(200).mean()
+    df["low_52w"] = df["Close"].shift(1).rolling(252, min_periods=200).min()
+    df["rsi"]     = compute_rsi(df["Close"])
+
+    ema12 = df["Close"].ewm(span=12, adjust=False).mean()
+    ema26 = df["Close"].ewm(span=26, adjust=False).mean()
+    df["macd"]        = ema12 - ema26
+    df["macd_signal"] = df["macd"].ewm(span=9, adjust=False).mean()
+
     return df
 
 
@@ -118,17 +136,22 @@ def check_rsi_oversold(df):
     return bool(pd.notna(row["rsi"]) and row["rsi"] < 30)
 
 
-def check_bb_lower_touch(df):
-    """Close falls below the lower Bollinger Band (20-day, 2 std devs)."""
-    row = df.iloc[-1]
-    return bool(pd.notna(row["bb_lower"]) and row["Close"] < row["bb_lower"])
+def check_macd_bull_cross(df):
+    """MACD line crosses above its signal line while still below zero."""
+    if len(df) < 2:
+        return False
+    curr, prev = df.iloc[-1], df.iloc[-2]
+    if pd.isna(curr["macd"]) or pd.isna(curr["macd_signal"]) or pd.isna(prev["macd"]) or pd.isna(prev["macd_signal"]):
+        return False
+    crossed_up = curr["macd"] > curr["macd_signal"] and prev["macd"] <= prev["macd_signal"]
+    return bool(crossed_up and curr["macd"] < 0)
 
 
 STRATEGIES = {
-    "buy_dip_200ma":  check_buy_dip_200ma,
-    "52w_low_bounce": check_52w_low_bounce,
-    "rsi_oversold":   check_rsi_oversold,
-    "bb_lower_touch": check_bb_lower_touch,
+    "buy_dip_200ma":   check_buy_dip_200ma,
+    "52w_low_bounce":  check_52w_low_bounce,
+    "rsi_oversold":    check_rsi_oversold,
+    "macd_bull_cross": check_macd_bull_cross,
 }
 
 
@@ -178,6 +201,45 @@ def save_positions(positions):
         json.dump(positions, f, indent=2)
 
 
+def get_latest_close(ticker):
+    """Fetch the most recent close price for a ticker being exited."""
+    try:
+        df = yf.download(ticker, period="5d", auto_adjust=True, progress=False)
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = [col[0] for col in df.columns]
+        if df.empty:
+            return None
+        return float(df["Close"].iloc[-1])
+    except Exception:
+        return None
+
+
+def log_trade(ticker, strategy, entry_date, exit_date, entry_price, exit_price, shares):
+    pct_gain = (
+        (exit_price - entry_price) / entry_price * 100 if exit_price is not None else None
+    )
+    dollar_pnl = (
+        (exit_price - entry_price) * shares if exit_price is not None else None
+    )
+
+    file_exists = os.path.exists(TRADE_LOG_FILE)
+    with open(TRADE_LOG_FILE, "a", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=TRADE_LOG_FIELDS)
+        if not file_exists:
+            writer.writeheader()
+        writer.writerow({
+            "ticker":      ticker,
+            "strategy":    strategy,
+            "entry_date":  entry_date,
+            "exit_date":   exit_date,
+            "entry_price": entry_price,
+            "exit_price":  exit_price,
+            "shares":      shares,
+            "pct_gain":    round(pct_gain, 4) if pct_gain is not None else "",
+            "dollar_pnl":  round(dollar_pnl, 2) if dollar_pnl is not None else "",
+        })
+
+
 # =============================================================================
 # MAIN
 # =============================================================================
@@ -199,6 +261,13 @@ def main():
                   f"{pos['shares']} shares  (entered {pos['entry_date']})")
             ok = place_order(client, pos["ticker"], pos["shares"], OrderSide.SELL)
             if ok:
+                exit_price = get_latest_close(pos["ticker"])
+                log_trade(
+                    ticker=pos["ticker"], strategy=pos["strategy"],
+                    entry_date=pos["entry_date"], exit_date=today,
+                    entry_price=pos["entry_price"], exit_price=exit_price,
+                    shares=pos["shares"],
+                )
                 to_remove.append(key)
         else:
             print(f"  HOLD  {pos['ticker']:6s}  [{pos['strategy']}]  "
