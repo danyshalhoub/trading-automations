@@ -50,3 +50,11 @@ jobs:
           fi
           git diff --staged --quiet || git commit -m "positions: $(date -u +'%Y-%m-%d')"
           git push
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python "Trading Automations/paper_trader/notify_failure.py"

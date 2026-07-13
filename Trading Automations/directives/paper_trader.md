@@ -6,13 +6,15 @@ Run the strategies that survived the backtest tournament's train/test cheat-chec
 ## Tools
 - Script: `paper_trader/trader.py` — scans tickers, enters/exits positions on a fixed hold-days timer, appends every closed trade to `paper_trader/trade_log.csv`.
 - Script: `paper_trader/performance_report.py` — reads `trade_log.csv`, writes `paper_trader/performance_report.md` (win rate, total trades, per-trade % gain, per-strategy breakdown), and emails a weekly digest.
-- Workflow: `.github/workflows/daily_trader.yml` — runs both scripts after US market close on weekdays, commits `positions.json`, `trade_log.csv`, and `performance_report.md` back to the repo.
+- Script: `paper_trader/notify_failure.py` — emails an alert if `trader.py` or `performance_report.py` fails (auth expired, rate-limited, unhandled exception). Only runs on failure.
+- Workflow: `.github/workflows/daily_trader.yml` — runs all scripts after US market close on weekdays, commits `positions.json`, `trade_log.csv`, and `performance_report.md` back to the repo.
 
 ## Expected Outputs
 - `positions.json` — currently open positions.
 - `trade_log.csv` — one row per closed trade (ticker, strategy, entry/exit date, entry/exit price, shares, % gain, $ P&L). This is the source of truth for live performance — never delete rows from it.
 - `performance_report.md` — regenerated every run; summary stats + full trade table.
 - A weekly email (Fridays) to `GMAIL_ADDRESS` summarizing win rate, trade count, and P&L. Skipped automatically if no trades have closed yet.
+- A failure-alert email to `GMAIL_ADDRESS` any day the workflow errors out (no silent failures — if you don't hear from it and don't get an alert, check the Actions tab manually).
 
 ## Key Settings
 - `HOLD_DAYS` (top of `trader.py`) — exit timer per strategy, in trading days.
