@@ -1,20 +1,4 @@
 {
-  "XOM_rsi_oversold": {
-    "ticker": "XOM",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 73,
-    "entry_price": 136.06
-  },
-  "CVX_rsi_oversold": {
-    "ticker": "CVX",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 59,
-    "entry_price": 168.47
-  },
   "MCD_52w_low_bounce": {
     "ticker": "MCD",
     "strategy": "52w_low_bounce",
@@ -30,46 +14,6 @@
     "exit_date": "2026-07-28",
     "shares": 80,
     "entry_price": 124.74
-  },
-  "ACN_rsi_oversold": {
-    "ticker": "ACN",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 80,
-    "entry_price": 124.74
-  },
-  "CRM_rsi_oversold": {
-    "ticker": "CRM",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 63,
-    "entry_price": 157.93
-  },
-  "VZ_bb_lower_touch": {
-    "ticker": "VZ",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 226,
-    "entry_price": 44.1
-  },
-  "ADBE_rsi_oversold": {
-    "ticker": "ADBE",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 48,
-    "entry_price": 206.43
-  },
-  "NFLX_rsi_oversold": {
-    "ticker": "NFLX",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 135,
-    "entry_price": 73.78
   },
   "NKE_52w_low_bounce": {
     "ticker": "NKE",
@@ -87,14 +31,6 @@
     "shares": 136,
     "entry_price": 73.25
   },
-  "ZTS_bb_lower_touch": {
-    "ticker": "ZTS",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 136,
-    "entry_price": 73.25
-  },
   "ISRG_52w_low_bounce": {
     "ticker": "ISRG",
     "strategy": "52w_low_bounce",
@@ -102,14 +38,6 @@
     "exit_date": "2026-07-28",
     "shares": 24,
     "entry_price": 405.97
-  },
-  "SLB_rsi_oversold": {
-    "ticker": "SLB",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 215,
-    "entry_price": 46.38
   },
   "AMT_52w_low_bounce": {
     "ticker": "AMT",
@@ -119,22 +47,6 @@
     "shares": 59,
     "entry_price": 168.67
   },
-  "AMT_rsi_oversold": {
-    "ticker": "AMT",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 59,
-    "entry_price": 168.67
-  },
-  "CCI_rsi_oversold": {
-    "ticker": "CCI",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 127,
-    "entry_price": 78.63
-  },
   "NOC_52w_low_bounce": {
     "ticker": "NOC",
     "strategy": "52w_low_bounce",
@@ -142,22 +54,6 @@
     "exit_date": "2026-07-28",
     "shares": 20,
     "entry_price": 496.02
-  },
-  "NOC_rsi_oversold": {
-    "ticker": "NOC",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 20,
-    "entry_price": 496.02
-  },
-  "SNAP_rsi_oversold": {
-    "ticker": "SNAP",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-14",
-    "shares": 2262,
-    "entry_price": 4.42
   },
   "PEP_bb_lower_touch": {
     "ticker": "PEP",
