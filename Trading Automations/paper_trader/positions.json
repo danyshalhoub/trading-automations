@@ -55,22 +55,6 @@
     "shares": 20,
     "entry_price": 496.02
   },
-  "PEP_bb_lower_touch": {
-    "ticker": "PEP",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 73,
-    "entry_price": 135.4
-  },
-  "DIS_bb_lower_touch": {
-    "ticker": "DIS",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 103,
-    "entry_price": 96.25
-  },
   "NFLX_52w_low_bounce": {
     "ticker": "NFLX",
     "strategy": "52w_low_bounce",
@@ -79,75 +63,11 @@
     "shares": 140,
     "entry_price": 71.4
   },
-  "MDLZ_bb_lower_touch": {
-    "ticker": "MDLZ",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 172,
-    "entry_price": 57.84
-  },
-  "CI_rsi_oversold": {
-    "ticker": "CI",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 36,
-    "entry_price": 275.68
-  },
-  "ZTS_rsi_oversold": {
-    "ticker": "ZTS",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 139,
-    "entry_price": 71.86
-  },
-  "ISRG_rsi_oversold": {
-    "ticker": "ISRG",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 25,
-    "entry_price": 397.68
-  },
-  "PLD_rsi_oversold": {
-    "ticker": "PLD",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 73,
-    "entry_price": 135.47
-  },
-  "PLD_bb_lower_touch": {
-    "ticker": "PLD",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 73,
-    "entry_price": 135.47
-  },
-  "AMT_bb_lower_touch": {
-    "ticker": "AMT",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
-    "shares": 61,
-    "entry_price": 163.57
-  },
   "CCI_52w_low_bounce": {
     "ticker": "CCI",
     "strategy": "52w_low_bounce",
     "entry_date": "2026-06-30",
     "exit_date": "2026-07-29",
-    "shares": 132,
-    "entry_price": 75.73
-  },
-  "CCI_bb_lower_touch": {
-    "ticker": "CCI",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-15",
     "shares": 132,
     "entry_price": 75.73
   },

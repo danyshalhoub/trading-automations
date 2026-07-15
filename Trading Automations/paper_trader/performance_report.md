@@ -1,20 +1,20 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-07-14_
+_Last updated: 2026-07-15_
 
 ## Summary
-- **Total closed trades:** 13
-- **Win rate:** 84.6%
-- **Average % gain per trade:** +3.70%
-- **Total P&L:** $+4,787.08
-- **Best trade:** CVX (rsi_oversold) +7.89%
+- **Total closed trades:** 23
+- **Win rate:** 82.6%
+- **Average % gain per trade:** +3.47%
+- **Total P&L:** $+7,944.24
+- **Best trade:** CI (rsi_oversold) +8.03%
 - **Worst trade:** VZ (bb_lower_touch) -3.70%
 
 ## By Strategy
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| bb_lower_touch | 2 | 50.0% | -1.29% |
-| rsi_oversold | 11 | 90.9% | +4.61% |
+| bb_lower_touch | 8 | 75.0% | +1.72% |
+| rsi_oversold | 15 | 86.7% | +4.41% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
@@ -32,3 +32,13 @@ _Last updated: 2026-07-14_
 | CCI | rsi_oversold | 2026-06-29 | 2026-07-14 | +0.53% | $+53.34 |
 | NOC | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.58% | $+653.00 |
 | SNAP | rsi_oversold | 2026-06-29 | 2026-07-14 | +5.88% | $+588.12 |
+| PEP | bb_lower_touch | 2026-06-30 | 2026-07-15 | -0.00% | $-0.00 |
+| DIS | bb_lower_touch | 2026-06-30 | 2026-07-15 | +0.94% | $+92.70 |
+| MDLZ | bb_lower_touch | 2026-06-30 | 2026-07-15 | +1.52% | $+151.36 |
+| CI | rsi_oversold | 2026-06-30 | 2026-07-15 | +8.03% | $+796.68 |
+| ZTS | rsi_oversold | 2026-06-30 | 2026-07-15 | +3.72% | $+371.13 |
+| ISRG | rsi_oversold | 2026-06-30 | 2026-07-15 | -2.19% | $-217.75 |
+| PLD | rsi_oversold | 2026-06-30 | 2026-07-15 | +5.87% | $+580.35 |
+| PLD | bb_lower_touch | 2026-06-30 | 2026-07-15 | +5.87% | $+580.35 |
+| AMT | bb_lower_touch | 2026-06-30 | 2026-07-15 | +3.09% | $+308.66 |
+| CCI | bb_lower_touch | 2026-06-30 | 2026-07-15 | +4.94% | $+493.68 |
