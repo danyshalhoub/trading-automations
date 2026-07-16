@@ -94,5 +94,77 @@
     "exit_date": "2026-07-28",
     "shares": 96,
     "entry_price": 103.12
+  },
+  "COST_macd_bull_cross": {
+    "ticker": "COST",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-08-14",
+    "shares": 10,
+    "entry_price": 945.57
+  },
+  "DIS_macd_bull_cross": {
+    "ticker": "DIS",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-08-14",
+    "shares": 100,
+    "entry_price": 99.71
+  },
+  "QCOM_rsi_oversold": {
+    "ticker": "QCOM",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-07-31",
+    "shares": 58,
+    "entry_price": 170.61
+  },
+  "CAT_rsi_oversold": {
+    "ticker": "CAT",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-07-31",
+    "shares": 11,
+    "entry_price": 877.17
+  },
+  "MDLZ_macd_bull_cross": {
+    "ticker": "MDLZ",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-08-14",
+    "shares": 162,
+    "entry_price": 61.42
+  },
+  "MU_rsi_oversold": {
+    "ticker": "MU",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-07-31",
+    "shares": 11,
+    "entry_price": 853.2
+  },
+  "GM_macd_bull_cross": {
+    "ticker": "GM",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-08-14",
+    "shares": 128,
+    "entry_price": 77.72
+  },
+  "SPCE_macd_bull_cross": {
+    "ticker": "SPCE",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-08-14",
+    "shares": 3861,
+    "entry_price": 2.59
+  },
+  "UWMC_52w_low_bounce": {
+    "ticker": "UWMC",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-07-16",
+    "exit_date": "2026-08-14",
+    "shares": 4878,
+    "entry_price": 2.05
   }
 }
