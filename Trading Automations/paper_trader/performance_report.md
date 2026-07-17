@@ -1,20 +1,20 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-07-16_
+_Last updated: 2026-07-17_
 
 ## Summary
-- **Total closed trades:** 23
-- **Win rate:** 82.6%
-- **Average % gain per trade:** +3.47%
-- **Total P&L:** $+7,944.24
+- **Total closed trades:** 25
+- **Win rate:** 84.0%
+- **Average % gain per trade:** +3.35%
+- **Total P&L:** $+8,319.66
 - **Best trade:** CI (rsi_oversold) +8.03%
 - **Worst trade:** VZ (bb_lower_touch) -3.70%
 
 ## By Strategy
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| bb_lower_touch | 8 | 75.0% | +1.72% |
-| rsi_oversold | 15 | 86.7% | +4.41% |
+| bb_lower_touch | 9 | 77.8% | +1.73% |
+| rsi_oversold | 16 | 87.5% | +4.27% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
@@ -42,3 +42,5 @@ _Last updated: 2026-07-16_
 | PLD | bb_lower_touch | 2026-06-30 | 2026-07-15 | +5.87% | $+580.35 |
 | AMT | bb_lower_touch | 2026-06-30 | 2026-07-15 | +3.09% | $+308.66 |
 | CCI | bb_lower_touch | 2026-06-30 | 2026-07-15 | +4.94% | $+493.68 |
+| WMT | rsi_oversold | 2026-07-02 | 2026-07-17 | +2.15% | $+213.60 |
+| EQIX | bb_lower_touch | 2026-07-02 | 2026-07-17 | +1.79% | $+161.82 |

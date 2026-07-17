@@ -71,22 +71,6 @@
     "shares": 132,
     "entry_price": 75.73
   },
-  "WMT_rsi_oversold": {
-    "ticker": "WMT",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-02",
-    "exit_date": "2026-07-17",
-    "shares": 89,
-    "entry_price": 111.84
-  },
-  "EQIX_bb_lower_touch": {
-    "ticker": "EQIX",
-    "strategy": "bb_lower_touch",
-    "entry_date": "2026-07-02",
-    "exit_date": "2026-07-17",
-    "shares": 9,
-    "entry_price": 1002.02
-  },
   "INTC_rsi_oversold": {
     "ticker": "INTC",
     "strategy": "rsi_oversold",
