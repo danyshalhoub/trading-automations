@@ -150,5 +150,13 @@
     "exit_date": "2026-08-14",
     "shares": 4878,
     "entry_price": 2.05
+  },
+  "PEP_52w_low_bounce": {
+    "ticker": "PEP",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-07-20",
+    "exit_date": "2026-08-18",
+    "shares": 73,
+    "entry_price": 135.46
   }
 }
