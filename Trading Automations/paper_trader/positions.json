@@ -158,5 +158,13 @@
     "exit_date": "2026-08-18",
     "shares": 73,
     "entry_price": 135.46
+  },
+  "GOOGL_rsi_oversold": {
+    "ticker": "GOOGL",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-24",
+    "exit_date": "2026-08-10",
+    "shares": 31,
+    "entry_price": 319.74
   }
 }
