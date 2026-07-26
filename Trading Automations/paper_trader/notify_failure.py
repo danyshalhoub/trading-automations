@@ -2,11 +2,11 @@
 """
 Failure Notifier
 =================
-Sends an email alert when the daily_trader.yml workflow fails (e.g.
-yfinance rate-limited, Alpaca auth expired, unhandled exception). Wired
-into the workflow with `if: failure()`, so it only runs when an earlier
-step in the job has already failed — meaning no trades were placed or
-exited that day.
+Sends an email alert when a paper-trader workflow fails (e.g. yfinance
+rate-limited, Alpaca auth expired, unhandled exception). Wired into both
+daily_trader.yml and weekly_tournament.yml with `if: failure()`, so it only
+runs when an earlier step in the job has already failed. WORKFLOW_NAME
+identifies which workflow failed in the alert email.
 """
 
 import os
@@ -17,6 +17,7 @@ from email.mime.text import MIMEText
 GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD")
 RUN_URL = os.environ.get("RUN_URL", "(no run URL provided)")
+WORKFLOW_NAME = os.environ.get("WORKFLOW_NAME", "Daily Paper Trader")
 
 
 def main():
@@ -25,13 +26,12 @@ def main():
         return
 
     body = (
-        f"The Daily Paper Trader workflow failed on {date.today().isoformat()}.\n\n"
-        f"No trades were placed and no exits were processed today.\n\n"
+        f"The {WORKFLOW_NAME} workflow failed on {date.today().isoformat()}.\n\n"
         f"Run logs: {RUN_URL}"
     )
 
     msg = MIMEText(body)
-    msg["Subject"] = f"Paper Trader FAILED — {date.today().isoformat()}"
+    msg["Subject"] = f"{WORKFLOW_NAME} FAILED — {date.today().isoformat()}"
     msg["From"] = GMAIL_ADDRESS
     msg["To"] = GMAIL_ADDRESS
 

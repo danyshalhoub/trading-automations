@@ -1,0 +1,53 @@
+name: Weekly Strategy Tournament
+
+on:
+  schedule:
+    # 10:00 PM UTC Friday = 6:00 PM ET — after market close (4 PM ET) and
+    # after the daily trader's 5:30 PM ET run, so this week's last trades
+    # are reflected before re-testing the roster.
+    - cron: '0 22 * * 5'
+  workflow_dispatch:
+    # Allows you to trigger a run manually from the GitHub Actions tab
+
+permissions:
+  contents: write   # needed so the action can commit the new roster back
+
+jobs:
+  tournament:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r "Trading Automations/paper_trader/requirements.txt"
+
+      - name: Run weekly tournament
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python "Trading Automations/paper_trader/weekly_tournament.py"
+
+      - name: Save updated roster and history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "Trading Automations/paper_trader/active_strategies.json" \
+                  "Trading Automations/paper_trader/thesis_history.jsonl" \
+                  "Trading Automations/paper_trader/weekly_tournament_report.md"
+          git diff --staged --quiet || git commit -m "weekly tournament: $(date -u +'%Y-%m-%d')"
+          git push
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          WORKFLOW_NAME: "Weekly Strategy Tournament"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python "Trading Automations/paper_trader/notify_failure.py"

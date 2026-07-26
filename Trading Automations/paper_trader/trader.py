@@ -3,19 +3,15 @@
 Daily Paper Trader
 ==================
 Runs after market close every weekday via GitHub Actions.
-Scans 134 US stocks for 4 trading signals and places paper
+Scans the shared ticker universe (strategies_lib.ALL_TICKERS) for whatever
+strategies are currently listed in active_strategies.json and places paper
 trades automatically on Alpaca.
 
-Strategies traded:
-  1. Buy Dip + 200-Day MA        — hold 5 trading days
-  2. 52-Week Low Bounce          — hold 20 trading days
-  3. RSI Oversold Bounce         — hold 10 trading days
-  4. MACD Bullish Cross (< 0)    — hold 20 trading days
-
-  (Bollinger Band Lower Touch was retired 2026-07-12 after failing its
-  train/test cheat-check in the tournament rerun — profitable 2019-2021,
-  lost money 2022-2024. Replaced with MACD Bullish Cross, which survived
-  the cheat-check in both halves. See round2_strategy_tournament.py.)
+The live roster (which 4 strategies are active, and their parameters) is
+no longer hardcoded here — it's read from active_strategies.json, which
+weekly_tournament.py rewrites every Friday after re-testing the current
+roster against fresh data plus new Claude-generated candidates. See
+directives/paper_trader.md for the weekly re-tournament process.
 
 SAFETY: This script uses Alpaca PAPER trading only.
         paper=True is hardcoded. No real money is ever at risk.
@@ -34,11 +30,12 @@ import warnings
 warnings.filterwarnings("ignore")
 
 import pandas as pd
-import numpy as np
 import yfinance as yf
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
+
+import strategies_lib as lib
 
 # =============================================================================
 # CONFIG
@@ -46,113 +43,20 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 
 POSITION_SIZE = 10_000   # Dollars per trade
 
-HOLD_DAYS = {
-    "buy_dip_200ma":    5,
-    "52w_low_bounce":   20,
-    "rsi_oversold":     10,
-    "macd_bull_cross":  20,
-}
-
-# positions.json and trade_log.csv live in the same folder as this script
+# positions.json, trade_log.csv, and active_strategies.json live in the same
+# folder as this script
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions.json")
 TRADE_LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trade_log.csv")
+ACTIVE_STRATEGIES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "active_strategies.json")
 TRADE_LOG_FIELDS = [
     "ticker", "strategy", "entry_date", "exit_date",
     "entry_price", "exit_price", "shares", "pct_gain", "dollar_pnl",
 ]
 
-# =============================================================================
-# TICKER UNIVERSE (same 134 stocks used in backtests)
-# =============================================================================
 
-SP500_SAMPLE = [
-    "AAPL","MSFT","AMZN","GOOGL","META","NVDA","TSLA","JPM","V","UNH",
-    "JNJ","PG","XOM","HD","MA","BAC","ABBV","MRK","CVX","PEP",
-    "KO","LLY","AVGO","COST","TMO","MCD","CSCO","WMT","DIS","ACN",
-    "ABT","CRM","NEE","DHR","VZ","ADBE","NFLX","INTC","TXN","NKE",
-    "PM","RTX","QCOM","HON","AMGN","LIN","IBM","SBUX","CAT","GE",
-    "BLK","GS","AXP","SPGI","BKNG","MDLZ","ADP","MMM","GILD","MO",
-    "TGT","CVS","CI","DE","SYK","ZTS","ISRG","MU","REGN","BDX",
-    "EOG","SLB","PLD","AMT","CCI","EQIX","PSA","O","SPG","WELL",
-    "F","GM","BA","LMT","NOC","GD","AON","CB","ALL",
-    "WFC","USB","PNC","TFC","COF","MS","SCHW","BK","STT","MTB",
-]
-VOLATILE_EXTRAS = [
-    "ROKU","SNAP","UBER","LYFT","PINS","TWLO","DDOG","NET","CRWD","ZS",
-    "BILL","AFRM","SOFI","HOOD","RIVN","LCID","COIN","MSTR","AMC","GME",
-    "SPCE","WKHS","SKLZ","OPEN","UWMC","CLOV","PLTR","PATH","U","GTLB",
-    "FROG","STEM","RUN","ARRY","BBBY","SMAR","NOVA",
-]
-ALL_TICKERS = SP500_SAMPLE + VOLATILE_EXTRAS
-
-
-# =============================================================================
-# TECHNICAL INDICATORS
-# =============================================================================
-
-def compute_rsi(series, period=14):
-    delta = series.diff()
-    gain  = delta.clip(lower=0).rolling(period, min_periods=period).mean()
-    loss  = (-delta.clip(upper=0)).rolling(period, min_periods=period).mean()
-    rs    = gain / loss.replace(0, np.nan)
-    return 100 - (100 / (1 + rs))
-
-
-def add_indicators(df):
-    df = df.copy()
-    df["ret"]     = df["Close"].pct_change()
-    df["ma200"]   = df["Close"].rolling(200).mean()
-    df["low_52w"] = df["Close"].shift(1).rolling(252, min_periods=200).min()
-    df["rsi"]     = compute_rsi(df["Close"])
-
-    ema12 = df["Close"].ewm(span=12, adjust=False).mean()
-    ema26 = df["Close"].ewm(span=26, adjust=False).mean()
-    df["macd"]        = ema12 - ema26
-    df["macd_signal"] = df["macd"].ewm(span=9, adjust=False).mean()
-
-    return df
-
-
-# =============================================================================
-# SIGNAL CHECKERS
-# Each checks whether today's (last row's) data triggers the strategy.
-# =============================================================================
-
-def check_buy_dip_200ma(df):
-    """Drop >10% today AND still above the 200-day moving average."""
-    row = df.iloc[-1]
-    return bool(row["ret"] < -0.10 and row["Close"] > row["ma200"])
-
-
-def check_52w_low_bounce(df):
-    """Price is within 3% of its 52-week low."""
-    row = df.iloc[-1]
-    return bool(pd.notna(row["low_52w"]) and row["Close"] <= row["low_52w"] * 1.03)
-
-
-def check_rsi_oversold(df):
-    """RSI(14) drops below 30 — technically oversold."""
-    row = df.iloc[-1]
-    return bool(pd.notna(row["rsi"]) and row["rsi"] < 30)
-
-
-def check_macd_bull_cross(df):
-    """MACD line crosses above its signal line while still below zero."""
-    if len(df) < 2:
-        return False
-    curr, prev = df.iloc[-1], df.iloc[-2]
-    if pd.isna(curr["macd"]) or pd.isna(curr["macd_signal"]) or pd.isna(prev["macd"]) or pd.isna(prev["macd_signal"]):
-        return False
-    crossed_up = curr["macd"] > curr["macd_signal"] and prev["macd"] <= prev["macd_signal"]
-    return bool(crossed_up and curr["macd"] < 0)
-
-
-STRATEGIES = {
-    "buy_dip_200ma":   check_buy_dip_200ma,
-    "52w_low_bounce":  check_52w_low_bounce,
-    "rsi_oversold":    check_rsi_oversold,
-    "macd_bull_cross": check_macd_bull_cross,
-}
+def load_active_strategies():
+    with open(ACTIVE_STRATEGIES_FILE) as f:
+        return json.load(f)
 
 
 # =============================================================================
@@ -289,14 +193,22 @@ def main():
     buying_power = get_buying_power(client)
     print(f"  Buying power: ${buying_power:,.0f}\n")
 
+    active_specs = load_active_strategies()
+    print(f"  Active strategies: {', '.join(s['name'] for s in active_specs)}\n")
+
     lookback_start = (
         pd.Timestamp.today() - pd.DateOffset(days=420)
     ).strftime("%Y-%m-%d")
 
+    spy_df = yf.download(lib.BENCHMARK, start=lookback_start, auto_adjust=True, progress=False)
+    if isinstance(spy_df.columns, pd.MultiIndex):
+        spy_df.columns = [col[0] for col in spy_df.columns]
+    spy_ret_63 = spy_df["Close"].pct_change(63)
+
     new_trades   = 0
     data_skipped = 0
 
-    for ticker in ALL_TICKERS:
+    for ticker in lib.ALL_TICKERS:
         # Stop if we've run out of capital
         if buying_power < POSITION_SIZE:
             print("  Buying power exhausted — scan stopped.")
@@ -324,7 +236,7 @@ def main():
             data_skipped += 1
             continue
 
-        df            = add_indicators(df)
+        df            = lib.add_base_columns(df, spy_ret_lookback=spy_ret_63)
         current_price = float(df["Close"].iloc[-1])
         if current_price <= 0:
             continue
@@ -333,17 +245,18 @@ def main():
         if shares < 1:
             continue  # stock price > $10,000 — skip
 
-        for strategy_name, check_fn in STRATEGIES.items():
+        for spec in active_specs:
+            strategy_name = spec["name"]
             pos_key = f"{ticker}_{strategy_name}"
 
             if pos_key in positions:
                 continue  # already holding this ticker/strategy combo
 
-            if not check_fn(df):
+            if not lib.check_signal_today(df, spec["indicator_type"], spec["params"]):
                 continue  # signal did not trigger today
 
             # Signal fired — calculate exit date in trading days
-            hold   = HOLD_DAYS[strategy_name]
+            hold   = spec["hold_days"]
             entry  = pd.Timestamp.today() + pd.offsets.BDay(1)   # tomorrow's open
             exit_d = (entry + pd.offsets.BDay(hold)).strftime("%Y-%m-%d")
 
