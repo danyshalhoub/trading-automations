@@ -5,7 +5,7 @@ Run the strategies that survived the backtest tournament's train/test cheat-chec
 
 ## Tools
 - Script: `paper_trader/trader.py` — scans tickers, enters/exits positions on a fixed hold-days timer, appends every closed trade to `paper_trader/trade_log.csv`.
-- Script: `paper_trader/performance_report.py` — reads `trade_log.csv`, writes `paper_trader/performance_report.md` (win rate, total trades, per-trade % gain, per-strategy breakdown), and emails a weekly digest.
+- Script: `paper_trader/performance_report.py` — reads `trade_log.csv`, writes `paper_trader/performance_report.md` (win rate, total trades, per-trade % gain, per-strategy breakdown), and emails a weekly digest. The report and email both show two sections: "This Week" (trades with `exit_date` in the last 7 days) and "All-Time" (cumulative since inception) — don't conflate the two when reading the Total P&L figure (fixed 2026-07-26 after the cumulative total was mistakenly sent as if it were the week's P&L).
 - Script: `paper_trader/notify_failure.py` — emails an alert if `trader.py` or `performance_report.py` fails (auth expired, rate-limited, unhandled exception). Only runs on failure.
 - Workflow: `.github/workflows/daily_trader.yml` — runs all scripts after US market close on weekdays, commits `positions.json`, `trade_log.csv`, and `performance_report.md` back to the repo.
 

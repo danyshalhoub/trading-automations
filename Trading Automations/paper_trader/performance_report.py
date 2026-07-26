@@ -19,7 +19,7 @@ import csv
 import os
 import smtplib
 import sys
-from datetime import date
+from datetime import date, timedelta
 from email.mime.text import MIMEText
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -37,6 +37,11 @@ def load_trades():
         rows = list(csv.DictReader(f))
     # Only trades with a known exit price count toward stats.
     return [r for r in rows if r["pct_gain"] not in ("", None)]
+
+
+def trades_closed_since(trades, days=7):
+    cutoff = date.today() - timedelta(days=days)
+    return [t for t in trades if date.fromisoformat(t["exit_date"]) >= cutoff]
 
 
 def compute_stats(trades):
@@ -73,16 +78,9 @@ def compute_stats(trades):
     }
 
 
-def build_report_markdown(stats, trades):
-    today = date.today().isoformat()
-
-    if stats is None:
-        return f"# Paper Trading Performance Report\n\n_Last updated: {today}_\n\nNo closed trades yet.\n"
-
+def build_summary_lines(stats, heading):
     lines = [
-        "# Paper Trading Performance Report",
-        f"\n_Last updated: {today}_\n",
-        "## Summary",
+        f"## {heading}",
         f"- **Total closed trades:** {stats['total_trades']}",
         f"- **Win rate:** {stats['win_rate']:.1f}%",
         f"- **Average % gain per trade:** {stats['avg_pct_gain']:+.2f}%",
@@ -91,12 +89,29 @@ def build_report_markdown(stats, trades):
         f"({stats['best_trade']['strategy']}) {float(stats['best_trade']['pct_gain']):+.2f}%",
         f"- **Worst trade:** {stats['worst_trade']['ticker']} "
         f"({stats['worst_trade']['strategy']}) {float(stats['worst_trade']['pct_gain']):+.2f}%",
-        "\n## By Strategy",
+        "",
         "| Strategy | Trades | Win Rate | Avg % Gain |",
         "|---|---|---|---|",
     ]
     for s, st in sorted(stats["by_strategy"].items()):
         lines.append(f"| {s} | {st['trades']} | {st['win_rate']:.1f}% | {st['avg_gain']:+.2f}% |")
+    return lines
+
+
+def build_report_markdown(stats, trades, week_stats):
+    today = date.today().isoformat()
+
+    if stats is None:
+        return f"# Paper Trading Performance Report\n\n_Last updated: {today}_\n\nNo closed trades yet.\n"
+
+    lines = ["# Paper Trading Performance Report", f"\n_Last updated: {today}_\n"]
+
+    if week_stats is not None:
+        lines += build_summary_lines(week_stats, "This Week (last 7 days)")
+    else:
+        lines += ["## This Week (last 7 days)", "", "No trades closed in the last 7 days."]
+    lines.append("")
+    lines += build_summary_lines(stats, "All-Time (cumulative)")
 
     lines.append("\n## All Trades")
     lines.append("| Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |")
@@ -110,22 +125,33 @@ def build_report_markdown(stats, trades):
     return "\n".join(lines) + "\n"
 
 
-def build_email_body(stats):
-    if stats is None:
-        return "No closed paper trades yet this week."
-
+def build_email_section(stats, heading):
     lines = [
-        f"Paper Trading Weekly Digest — {date.today().isoformat()}",
-        "",
-        f"Total closed trades: {stats['total_trades']}",
-        f"Win rate: {stats['win_rate']:.1f}%",
-        f"Average % gain per trade: {stats['avg_pct_gain']:+.2f}%",
-        f"Total P&L: ${stats['total_pnl']:+,.2f}",
-        "",
-        "By strategy:",
+        heading,
+        f"  Total closed trades: {stats['total_trades']}",
+        f"  Win rate: {stats['win_rate']:.1f}%",
+        f"  Average % gain per trade: {stats['avg_pct_gain']:+.2f}%",
+        f"  Total P&L: ${stats['total_pnl']:+,.2f}",
+        "  By strategy:",
     ]
     for s, st in sorted(stats["by_strategy"].items()):
-        lines.append(f"  {s}: {st['trades']} trades, {st['win_rate']:.1f}% win rate, {st['avg_gain']:+.2f}% avg gain")
+        lines.append(f"    {s}: {st['trades']} trades, {st['win_rate']:.1f}% win rate, {st['avg_gain']:+.2f}% avg gain")
+    return lines
+
+
+def build_email_body(stats, week_stats):
+    if stats is None:
+        return "No closed paper trades yet."
+
+    lines = [f"Paper Trading Weekly Digest — {date.today().isoformat()}", ""]
+
+    if week_stats is not None:
+        lines += build_email_section(week_stats, "This Week (last 7 days):")
+    else:
+        lines += ["This Week (last 7 days):", "  No trades closed in the last 7 days."]
+    lines.append("")
+    lines += build_email_section(stats, "All-Time (cumulative):")
+
     return "\n".join(lines)
 
 
@@ -148,8 +174,9 @@ def send_email(body):
 def main():
     trades = load_trades()
     stats = compute_stats(trades)
+    week_stats = compute_stats(trades_closed_since(trades, days=7))
 
-    report_md = build_report_markdown(stats, trades)
+    report_md = build_report_markdown(stats, trades, week_stats)
     with open(REPORT_FILE, "w") as f:
         f.write(report_md)
     print(f"Wrote {REPORT_FILE}")
@@ -158,7 +185,7 @@ def main():
     force_email = "--force-email" in sys.argv
 
     if is_friday or force_email:
-        send_email(build_email_body(stats))
+        send_email(build_email_body(stats, week_stats))
     else:
         print("  Not Friday — skipping weekly email (use --force-email to override).")
 

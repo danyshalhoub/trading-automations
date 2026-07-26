@@ -1,8 +1,12 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-07-24_
+_Last updated: 2026-07-26_
 
-## Summary
+## This Week (last 7 days)
+
+No trades closed in the last 7 days.
+
+## All-Time (cumulative)
 - **Total closed trades:** 25
 - **Win rate:** 84.0%
 - **Average % gain per trade:** +3.35%
@@ -10,7 +14,6 @@ _Last updated: 2026-07-24_
 - **Best trade:** CI (rsi_oversold) +8.03%
 - **Worst trade:** VZ (bb_lower_touch) -3.70%
 
-## By Strategy
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | bb_lower_touch | 9 | 77.8% | +1.73% |
