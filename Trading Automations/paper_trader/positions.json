@@ -166,5 +166,13 @@
     "exit_date": "2026-08-10",
     "shares": 31,
     "entry_price": 319.74
+  },
+  "TSLA_52w_low_bounce": {
+    "ticker": "TSLA",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-07-27",
+    "exit_date": "2026-08-25",
+    "shares": 32,
+    "entry_price": 309.22
   }
 }
