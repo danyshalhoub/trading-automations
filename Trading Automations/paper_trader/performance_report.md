@@ -1,23 +1,33 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-07-27_
+_Last updated: 2026-07-28_
 
 ## This Week (last 7 days)
-
-No trades closed in the last 7 days.
-
-## All-Time (cumulative)
-- **Total closed trades:** 25
-- **Win rate:** 84.0%
-- **Average % gain per trade:** +3.35%
-- **Total P&L:** $+8,319.66
-- **Best trade:** CI (rsi_oversold) +8.03%
-- **Worst trade:** VZ (bb_lower_touch) -3.70%
+- **Total closed trades:** 8
+- **Win rate:** 75.0%
+- **Average % gain per trade:** +3.63%
+- **Total P&L:** $+2,923.58
+- **Best trade:** ACN (52w_low_bounce) +32.00%
+- **Worst trade:** INTC (rsi_oversold) -16.31%
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
+| 52w_low_bounce | 7 | 85.7% | +6.47% |
+| rsi_oversold | 1 | 0.0% | -16.31% |
+
+## All-Time (cumulative)
+- **Total closed trades:** 33
+- **Win rate:** 81.8%
+- **Average % gain per trade:** +3.42%
+- **Total P&L:** $+11,243.24
+- **Best trade:** ACN (52w_low_bounce) +32.00%
+- **Worst trade:** INTC (rsi_oversold) -16.31%
+
+| Strategy | Trades | Win Rate | Avg % Gain |
+|---|---|---|---|
+| 52w_low_bounce | 7 | 85.7% | +6.47% |
 | bb_lower_touch | 9 | 77.8% | +1.73% |
-| rsi_oversold | 16 | 87.5% | +4.27% |
+| rsi_oversold | 17 | 82.4% | +3.06% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
@@ -47,3 +57,11 @@ No trades closed in the last 7 days.
 | CCI | bb_lower_touch | 2026-06-30 | 2026-07-15 | +4.94% | $+493.68 |
 | WMT | rsi_oversold | 2026-07-02 | 2026-07-17 | +2.15% | $+213.60 |
 | EQIX | bb_lower_touch | 2026-07-02 | 2026-07-17 | +1.79% | $+161.82 |
+| MCD | 52w_low_bounce | 2026-06-29 | 2026-07-28 | +2.19% | $+216.08 |
+| ACN | 52w_low_bounce | 2026-06-29 | 2026-07-28 | +32.00% | $+3,193.60 |
+| NKE | 52w_low_bounce | 2026-06-29 | 2026-07-28 | +3.79% | $+378.37 |
+| ZTS | 52w_low_bounce | 2026-06-29 | 2026-07-28 | +5.82% | $+579.36 |
+| ISRG | 52w_low_bounce | 2026-06-29 | 2026-07-28 | -10.88% | $-1,060.08 |
+| AMT | 52w_low_bounce | 2026-06-29 | 2026-07-28 | +1.68% | $+166.97 |
+| NOC | 52w_low_bounce | 2026-06-29 | 2026-07-28 | +10.73% | $+1,064.00 |
+| INTC | rsi_oversold | 2026-07-13 | 2026-07-28 | -16.31% | $-1,614.72 |

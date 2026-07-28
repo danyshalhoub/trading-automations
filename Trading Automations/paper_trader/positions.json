@@ -1,60 +1,4 @@
 {
-  "MCD_52w_low_bounce": {
-    "ticker": "MCD",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 37,
-    "entry_price": 267.18
-  },
-  "ACN_52w_low_bounce": {
-    "ticker": "ACN",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 80,
-    "entry_price": 124.74
-  },
-  "NKE_52w_low_bounce": {
-    "ticker": "NKE",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 241,
-    "entry_price": 41.48
-  },
-  "ZTS_52w_low_bounce": {
-    "ticker": "ZTS",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 136,
-    "entry_price": 73.25
-  },
-  "ISRG_52w_low_bounce": {
-    "ticker": "ISRG",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 24,
-    "entry_price": 405.97
-  },
-  "AMT_52w_low_bounce": {
-    "ticker": "AMT",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 59,
-    "entry_price": 168.67
-  },
-  "NOC_52w_low_bounce": {
-    "ticker": "NOC",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-29",
-    "exit_date": "2026-07-28",
-    "shares": 20,
-    "entry_price": 496.02
-  },
   "NFLX_52w_low_bounce": {
     "ticker": "NFLX",
     "strategy": "52w_low_bounce",
@@ -70,14 +14,6 @@
     "exit_date": "2026-07-29",
     "shares": 132,
     "entry_price": 75.73
-  },
-  "INTC_rsi_oversold": {
-    "ticker": "INTC",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-13",
-    "exit_date": "2026-07-28",
-    "shares": 96,
-    "entry_price": 103.12
   },
   "COST_macd_bull_cross": {
     "ticker": "COST",
