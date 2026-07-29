@@ -1,20 +1,4 @@
 {
-  "NFLX_52w_low_bounce": {
-    "ticker": "NFLX",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-29",
-    "shares": 140,
-    "entry_price": 71.4
-  },
-  "CCI_52w_low_bounce": {
-    "ticker": "CCI",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-06-30",
-    "exit_date": "2026-07-29",
-    "shares": 132,
-    "entry_price": 75.73
-  },
   "COST_macd_bull_cross": {
     "ticker": "COST",
     "strategy": "macd_bull_cross",
@@ -110,5 +94,85 @@
     "exit_date": "2026-08-25",
     "shares": 32,
     "entry_price": 309.22
+  },
+  "AMZN_rsi_oversold": {
+    "ticker": "AMZN",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 44,
+    "entry_price": 226.65
+  },
+  "TSLA_rsi_oversold": {
+    "ticker": "TSLA",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 33,
+    "entry_price": 298.32
+  },
+  "INTC_rsi_oversold": {
+    "ticker": "INTC",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 122,
+    "entry_price": 81.88
+  },
+  "TXN_rsi_oversold": {
+    "ticker": "TXN",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 36,
+    "entry_price": 271.3
+  },
+  "NKE_macd_bull_cross": {
+    "ticker": "NKE",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-27",
+    "shares": 231,
+    "entry_price": 43.22
+  },
+  "IBM_rsi_oversold": {
+    "ticker": "IBM",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 44,
+    "entry_price": 226.44
+  },
+  "TWLO_rsi_oversold": {
+    "ticker": "TWLO",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 53,
+    "entry_price": 188.25
+  },
+  "AFRM_rsi_oversold": {
+    "ticker": "AFRM",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 142,
+    "entry_price": 70.11
+  },
+  "SOFI_52w_low_bounce": {
+    "ticker": "SOFI",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-27",
+    "shares": 655,
+    "entry_price": 15.25
+  },
+  "SOFI_rsi_oversold": {
+    "ticker": "SOFI",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-07-29",
+    "exit_date": "2026-08-13",
+    "shares": 655,
+    "entry_price": 15.25
   }
 }
