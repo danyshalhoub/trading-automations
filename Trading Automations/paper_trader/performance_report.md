@@ -1,25 +1,25 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-07-30_
+_Last updated: 2026-07-31_
 
 ## This Week (last 7 days)
-- **Total closed trades:** 10
-- **Win rate:** 80.0%
-- **Average % gain per trade:** +3.66%
-- **Total P&L:** $+3,679.30
+- **Total closed trades:** 13
+- **Win rate:** 61.5%
+- **Average % gain per trade:** +0.96%
+- **Total P&L:** $+1,327.47
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 9 | 88.9% | +5.87% |
-| rsi_oversold | 1 | 0.0% | -16.31% |
+| rsi_oversold | 4 | 0.0% | -10.11% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 35
-- **Win rate:** 82.9%
-- **Average % gain per trade:** +3.44%
-- **Total P&L:** $+11,998.96
+- **Total closed trades:** 38
+- **Win rate:** 76.3%
+- **Average % gain per trade:** +2.53%
+- **Total P&L:** $+9,647.13
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
 
@@ -27,7 +27,7 @@ _Last updated: 2026-07-30_
 |---|---|---|---|
 | 52w_low_bounce | 9 | 88.9% | +5.87% |
 | bb_lower_touch | 9 | 77.8% | +1.73% |
-| rsi_oversold | 17 | 82.4% | +3.06% |
+| rsi_oversold | 20 | 70.0% | +1.39% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
@@ -67,3 +67,6 @@ _Last updated: 2026-07-30_
 | INTC | rsi_oversold | 2026-07-13 | 2026-07-28 | -16.31% | $-1,614.72 |
 | NFLX | 52w_low_bounce | 2026-06-30 | 2026-07-29 | +3.12% | $+312.20 |
 | CCI | 52w_low_bounce | 2026-06-30 | 2026-07-29 | +4.44% | $+443.52 |
+| QCOM | rsi_oversold | 2026-07-16 | 2026-07-31 | -13.48% | $-1,334.00 |
+| CAT | rsi_oversold | 2026-07-16 | 2026-07-31 | -7.11% | $-685.96 |
+| MU | rsi_oversold | 2026-07-16 | 2026-07-31 | -3.54% | $-331.87 |

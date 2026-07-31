@@ -15,22 +15,6 @@
     "shares": 100,
     "entry_price": 99.71
   },
-  "QCOM_rsi_oversold": {
-    "ticker": "QCOM",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-16",
-    "exit_date": "2026-07-31",
-    "shares": 58,
-    "entry_price": 170.61
-  },
-  "CAT_rsi_oversold": {
-    "ticker": "CAT",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-16",
-    "exit_date": "2026-07-31",
-    "shares": 11,
-    "entry_price": 877.17
-  },
   "MDLZ_macd_bull_cross": {
     "ticker": "MDLZ",
     "strategy": "macd_bull_cross",
@@ -38,14 +22,6 @@
     "exit_date": "2026-08-14",
     "shares": 162,
     "entry_price": 61.42
-  },
-  "MU_rsi_oversold": {
-    "ticker": "MU",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-16",
-    "exit_date": "2026-07-31",
-    "shares": 11,
-    "entry_price": 853.2
   },
   "GM_macd_bull_cross": {
     "ticker": "GM",
