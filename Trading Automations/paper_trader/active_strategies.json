@@ -1,34 +1,46 @@
 [
   {
-    "name": "buy_dip_200ma",
-    "indicator_type": "buy_dip_ma",
-    "params": {"drop_pct": 0.10, "ma_period": 200},
-    "hold_days": 5,
-    "thesis": "Panic dip inside a healthy uptrend: stock drops >10% in a day but stays above its 200-day MA.",
+    "name": "low_52w_bounce_tight",
+    "indicator_type": "low_52w_bounce",
+    "params": {
+      "pct_from_low": 1.015
+    },
+    "hold_days": 25,
+    "thesis": "Tighter proximity to the 52-week low is a higher-conviction capitulation signal than the incumbent's 3% band; long hold since these are slow-grinding reversals, not quick bounces.",
+    "added_week": "2026-07-31"
+  },
+  {
+    "name": "macd_bull_cross",
+    "indicator_type": "macd_bull_cross",
+    "params": {
+      "fast": 12,
+      "slow": 26,
+      "signal": 9
+    },
+    "hold_days": 20,
+    "thesis": "Early-stage momentum shift: MACD bullish crossover while still below zero. Replaced bb_lower_touch on 2026-07-12 after it failed the train/test cheat-check on rerun.",
     "added_week": "pre-existing"
   },
   {
     "name": "52w_low_bounce",
     "indicator_type": "low_52w_bounce",
-    "params": {"pct_from_low": 1.03},
+    "params": {
+      "pct_from_low": 1.03
+    },
     "hold_days": 20,
     "thesis": "Contrarian bounce off maximum pessimism: stock within 3% of its 52-week low.",
     "added_week": "pre-existing"
   },
   {
-    "name": "rsi_oversold",
-    "indicator_type": "rsi_oversold",
-    "params": {"period": 14, "threshold": 30},
-    "hold_days": 10,
-    "thesis": "Classic oversold bounce: RSI(14) drops below 30.",
-    "added_week": "pre-existing"
-  },
-  {
-    "name": "macd_bull_cross",
+    "name": "macd_bull_cross_fast",
     "indicator_type": "macd_bull_cross",
-    "params": {"fast": 12, "slow": 26, "signal": 9},
-    "hold_days": 20,
-    "thesis": "Early-stage momentum shift: MACD bullish crossover while still below zero. Replaced bb_lower_touch on 2026-07-12 after it failed the train/test cheat-check on rerun.",
-    "added_week": "pre-existing"
+    "params": {
+      "fast": 8,
+      "slow": 21,
+      "signal": 6
+    },
+    "hold_days": 12,
+    "thesis": "A faster MACD pair should catch momentum shifts sooner in a low-vol grind, where the incumbent 12/26/9 cross can be slow to trigger on subtle moves.",
+    "added_week": "2026-07-31"
   }
 ]

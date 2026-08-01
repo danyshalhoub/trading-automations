@@ -2,14 +2,21 @@
 """
 Weekly Strategy Tournament
 ============================
-Runs after market close every Friday via GitHub Actions:
+Run manually (locally, or via workflow_dispatch) whenever you decide to
+re-test the roster — there is no passive schedule. If a week goes by without
+a manual run, active_strategies.json simply stays as-is and trader.py keeps
+trading the same 4 strategies; that's an intentional choice, not a fallback.
 
   1. Downloads fresh price data, END_DATE = today (a rolling window — this is
-     what makes "re-run the tournament weekly" mean something; the test half
-     of the cheat-check keeps extending toward the present instead of testing
-     the same fixed 2019-2024 window every week).
-  2. Asks Claude for NUM_CANDIDATES new candidate strategies (thesis_generator.py) —
-     structured params only, no code generation.
+     what makes "re-run the tournament" mean something; the test half of the
+     cheat-check keeps extending toward the present instead of testing the
+     same fixed 2019-2024 window every time).
+  2. Loads new candidate strategies from weekly_candidates.json, if present.
+     That file is produced manually (via the `stock-thesis-generator` skill
+     run in a Claude Code session) before this script runs — structured
+     params only, no code generation. If the file is absent, this is simply
+     a re-test of the current 4 incumbents against fresh data — no new
+     candidates that run.
   3. Backtests the current 4 live strategies + all new candidates together
      (candidates + incumbents = one pool), applies the train/test cheat-check.
   4. Ranks cheat-check survivors by test-half P&L, takes the top 4. If fewer
@@ -17,12 +24,14 @@ Runs after market close every Friday via GitHub Actions:
      remaining slots rather than leaving the roster short.
   5. Writes the new roster to active_strategies.json (which trader.py reads
      every day) and appends the full week's results to thesis_history.jsonl
-     for an audit trail.
+     for an audit trail. Consumes (deletes) weekly_candidates.json so a stale
+     candidates file can't be silently reused on the next run.
 
-SAFETY: Every candidate — whether from Claude or an incumbent — is backtested
-through the same fixed, vetted indicator engine in strategies_lib.py before
-it can ever go live. Claude only ever selects indicator_type + params from a
-closed registry; it never writes or influences execution code.
+SAFETY: Every candidate — whether hand-authored or an incumbent — is
+backtested through the same fixed, vetted indicator engine in
+strategies_lib.py before it can ever go live. A candidate spec only ever
+selects indicator_type + params from a closed registry; it never writes or
+influences execution code.
 """
 
 import json
@@ -35,10 +44,10 @@ import pandas as pd
 import yfinance as yf
 
 import strategies_lib as lib
-import thesis_generator
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ACTIVE_STRATEGIES_FILE = os.path.join(BASE_DIR, "active_strategies.json")
+CANDIDATES_FILE = os.path.join(BASE_DIR, "weekly_candidates.json")
 THESIS_HISTORY_FILE = os.path.join(BASE_DIR, "thesis_history.jsonl")
 REPORT_FILE = os.path.join(BASE_DIR, "weekly_tournament_report.md")
 
@@ -63,6 +72,18 @@ def save_active_strategies(specs):
 def append_thesis_history(record):
     with open(THESIS_HISTORY_FILE, "a") as f:
         f.write(json.dumps(record, default=str) + "\n")
+
+
+def load_and_consume_candidates():
+    """Reads manually-authored candidates from weekly_candidates.json, then
+    deletes the file so it can't be silently reused on a future run. Missing
+    file just means no new candidates this run."""
+    if not os.path.exists(CANDIDATES_FILE):
+        return []
+    with open(CANDIDATES_FILE) as f:
+        candidates = json.load(f)
+    os.remove(CANDIDATES_FILE)
+    return candidates
 
 
 def download_price_data(end_date):
@@ -181,11 +202,15 @@ def main():
     for s in incumbents:
         print(f"  - {s['name']} [{s['indicator_type']}] {s.get('params', {})} hold={s['hold_days']}")
 
-    print("\nGenerating new candidates via Claude...")
-    new_candidates = thesis_generator.generate_candidates(incumbents)
+    new_candidates = load_and_consume_candidates()
     for spec in new_candidates:
         spec["incumbent"] = False
-    print(f"  {len(new_candidates)} new candidates received.\n")
+    if new_candidates:
+        print(f"\nLoaded {len(new_candidates)} manually-authored candidates from "
+              f"{os.path.basename(CANDIDATES_FILE)}.\n")
+    else:
+        print(f"\nNo {os.path.basename(CANDIDATES_FILE)} found — re-testing "
+              f"incumbents only, no new candidates this run.\n")
 
     all_candidates = incumbents + new_candidates
     if not all_candidates:
@@ -225,10 +250,7 @@ def main():
         "num_new_candidates": len(new_candidates),
         "num_evaluated": len(results),
         "roster": [r["name"] for r in roster],
-        "results": [
-            {k: v for k, v in r.items() if k != "stats"} | {"stats": r["stats"]}
-            for r in results
-        ],
+        "results": results,
     })
     print(f"Appended results to {THESIS_HISTORY_FILE}")
 

@@ -1,13 +1,11 @@
 name: Weekly Strategy Tournament
 
 on:
-  schedule:
-    # 10:00 PM UTC Friday = 6:00 PM ET — after market close (4 PM ET) and
-    # after the daily trader's 5:30 PM ET run, so this week's last trades
-    # are reflected before re-testing the roster.
-    - cron: '0 22 * * 5'
   workflow_dispatch:
-    # Allows you to trigger a run manually from the GitHub Actions tab
+    # Manual-only by design: trigger from the GitHub Actions tab whenever you
+    # decide to re-run the tournament. If weekly_candidates.json isn't
+    # committed to the repo before this runs, it just re-tests the current 4
+    # incumbents against fresh data — see weekly_tournament.py.
 
 permissions:
   contents: write   # needed so the action can commit the new roster back
@@ -29,8 +27,6 @@ jobs:
         run: pip install -r "Trading Automations/paper_trader/requirements.txt"
 
       - name: Run weekly tournament
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python "Trading Automations/paper_trader/weekly_tournament.py"
 
       - name: Save updated roster and history
