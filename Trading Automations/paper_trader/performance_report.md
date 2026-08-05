@@ -1,6 +1,30 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-07-31_
+_Last updated: 2026-08-04_
+
+## Open Positions
+
+| Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
+|---|---|---|---|---|
+| GOOGL | rsi_oversold | 2026-07-24 | 2026-08-10 | 6d |
+| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
+| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
+| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
+| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
+| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
+| SPCE | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
+| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 10d |
+| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 14d |
+| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 21d |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 23d |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 23d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 13
@@ -9,6 +33,7 @@ _Last updated: 2026-07-31_
 - **Total P&L:** $+1,327.47
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
+- **vs S&P 500** (same 13 trades, same entry/exit dates): SPY averaged -0.57%/trade ($-735.20 total) — you beat SPY by +1.52 pts ($+2,062.67)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
@@ -22,6 +47,7 @@ _Last updated: 2026-07-31_
 - **Total P&L:** $+9,647.13
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
+- **vs S&P 500** (same 38 trades, same entry/exit dates): SPY averaged +0.58%/trade ($+2,201.42 total) — you beat SPY by +1.95 pts ($+7,445.71)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
