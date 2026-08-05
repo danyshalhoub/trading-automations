@@ -22,9 +22,14 @@ _Last updated: 2026-08-04_
 | SPCE | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
 | UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 10d |
 | PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 14d |
+| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 16d |
+| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 16d |
+| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 16d |
 | TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 21d |
 | NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 23d |
 | SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 23d |
+| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 28d |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 35d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 13
