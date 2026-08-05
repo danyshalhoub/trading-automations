@@ -7,6 +7,18 @@ _Last updated: 2026-08-04_
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
 | ACN | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| XOM | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| CVX | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| CRM | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| VZ | bb_lower_touch | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| ADBE | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| NFLX | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| ZTS | bb_lower_touch | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| SLB | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| AMT | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| CCI | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| NOC | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
+| SNAP | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
 | GOOGL | rsi_oversold | 2026-07-24 | 2026-08-10 | 6d |
 | AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
 | TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
@@ -20,7 +32,6 @@ _Last updated: 2026-08-04_
 | DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
 | MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
 | GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
-| SPCE | macd_bull_cross | 2026-07-16 | 2026-08-14 | 10d |
 | UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 10d |
 | PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 14d |
 | NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 16d |
@@ -47,35 +58,23 @@ _Last updated: 2026-08-04_
 | rsi_oversold | 4 | 0.0% | -10.11% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 37
-- **Win rate:** 75.7%
-- **Average % gain per trade:** +2.39%
-- **Total P&L:** $+8,861.53
+- **Total closed trades:** 25
+- **Win rate:** 72.0%
+- **Average % gain per trade:** +1.93%
+- **Total P&L:** $+4,860.05
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
-- **vs S&P 500** (same 37 trades, same entry/exit dates): SPY averaged +0.56%/trade ($+2,055.27 total) — you beat SPY by +1.83 pts ($+6,806.26)
+- **vs S&P 500** (same 25 trades, same entry/exit dates): SPY averaged +0.12%/trade ($+301.42 total) — you beat SPY by +1.81 pts ($+4,558.63)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 9 | 88.9% | +5.87% |
-| bb_lower_touch | 9 | 77.8% | +1.73% |
-| rsi_oversold | 19 | 68.4% | +1.05% |
+| bb_lower_touch | 7 | 85.7% | +2.59% |
+| rsi_oversold | 9 | 44.4% | -2.54% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
 |---|---|---|---|---|---|
-| XOM | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.64% | $+659.19 |
-| CVX | rsi_oversold | 2026-06-29 | 2026-07-14 | +7.89% | $+784.11 |
-| CRM | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.10% | $+606.69 |
-| VZ | bb_lower_touch | 2026-06-29 | 2026-07-14 | -3.70% | $-368.38 |
-| ADBE | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.95% | $+688.80 |
-| NFLX | rsi_oversold | 2026-06-29 | 2026-07-14 | -0.34% | $-33.75 |
-| ZTS | bb_lower_touch | 2026-06-29 | 2026-07-14 | +1.12% | $+111.52 |
-| SLB | rsi_oversold | 2026-06-29 | 2026-07-14 | +2.50% | $+249.40 |
-| AMT | rsi_oversold | 2026-06-29 | 2026-07-14 | +0.09% | $+9.44 |
-| CCI | rsi_oversold | 2026-06-29 | 2026-07-14 | +0.53% | $+53.34 |
-| NOC | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.58% | $+653.00 |
-| SNAP | rsi_oversold | 2026-06-29 | 2026-07-14 | +5.88% | $+588.12 |
 | PEP | bb_lower_touch | 2026-06-30 | 2026-07-15 | -0.00% | $-0.00 |
 | DIS | bb_lower_touch | 2026-06-30 | 2026-07-15 | +0.94% | $+92.70 |
 | MDLZ | bb_lower_touch | 2026-06-30 | 2026-07-15 | +1.52% | $+151.36 |
