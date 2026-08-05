@@ -6,6 +6,7 @@ _Last updated: 2026-08-04_
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
+| ACN | rsi_oversold | 2026-06-29 | 2026-07-14 | overdue by 21d |
 | GOOGL | rsi_oversold | 2026-07-24 | 2026-08-10 | 6d |
 | AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
 | TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 9d |
@@ -46,26 +47,25 @@ _Last updated: 2026-08-04_
 | rsi_oversold | 4 | 0.0% | -10.11% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 38
-- **Win rate:** 76.3%
-- **Average % gain per trade:** +2.53%
-- **Total P&L:** $+9,647.13
+- **Total closed trades:** 37
+- **Win rate:** 75.7%
+- **Average % gain per trade:** +2.39%
+- **Total P&L:** $+8,861.53
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
-- **vs S&P 500** (same 38 trades, same entry/exit dates): SPY averaged +0.58%/trade ($+2,201.42 total) — you beat SPY by +1.95 pts ($+7,445.71)
+- **vs S&P 500** (same 37 trades, same entry/exit dates): SPY averaged +0.56%/trade ($+2,055.27 total) — you beat SPY by +1.83 pts ($+6,806.26)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 9 | 88.9% | +5.87% |
 | bb_lower_touch | 9 | 77.8% | +1.73% |
-| rsi_oversold | 20 | 70.0% | +1.39% |
+| rsi_oversold | 19 | 68.4% | +1.05% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
 |---|---|---|---|---|---|
 | XOM | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.64% | $+659.19 |
 | CVX | rsi_oversold | 2026-06-29 | 2026-07-14 | +7.89% | $+784.11 |
-| ACN | rsi_oversold | 2026-06-29 | 2026-07-14 | +7.87% | $+785.60 |
 | CRM | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.10% | $+606.69 |
 | VZ | bb_lower_touch | 2026-06-29 | 2026-07-14 | -3.70% | $-368.38 |
 | ADBE | rsi_oversold | 2026-06-29 | 2026-07-14 | +6.95% | $+688.80 |

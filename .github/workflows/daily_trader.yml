@@ -44,12 +44,36 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "Trading Automations/paper_trader/positions.json" \
                   "Trading Automations/paper_trader/performance_report.md"
-          # trade_log.csv only exists once the first trade has closed
+          # trade_log.csv and pending_entries.json only exist once the first
+          # trade has closed / the first entry order has ever been submitted
           if [ -f "Trading Automations/paper_trader/trade_log.csv" ]; then
             git add "Trading Automations/paper_trader/trade_log.csv"
           fi
-          git diff --staged --quiet || git commit -m "positions: $(date -u +'%Y-%m-%d')"
-          git push
+          if [ -f "Trading Automations/paper_trader/pending_entries.json" ]; then
+            git add "Trading Automations/paper_trader/pending_entries.json"
+          fi
+
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "positions: $(date -u +'%Y-%m-%d')"
+
+          # A same-day manual push (or an overlapping run) can leave the
+          # remote ahead of this checkout. A plain `git push` failing here
+          # would silently discard this run's real, already-executed order
+          # results (see the 2026-08-05 ACN incident in the directive) — so
+          # retry with a rebase instead of giving up on the first rejection.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) — fetching and rebasing before retrying."
+            git fetch origin
+            git rebase origin/main
+          done
+          echo "::error::Failed to push after 5 attempts — this run's results were NOT saved."
+          exit 1
 
       - name: Notify on failure
         if: failure()

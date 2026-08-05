@@ -1,4 +1,12 @@
 {
+  "ACN_rsi_oversold": {
+    "ticker": "ACN",
+    "strategy": "rsi_oversold",
+    "entry_date": "2026-06-29",
+    "exit_date": "2026-07-14",
+    "shares": 80,
+    "entry_price": 123.80
+  },
   "COST_macd_bull_cross": {
     "ticker": "COST",
     "strategy": "macd_bull_cross",
