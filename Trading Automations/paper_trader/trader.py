@@ -57,6 +57,7 @@ warnings.filterwarnings("ignore")
 
 import pandas as pd
 import yfinance as yf
+from alpaca.common.exceptions import APIError
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, OrderStatus, TimeInForce
@@ -105,7 +106,16 @@ def place_order(client, ticker, shares, side):
     """Submits a market order and returns the resulting Order (with its
     Alpaca order ID), or None if submission itself failed. Does NOT wait
     for or check the fill — that only happens on a later run, once a
-    market session has actually had a chance to execute it."""
+    market session has actually had a chance to execute it.
+
+    Self-heals from a duplicate-order rejection: if a prior run already
+    submitted this exact order but crashed before its ID got saved locally
+    (as happened 2026-08-06), Alpaca rejects the resubmit because the
+    shares/cash are already held by that still-outstanding order - and its
+    rejection includes that order's real ID in `related_orders`. Rather
+    than failing and repeating the same rejection every run forever, adopt
+    that ID so the caller tracks the real order and reconciliation can
+    check its actual status next run."""
     try:
         return client.submit_order(MarketOrderRequest(
             symbol=ticker,
@@ -113,6 +123,21 @@ def place_order(client, ticker, shares, side):
             side=side,
             time_in_force=TimeInForce.DAY,
         ))
+    except APIError as e:
+        try:
+            related = json.loads(str(e)).get("related_orders") or []
+        except (ValueError, TypeError):
+            related = []
+        if len(related) == 1:
+            print(f"    {ticker} {side.value} {shares}sh already has an outstanding "
+                  f"order ({related[0]}) — adopting it instead of resubmitting.")
+            try:
+                return client.get_order_by_id(related[0])
+            except Exception as lookup_err:
+                print(f"    Could not look up existing order {related[0]}: {lookup_err}")
+                return None
+        print(f"    Order failed ({ticker} {side.value} {shares}sh): {e}")
+        return None
     except Exception as e:
         print(f"    Order failed ({ticker} {side.value} {shares}sh): {e}")
         return None
