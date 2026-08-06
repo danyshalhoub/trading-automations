@@ -5,7 +5,7 @@
     "entry_date": "2026-06-29",
     "exit_date": "2026-07-14",
     "shares": 80,
-    "entry_price": 123.80
+    "entry_price": 123.8
   },
   "XOM_rsi_oversold": {
     "ticker": "XOM",
@@ -45,7 +45,7 @@
     "entry_date": "2026-06-29",
     "exit_date": "2026-07-14",
     "shares": 48,
-    "entry_price": 204.60
+    "entry_price": 204.6
   },
   "NFLX_rsi_oversold": {
     "ticker": "NFLX",
@@ -93,7 +93,7 @@
     "entry_date": "2026-06-29",
     "exit_date": "2026-07-14",
     "shares": 20,
-    "entry_price": 500.50
+    "entry_price": 500.5
   },
   "SNAP_rsi_oversold": {
     "ticker": "SNAP",
