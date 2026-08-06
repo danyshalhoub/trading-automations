@@ -288,7 +288,7 @@ def main():
                   f"{pos['shares']} shares  (entered {pos['entry_date']})")
             order = place_order(client, pos["ticker"], pos["shares"], OrderSide.SELL)
             if order is not None:
-                pos["pending_exit_order_id"] = order.id
+                pos["pending_exit_order_id"] = str(order.id)
                 new_exit_orders += 1
         else:
             print(f"  HOLD  {pos['ticker']:6s}  [{pos['strategy']}]  "
@@ -375,7 +375,7 @@ def main():
 
             order = place_order(client, ticker, shares, OrderSide.BUY)
             if order is not None:
-                pending[order.id] = {
+                pending[str(order.id)] = {
                     "ticker":    ticker,
                     "strategy":  strategy_name,
                     "hold_days": spec["hold_days"],
