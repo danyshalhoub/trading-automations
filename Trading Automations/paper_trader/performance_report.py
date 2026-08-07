@@ -30,8 +30,9 @@ import json
 import os
 import smtplib
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from email.mime.text import MIMEText
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import yfinance as yf
@@ -46,6 +47,19 @@ REPORT_FILE = os.path.join(BASE_DIR, "performance_report.md")
 GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD")
 
+# The GitHub Actions runner's system clock is UTC, not US market time. A run
+# that's delayed enough to cross UTC midnight (which lands at 5 PM Pacific /
+# 8 PM Eastern in summer) would otherwise silently report tomorrow's date -
+# this bit us 2026-08-06/07, when a slow Thursday run crossed into Friday
+# UTC and fired the Friday-only weekly email a day early, dated a day ahead
+# of what was still Thursday for Dany. "Today" here always means the US
+# market's own calendar day, regardless of the runner's local clock.
+MARKET_TZ = ZoneInfo("America/New_York")
+
+
+def today_et():
+    return datetime.now(MARKET_TZ).date()
+
 
 def load_trades():
     if not os.path.exists(TRADE_LOG_FILE):
@@ -57,7 +71,7 @@ def load_trades():
 
 
 def trades_closed_since(trades, days=7):
-    cutoff = date.today() - timedelta(days=days)
+    cutoff = today_et() - timedelta(days=days)
     return [t for t in trades if date.fromisoformat(t["exit_date"]) >= cutoff]
 
 
@@ -67,7 +81,7 @@ def load_positions():
         return []
     with open(POSITIONS_FILE) as f:
         positions = list(json.load(f).values())
-    today = date.today()
+    today = today_et()
     for p in positions:
         p["days_until_close"] = (date.fromisoformat(p["exit_date"]) - today).days
     return sorted(positions, key=lambda p: p["days_until_close"])
@@ -250,7 +264,7 @@ def build_summary_lines(stats, heading, bench=None):
 
 
 def build_report_markdown(stats, trades, week_stats, week_bench=None, all_bench=None, positions=None):
-    today = date.today().isoformat()
+    today = today_et().isoformat()
     positions = positions or []
 
     if stats is None:
@@ -302,12 +316,12 @@ def build_email_body(stats, week_stats, week_bench=None, all_bench=None, positio
     positions = positions or []
 
     if stats is None:
-        lines = [f"Paper Trading Weekly Digest — {date.today().isoformat()}", ""]
+        lines = [f"Paper Trading Weekly Digest — {today_et().isoformat()}", ""]
         lines += build_open_positions_plain(positions)
         lines += ["", "No closed paper trades yet."]
         return "\n".join(lines)
 
-    lines = [f"Paper Trading Weekly Digest — {date.today().isoformat()}", ""]
+    lines = [f"Paper Trading Weekly Digest — {today_et().isoformat()}", ""]
     lines += build_open_positions_plain(positions)
     lines.append("")
 
@@ -327,7 +341,7 @@ def send_email(body):
         return
 
     msg = MIMEText(body)
-    msg["Subject"] = f"Paper Trading Weekly Digest — {date.today().isoformat()}"
+    msg["Subject"] = f"Paper Trading Weekly Digest — {today_et().isoformat()}"
     msg["From"] = GMAIL_ADDRESS
     msg["To"] = GMAIL_ADDRESS
 
@@ -358,7 +372,7 @@ def main():
         f.write(report_md)
     print(f"Wrote {REPORT_FILE}")
 
-    is_friday = date.today().weekday() == 4
+    is_friday = today_et().weekday() == 4
     force_email = "--force-email" in sys.argv
 
     if is_friday or force_email:

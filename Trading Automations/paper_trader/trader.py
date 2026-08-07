@@ -51,8 +51,9 @@ trade count from that log, and optionally email a weekly digest.
 import csv
 import json
 import os
-from datetime import date
+from datetime import datetime
 import warnings
+from zoneinfo import ZoneInfo
 warnings.filterwarnings("ignore")
 
 import pandas as pd
@@ -71,6 +72,19 @@ import strategies_lib as lib
 POSITION_SIZE = 10_000   # Dollars per trade
 
 TERMINAL_FAILURE_STATUSES = {OrderStatus.CANCELED, OrderStatus.EXPIRED, OrderStatus.REJECTED}
+
+# The GitHub Actions runner's system clock is UTC, not US market time. A run
+# delayed enough to cross UTC midnight (5 PM Pacific / 8 PM Eastern in
+# summer) would otherwise log entry/exit dates a calendar day off from the
+# actual NYSE trading day it ran against - this is what actually matters
+# here, not just report cosmetics (see the same fix in performance_report.py
+# for the 2026-08-06/07 incident that surfaced it).
+MARKET_TZ = ZoneInfo("America/New_York")
+
+
+def today_et():
+    return datetime.now(MARKET_TZ).date()
+
 
 # positions.json, pending_entries.json, trade_log.csv, and active_strategies.json
 # live in the same folder as this script
@@ -215,7 +229,7 @@ def reconcile_pending_exits(client, positions):
         order = client.get_order_by_id(order_id)
         if order.status == OrderStatus.FILLED:
             exit_price = float(order.filled_avg_price)
-            exit_date = (order.filled_at.date() if order.filled_at else date.today()).isoformat()
+            exit_date = (order.filled_at.date() if order.filled_at else today_et()).isoformat()
             log_trade(
                 ticker=pos["ticker"], strategy=pos["strategy"],
                 entry_date=pos["entry_date"], exit_date=exit_date,
@@ -249,7 +263,7 @@ def reconcile_pending_entries(client, pending, positions):
     for order_id, info in pending.items():
         order = client.get_order_by_id(order_id)
         if order.status == OrderStatus.FILLED:
-            fill_date = (order.filled_at.date() if order.filled_at else date.today())
+            fill_date = (order.filled_at.date() if order.filled_at else today_et())
             entry_price = float(order.filled_avg_price)
             exit_d = (pd.Timestamp(fill_date) + pd.offsets.BDay(info["hold_days"])).strftime("%Y-%m-%d")
             pos_key = f"{info['ticker']}_{info['strategy']}"
@@ -283,7 +297,7 @@ def reconcile_pending_entries(client, pending, positions):
 # =============================================================================
 
 def main():
-    today = date.today().isoformat()
+    today = today_et().isoformat()
     print(f"=== Daily Paper Trader — {today} ===\n")
 
     client    = make_client()
@@ -370,7 +384,7 @@ def main():
         # If the market was closed today, the last row is yesterday's data
         # and we could falsely re-trigger yesterday's signals.
         last_market_date = df.index[-1].date()
-        if last_market_date != date.today():
+        if last_market_date != today_et():
             data_skipped += 1
             continue
 

@@ -57,7 +57,11 @@ jobs:
             echo "Nothing to commit."
             exit 0
           fi
-          git commit -m "positions: $(date -u +'%Y-%m-%d')"
+          # Eastern, not UTC, to match trader.py/performance_report.py's own
+          # notion of "today" (see 2026-08-06/07 incident in the directive) -
+          # a delayed run crossing UTC midnight shouldn't mislabel the commit
+          # a day ahead of the actual US trading day it ran against.
+          git commit -m "positions: $(TZ=America/New_York date +'%Y-%m-%d')"
 
           # A same-day manual push (or an overlapping run) can leave the
           # remote ahead of this checkout. A plain `git push` failing here
