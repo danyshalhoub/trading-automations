@@ -36,8 +36,28 @@ jobs:
           git add "Trading Automations/paper_trader/active_strategies.json" \
                   "Trading Automations/paper_trader/thesis_history.jsonl" \
                   "Trading Automations/paper_trader/weekly_tournament_report.md"
-          git diff --staged --quiet || git commit -m "weekly tournament: $(date -u +'%Y-%m-%d')"
-          git push
+
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "weekly tournament: $(date -u +'%Y-%m-%d')"
+
+          # A same-day daily-trader commit (positions.json/pending_entries.json)
+          # can leave the remote ahead of this checkout. A plain `git push`
+          # failing here would silently discard this run's new roster — so
+          # retry with a rebase instead of giving up on the first rejection,
+          # same fix as daily_trader.yml.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) — fetching and rebasing before retrying."
+            git fetch origin
+            git rebase origin/main
+          done
+          echo "::error::Failed to push after 5 attempts — this run's roster was NOT saved."
+          exit 1
 
       - name: Notify on failure
         if: failure()
