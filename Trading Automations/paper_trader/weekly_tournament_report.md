@@ -1,6 +1,6 @@
 # Weekly Strategy Tournament Report
 
-_Run date: 2026-07-31_
+_Run date: 2026-08-07_
 
 ## New Candidates Generated: 20
 ## Total Evaluated (incumbents + new): 24
@@ -9,35 +9,35 @@ _Run date: 2026-07-31_
 ## Next Week's Roster
 | Name | Indicator | Params | Hold Days | Test P&L | Verdict |
 |---|---|---|---|---|---|
-| low_52w_bounce_tight | low_52w_bounce | {'pct_from_low': 1.015} | 25 | $203,710 | SURVIVED |
-| macd_bull_cross | macd_bull_cross | {'fast': 12, 'slow': 26, 'signal': 9} | 20 | $158,892 | SURVIVED |
-| 52w_low_bounce | low_52w_bounce | {'pct_from_low': 1.03} | 20 | $158,357 | SURVIVED |
-| macd_bull_cross_fast | macd_bull_cross | {'fast': 8, 'slow': 21, 'signal': 6} | 12 | $117,013 | SURVIVED |
+| low_52w_bounce_loose | low_52w_bounce | {'pct_from_low': 1.08} | 22 | $296,015 | SURVIVED |
+| low_52w_bounce_tight | low_52w_bounce | {'pct_from_low': 1.015} | 25 | $207,979 | SURVIVED |
+| relative_strength_spy_long | relative_strength_spy | {'lookback_days': 126, 'outperform_pct': 0.2} | 25 | $177,543 | SURVIVED |
+| n_day_breakout_40 | n_day_breakout | {'lookback': 40} | 20 | $171,316 | SURVIVED |
 
 ## All Candidates This Week
 | Name | Type | Incumbent | Trades | Train P&L | Test P&L | Verdict | Thesis |
 |---|---|---|---|---|---|---|---|
-| bb_lower_touch_wide | bb_lower_touch | no | 1722 | $-32,856 | $213,817 | FAILED (lost in training too) | A wider window and stricter 2.5-std band is a higher-conviction extreme-deviation signal for when the market does have a |
-| low_52w_bounce_tight | low_52w_bounce | no | 955 | $48,763 | $203,710 | SURVIVED | Tighter proximity to the 52-week low is a higher-conviction capitulation signal than the incumbent's 3% band; long hold  |
-| macd_bull_cross | macd_bull_cross | yes | 3767 | $340,636 | $158,892 | SURVIVED | Early-stage momentum shift: MACD bullish crossover while still below zero. Replaced bb_lower_touch on 2026-07-12 after i |
-| 52w_low_bounce | low_52w_bounce | yes | 1227 | $69,894 | $158,357 | SURVIVED | Contrarian bounce off maximum pessimism: stock within 3% of its 52-week low. |
-| macd_bull_cross_fast | macd_bull_cross | no | 5492 | $432,343 | $117,013 | SURVIVED | A faster MACD pair should catch momentum shifts sooner in a low-vol grind, where the incumbent 12/26/9 cross can be slow |
-| n_day_breakout_20 | n_day_breakout | no | 9095 | $480,656 | $98,866 | SURVIVED | 20-day high breakouts in a low-vol grind-up market should be cleaner (less noise, less immediate fade) with steadier fol |
-| rsi_oversold | rsi_oversold | yes | 5161 | $32,810 | $85,759 | SURVIVED | Classic oversold bounce: RSI(14) drops below 30. |
-| rsi_oversold_tight | rsi_oversold | no | 4781 | $24,117 | $63,546 | SURVIVED | SPY is in a low-vol grind (12.4% annualized 1-month vol, +0.3% 1mo / +3.9% 3mo). A tighter RSI threshold and shorter per |
-| bb_squeeze_breakout_default | bb_squeeze_breakout | no | 1253 | $45,877 | $41,467 | SURVIVED | Low realized vol means Bollinger squeezes are common right now. A breakout from a squeeze inside a mild 3-month uptrend  |
-| buy_dip_ma_long_ma | buy_dip_ma | no | 435 | $110,823 | $39,295 | SURVIVED | Same shallow-dip logic, but filtered by the full 1-year MA for a stricter 'still in a real uptrend' check before buying  |
-| buy_dip_200ma | buy_dip_ma | yes | 222 | $28,483 | $32,948 | SURVIVED | Panic dip inside a healthy uptrend: stock drops >10% in a day but stays above its 200-day MA. |
-| golden_cross_classic | golden_cross | no | 716 | $54,061 | $32,430 | SURVIVED | Classic trend-following entry. The market's already in a mild 3-month uptrend with low vol, so a fresh golden cross shou |
-| bb_lower_touch_tight | bb_lower_touch | no | 8026 | $42,530 | $25,853 | SURVIVED | With realized vol this low, the default 2.0-std lower band rarely gets touched. Tightening to 1.5 std should generate en |
-| relative_strength_spy_default | relative_strength_spy | no | 3199 | $468,625 | $18,682 | SURVIVED | Names meaningfully outperforming SPY's +3.9% 3-month return show real relative strength worth riding, rather than bettin |
-| inside_day_breakout_default | inside_day_breakout | no | 7319 | $192,194 | $6,016 | SURVIVED | Inside-day contraction followed by a breakout is a volatility-contraction signal that should show up more often in the c |
-| high_volume_hammer_lowvol | high_volume_hammer | no | 430 | $20,865 | $5,926 | SURVIVED | Lowering the drop threshold to fit current low volatility, while still requiring above-average volume and a strong intra |
-| gap_down_recovery_default | gap_down_recovery | no | 2439 | $-28,593 | $-4,480 | FAILED (lost in training too) | An intraday reversal of a gap-down is a quick mean-reversion play; short hold to capture just the snapback, not a longer |
-| capitulation_exhaustion_lowvol | capitulation_exhaustion | no | 759 | $227,950 | $-9,092 | FAILED (test half lost money) | Lowering the cumulative-return threshold to fit current low realized vol, so a 7% pullback on below-average volume (exha |
-| gap_up_continuation_default | gap_up_continuation | no | 2465 | $-4,539 | $-16,883 | FAILED (lost in training too) | In a mild uptrend, gap-ups that hold and close green often continue short-term as a momentum-continuation play. |
-| buy_dip_ma_shallow | buy_dip_ma | no | 1020 | $58,088 | $-17,431 | FAILED (test half lost money) | The incumbent's 10% single-day drop threshold will be rare at 12.4% annualized vol. Lowering to 6% with a shorter 150-da |
-| three_red_days_quick | three_red_days | no | 23109 | $428,397 | $-85,679 | FAILED (test half lost money) | In a calm, mildly-up tape, even two consecutive red days stands out more than usual. Short hold to capture the immediate |
-| death_cross_short_classic | death_cross_short | no | 653 | $-98,859 | $-96,826 | FAILED (lost in training too) | A hedge/diversifier on the short side: even with SPY in a mild uptrend, individual names breaking their own long-term tr |
-| failed_breakout_short_default | failed_breakout_short | no | 5739 | $-316,440 | $-264,619 | FAILED (lost in training too) | In a low-vol tape, genuine breakouts should hold; ones that fail immediately on weak volume are a cleaner exhaustion sig |
-| turn_of_month_default | turn_of_month | no | 11468 | $203,873 | $-425,422 | FAILED (test half lost money) | Well-documented turn-of-month seasonal drift is regime-independent, so it's a useful diversifier regardless of the curre |
+| low_52w_bounce_loose | low_52w_bounce | no | 1846 | $83,269 | $296,015 | SURVIVED | A looser band than the two incumbent 52-week-low strategies, to test whether casting a wider net for laggards still work |
+| low_52w_bounce_tight | low_52w_bounce | yes | 961 | $48,763 | $207,979 | SURVIVED | Tighter proximity to the 52-week low is a higher-conviction capitulation signal than the incumbent's 3% band; long hold  |
+| relative_strength_spy_long | relative_strength_spy | no | 2706 | $446,098 | $177,543 | SURVIVED | A longer 6-month lookback with a higher outperformance bar for more durable leaders, held longer to let sustained relati |
+| n_day_breakout_40 | n_day_breakout | no | 4733 | $378,233 | $171,316 | SURVIVED | A longer 40-day breakout lookback for higher-conviction confirmation, held longer to capture more of the trend — a secon |
+| macd_bull_cross | macd_bull_cross | yes | 3789 | $340,636 | $167,063 | SURVIVED | Early-stage momentum shift: MACD bullish crossover while still below zero. Replaced bb_lower_touch on 2026-07-12 after i |
+| 52w_low_bounce | low_52w_bounce | yes | 1229 | $69,894 | $156,174 | SURVIVED | Contrarian bounce off maximum pessimism: stock within 3% of its 52-week low. |
+| macd_bull_cross_fast | macd_bull_cross | yes | 5498 | $432,343 | $120,284 | SURVIVED | A faster MACD pair should catch momentum shifts sooner in a low-vol grind, where the incumbent 12/26/9 cross can be slow |
+| bb_lower_touch_tight | bb_lower_touch | no | 6222 | $172,914 | $99,674 | SURVIVED | Tighter Bollinger band on a shorter window flags smaller deviations from the mean, appropriate when overall volatility i |
+| macd_bull_cross_mid | macd_bull_cross | no | 4588 | $359,662 | $89,305 | SURVIVED | A middle-speed MACD pair (between the incumbent's standard and fast variants) to catch momentum shifts a bit sooner than |
+| rsi_oversold_p10_t25 | rsi_oversold | no | 5919 | $38,858 | $77,228 | SURVIVED | In a low-vol uptrend (SPY 3mo +5.1%, ann. vol 14%), dips get bought fast — a tighter/faster RSI oversold read should cat |
+| n_day_breakout_20 | n_day_breakout | no | 8332 | $457,511 | $57,048 | SURVIVED | Classic momentum breakout — a 20-day high in a market with low volatility and a positive trend is more likely to be a ge |
+| bb_squeeze_breakout_std | bb_squeeze_breakout | no | 1460 | $83,578 | $44,111 | SURVIVED | Low current volatility means more names are likely coiled in squeezes; a breakout out of that squeeze in a broadly risin |
+| relative_strength_spy_std | relative_strength_spy | no | 3206 | $468,625 | $17,284 | SURVIVED | With SPY itself up 5.1% over 3 months, screening for names outperforming that already-rising benchmark should surface ge |
+| buy_dip_ma_shallow | buy_dip_ma | no | 600 | $109,185 | $6,789 | SURVIVED | In a market up 5% over 3 months, deep 10%+ single-day drops are rare; a shallower drop threshold against a shorter trend |
+| capitulation_exhaustion_std | capitulation_exhaustion | no | 742 | $205,262 | $2,410 | SURVIVED | Looks for a sharp cumulative decline on fading volume while still above the 200-day MA — a pullback-within-an-uptrend pa |
+| high_volume_hammer_std | high_volume_hammer | no | 172 | $-2,273 | $-1,521 | FAILED (lost in training too) | Capitulation-style reversal on elevated volume; a higher volume-ratio bar filters for real panic selling even though the |
+| gap_down_recovery_std | gap_down_recovery | no | 1403 | $-6,558 | $-2,805 | FAILED (lost in training too) | A same-day recovery from a 4%+ gap down suggests the drop was noise rather than a real regime shift, consistent with an  |
+| golden_cross_fast | golden_cross | no | 1246 | $123,849 | $-19,501 | FAILED (test half lost money) | Faster moving-average pair should confirm the current uptrend sooner than a classic 50/200 cross, letting the strategy r |
+| inside_day_breakout_std | inside_day_breakout | no | 7616 | $158,140 | $-80,470 | FAILED (test half lost money) | Inside-day compression followed by a breakout is a low-vol-friendly pattern — consolidation-then-continuation fits a mar |
+| gap_up_continuation_std | gap_up_continuation | no | 3118 | $44,705 | $-99,846 | FAILED (test half lost money) | Gap-up-and-hold continuation should work better than usual right now since low volatility means gaps are more likely dri |
+| death_cross_short_std | death_cross_short | no | 846 | $-64,679 | $-101,012 | FAILED (lost in training too) | Even in a rising tape, individual laggards break down; this shorts names whose own trend rolls over, providing diversifi |
+| three_red_days_quick | three_red_days | no | 21147 | $517,521 | $-154,060 | FAILED (test half lost money) | Only two consecutive red days needed — a short, shallow pullback signal suited to a low-vol tape where extended down-str |
+| failed_breakout_short_std | failed_breakout_short | no | 5173 | $-300,123 | $-226,767 | FAILED (lost in training too) | Shorts breakouts that fail on weak volume the next day — a check against complacency, since low volatility can mask thin |
+| turn_of_month_std | turn_of_month | no | 11468 | $291,175 | $-261,924 | FAILED (test half lost money) | Turn-of-month seasonality is regime-agnostic and worth re-testing every cycle; current calm conditions shouldn't interfe |

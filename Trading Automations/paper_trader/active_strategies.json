@@ -1,5 +1,15 @@
 [
   {
+    "name": "low_52w_bounce_loose",
+    "indicator_type": "low_52w_bounce",
+    "params": {
+      "pct_from_low": 1.08
+    },
+    "hold_days": 22,
+    "thesis": "A looser band than the two incumbent 52-week-low strategies, to test whether casting a wider net for laggards still works when the broad market is grinding higher.",
+    "added_week": "2026-08-07"
+  },
+  {
     "name": "low_52w_bounce_tight",
     "indicator_type": "low_52w_bounce",
     "params": {
@@ -10,37 +20,24 @@
     "added_week": "2026-07-31"
   },
   {
-    "name": "macd_bull_cross",
-    "indicator_type": "macd_bull_cross",
+    "name": "relative_strength_spy_long",
+    "indicator_type": "relative_strength_spy",
     "params": {
-      "fast": 12,
-      "slow": 26,
-      "signal": 9
+      "lookback_days": 126,
+      "outperform_pct": 0.2
     },
-    "hold_days": 20,
-    "thesis": "Early-stage momentum shift: MACD bullish crossover while still below zero. Replaced bb_lower_touch on 2026-07-12 after it failed the train/test cheat-check on rerun.",
-    "added_week": "pre-existing"
+    "hold_days": 25,
+    "thesis": "A longer 6-month lookback with a higher outperformance bar for more durable leaders, held longer to let sustained relative strength keep compounding in a trending tape.",
+    "added_week": "2026-08-07"
   },
   {
-    "name": "52w_low_bounce",
-    "indicator_type": "low_52w_bounce",
+    "name": "n_day_breakout_40",
+    "indicator_type": "n_day_breakout",
     "params": {
-      "pct_from_low": 1.03
+      "lookback": 40
     },
     "hold_days": 20,
-    "thesis": "Contrarian bounce off maximum pessimism: stock within 3% of its 52-week low.",
-    "added_week": "pre-existing"
-  },
-  {
-    "name": "macd_bull_cross_fast",
-    "indicator_type": "macd_bull_cross",
-    "params": {
-      "fast": 8,
-      "slow": 21,
-      "signal": 6
-    },
-    "hold_days": 12,
-    "thesis": "A faster MACD pair should catch momentum shifts sooner in a low-vol grind, where the incumbent 12/26/9 cross can be slow to trigger on subtle moves.",
-    "added_week": "2026-07-31"
+    "thesis": "A longer 40-day breakout lookback for higher-conviction confirmation, held longer to capture more of the trend \u2014 a second angle on momentum given how supportive current conditions are for trend-following.",
+    "added_week": "2026-08-07"
   }
 ]
