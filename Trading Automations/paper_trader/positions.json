@@ -53,7 +53,8 @@
     "entry_date": "2026-07-24",
     "exit_date": "2026-08-10",
     "shares": 31,
-    "entry_price": 319.74
+    "entry_price": 319.74,
+    "pending_exit_order_id": "909b0ad2-3222-48cb-8f71-7b1e81d6ded6"
   },
   "TSLA_52w_low_bounce": {
     "ticker": "TSLA",
@@ -182,5 +183,85 @@
     "exit_date": "2026-08-20",
     "shares": 109,
     "entry_price": 91.0
+  },
+  "TSLA_macd_bull_cross": {
+    "ticker": "TSLA",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 30,
+    "entry_price": 327.44
+  },
+  "LLY_macd_bull_cross_fast": {
+    "ticker": "LLY",
+    "strategy": "macd_bull_cross_fast",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-08-26",
+    "shares": 8,
+    "entry_price": 1202.63
+  },
+  "TXN_macd_bull_cross": {
+    "ticker": "TXN",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 34,
+    "entry_price": 286.82
+  },
+  "NKE_52w_low_bounce": {
+    "ticker": "NKE",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 239,
+    "entry_price": 41.79
+  },
+  "ZTS_52w_low_bounce": {
+    "ticker": "ZTS",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 137,
+    "entry_price": 73.16
+  },
+  "CCI_52w_low_bounce": {
+    "ticker": "CCI",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 132,
+    "entry_price": 75.29
+  },
+  "CCI_macd_bull_cross_fast": {
+    "ticker": "CCI",
+    "strategy": "macd_bull_cross_fast",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-08-26",
+    "shares": 132,
+    "entry_price": 75.13
+  },
+  "UBER_macd_bull_cross": {
+    "ticker": "UBER",
+    "strategy": "macd_bull_cross",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 133,
+    "entry_price": 76.97
+  },
+  "GME_low_52w_bounce_tight": {
+    "ticker": "GME",
+    "strategy": "low_52w_bounce_tight",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-14",
+    "shares": 521,
+    "entry_price": 19.49
+  },
+  "GME_52w_low_bounce": {
+    "ticker": "GME",
+    "strategy": "52w_low_bounce",
+    "entry_date": "2026-08-10",
+    "exit_date": "2026-09-07",
+    "shares": 521,
+    "entry_price": 19.38
   }
 }

@@ -1,48 +1,58 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-08-07_
+_Last updated: 2026-08-10_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| GOOGL | rsi_oversold | 2026-07-24 | 2026-08-10 | 3d |
-| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 6d |
-| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 7d |
-| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 7d |
-| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 7d |
-| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 7d |
-| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 7d |
-| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 11d |
-| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 13d |
-| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 13d |
-| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 13d |
-| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 18d |
-| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 20d |
-| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 20d |
-| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 25d |
-| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 32d |
+| GOOGL | rsi_oversold | 2026-07-24 | 2026-08-10 | closes today |
+| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
+| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
+| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
+| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
+| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
+| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 4d |
+| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 8d |
+| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 10d |
+| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 10d |
+| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 10d |
+| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 15d |
+| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 16d |
+| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 16d |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 17d |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 17d |
+| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 22d |
+| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 28d |
+| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 28d |
+| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
+| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
+| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
+| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 28d |
+| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 29d |
+| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 35d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 16
-- **Win rate:** 75.0%
-- **Average % gain per trade:** +7.06%
-- **Total P&L:** $+11,288.56
+- **Total closed trades:** 13
+- **Win rate:** 92.3%
+- **Average % gain per trade:** +10.55%
+- **Total P&L:** $+13,640.39
 - **Best trade:** ACN (rsi_oversold) +28.37%
-- **Worst trade:** QCOM (rsi_oversold) -13.48%
-- **vs S&P 500** (same 16 trades, same entry/exit dates): SPY averaged +2.93%/trade ($+4,687.63 total) — you beat SPY by +4.13 pts ($+6,600.93)
+- **Worst trade:** CCI (rsi_oversold) -5.01%
+- **vs S&P 500** (same 13 trades, same entry/exit dates): SPY averaged +3.72%/trade ($+4,835.09 total) — you beat SPY by +6.83 pts ($+8,805.30)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | bb_lower_touch | 2 | 100.0% | +5.10% |
-| rsi_oversold | 14 | 71.4% | +7.34% |
+| rsi_oversold | 11 | 90.9% | +11.54% |
 
 ## All-Time (cumulative)
 - **Total closed trades:** 38
