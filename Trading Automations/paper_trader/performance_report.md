@@ -1,73 +1,72 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-08-10_
+_Last updated: 2026-08-11_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| GOOGL | rsi_oversold | 2026-07-24 | 2026-08-10 | closes today |
-| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 3d |
-| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
-| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
-| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
-| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 4d |
-| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 4d |
-| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 8d |
-| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 10d |
-| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 10d |
-| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 10d |
-| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 15d |
-| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 16d |
-| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 16d |
-| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 17d |
-| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 17d |
-| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 22d |
-| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 28d |
-| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 28d |
-| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
-| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
-| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
-| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 28d |
-| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 28d |
-| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 29d |
-| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 35d |
+| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
+| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
+| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
+| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
+| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
+| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 3d |
+| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 7d |
+| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 9d |
+| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 9d |
+| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 9d |
+| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 14d |
+| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 15d |
+| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 15d |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 16d |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 16d |
+| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 21d |
+| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 27d |
+| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 27d |
+| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
+| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
+| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
+| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 27d |
+| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 28d |
+| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 34d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 13
-- **Win rate:** 92.3%
-- **Average % gain per trade:** +10.55%
-- **Total P&L:** $+13,640.39
+- **Total closed trades:** 14
+- **Win rate:** 92.9%
+- **Average % gain per trade:** +10.56%
+- **Total P&L:** $+14,702.08
 - **Best trade:** ACN (rsi_oversold) +28.37%
 - **Worst trade:** CCI (rsi_oversold) -5.01%
-- **vs S&P 500** (same 13 trades, same entry/exit dates): SPY averaged +3.72%/trade ($+4,835.09 total) — you beat SPY by +6.83 pts ($+8,805.30)
+- **vs S&P 500** (same 14 trades, same entry/exit dates): SPY averaged +3.76%/trade ($+5,263.14 total) — you beat SPY by +6.80 pts ($+9,438.94)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | bb_lower_touch | 2 | 100.0% | +5.10% |
-| rsi_oversold | 11 | 90.9% | +11.54% |
+| rsi_oversold | 12 | 91.7% | +11.47% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 38
-- **Win rate:** 78.9%
-- **Average % gain per trade:** +4.88%
-- **Total P&L:** $+18,500.44
+- **Total closed trades:** 39
+- **Win rate:** 79.5%
+- **Average % gain per trade:** +5.02%
+- **Total P&L:** $+19,562.13
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** INTC (rsi_oversold) -16.31%
-- **vs S&P 500** (same 38 trades, same entry/exit dates): SPY averaged +1.35%/trade ($+5,136.51 total) — you beat SPY by +3.52 pts ($+13,363.93)
+- **vs S&P 500** (same 39 trades, same entry/exit dates): SPY averaged +1.43%/trade ($+5,564.56 total) — you beat SPY by +3.60 pts ($+13,997.57)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 9 | 88.9% | +5.87% |
 | bb_lower_touch | 9 | 88.9% | +3.15% |
-| rsi_oversold | 20 | 70.0% | +5.20% |
+| rsi_oversold | 21 | 71.4% | +5.46% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
@@ -110,3 +109,4 @@ _Last updated: 2026-08-10_
 | CCI | rsi_oversold | 2026-06-29 | 2026-08-06 | -5.01% | $-499.21 |
 | NOC | rsi_oversold | 2026-06-29 | 2026-08-06 | +12.50% | $+1,251.36 |
 | SNAP | rsi_oversold | 2026-06-29 | 2026-08-06 | +17.44% | $+1,747.97 |
+| GOOGL | rsi_oversold | 2026-07-24 | 2026-08-11 | +10.71% | $+1,061.69 |

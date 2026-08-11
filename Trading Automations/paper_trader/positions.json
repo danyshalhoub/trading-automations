@@ -47,15 +47,6 @@
     "shares": 73,
     "entry_price": 135.46
   },
-  "GOOGL_rsi_oversold": {
-    "ticker": "GOOGL",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-24",
-    "exit_date": "2026-08-10",
-    "shares": 31,
-    "entry_price": 319.74,
-    "pending_exit_order_id": "909b0ad2-3222-48cb-8f71-7b1e81d6ded6"
-  },
   "TSLA_52w_low_bounce": {
     "ticker": "TSLA",
     "strategy": "52w_low_bounce",
