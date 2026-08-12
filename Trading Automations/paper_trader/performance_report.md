@@ -1,43 +1,44 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-08-11_
+_Last updated: 2026-08-12_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 2d |
-| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
-| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
-| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
-| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 3d |
-| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 3d |
-| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 7d |
-| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 9d |
-| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 9d |
-| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 9d |
-| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 14d |
-| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 15d |
-| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 15d |
-| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 16d |
-| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 16d |
-| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 21d |
-| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 27d |
-| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 27d |
-| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
-| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
-| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
-| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 27d |
-| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 27d |
-| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 28d |
-| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 34d |
+| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
+| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
+| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
+| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
+| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
+| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 2d |
+| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 6d |
+| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 8d |
+| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 8d |
+| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 8d |
+| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 13d |
+| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 14d |
+| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 14d |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 15d |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 15d |
+| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 20d |
+| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 26d |
+| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 26d |
+| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
+| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
+| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
+| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 26d |
+| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 27d |
+| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 33d |
+| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 35d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 14

@@ -254,5 +254,13 @@
     "exit_date": "2026-09-07",
     "shares": 521,
     "entry_price": 19.38
+  },
+  "AMZN_relative_strength_spy_long": {
+    "ticker": "AMZN",
+    "strategy": "relative_strength_spy_long",
+    "entry_date": "2026-08-12",
+    "exit_date": "2026-09-16",
+    "shares": 36,
+    "entry_price": 272.88
   }
 }

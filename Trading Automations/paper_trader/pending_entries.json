@@ -1,7 +1,1 @@
-{
-  "730fcf9d-9bca-4fc1-b2b7-96dbf7deae04": {
-    "ticker": "AMZN",
-    "strategy": "relative_strength_spy_long",
-    "hold_days": 25
-  }
-}
+{}
