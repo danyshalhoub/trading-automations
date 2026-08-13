@@ -1,44 +1,44 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-08-12_
+_Last updated: 2026-08-13_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | 1d |
-| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
-| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
-| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
-| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 2d |
-| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 2d |
-| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 6d |
-| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 8d |
-| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 8d |
-| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 8d |
-| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 13d |
-| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 14d |
-| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 14d |
-| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 15d |
-| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 15d |
-| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 20d |
-| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 26d |
-| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 26d |
-| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
-| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
-| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
-| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 26d |
-| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 26d |
-| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 27d |
-| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 33d |
-| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 35d |
+| AMZN | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| TSLA | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| INTC | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| TXN | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| IBM | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| TWLO | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| AFRM | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| SOFI | rsi_oversold | 2026-07-29 | 2026-08-13 | closes today |
+| COST | macd_bull_cross | 2026-07-16 | 2026-08-14 | 1d |
+| DIS | macd_bull_cross | 2026-07-16 | 2026-08-14 | 1d |
+| MDLZ | macd_bull_cross | 2026-07-16 | 2026-08-14 | 1d |
+| GM | macd_bull_cross | 2026-07-16 | 2026-08-14 | 1d |
+| UWMC | 52w_low_bounce | 2026-07-16 | 2026-08-14 | 1d |
+| PEP | 52w_low_bounce | 2026-07-20 | 2026-08-18 | 5d |
+| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 7d |
+| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 7d |
+| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 7d |
+| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 12d |
+| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 13d |
+| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 13d |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 14d |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 14d |
+| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 19d |
+| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 25d |
+| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 25d |
+| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 25d |
+| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 25d |
+| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 25d |
+| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 25d |
+| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 25d |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 26d |
+| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 32d |
+| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 34d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 14

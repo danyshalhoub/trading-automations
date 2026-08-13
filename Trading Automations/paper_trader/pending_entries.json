@@ -1,1 +1,7 @@
-{}
+{
+  "f035d300-4bcb-4715-8efe-57934ff7848c": {
+    "ticker": "NVDA",
+    "strategy": "n_day_breakout_40",
+    "hold_days": 20
+  }
+}

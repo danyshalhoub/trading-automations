@@ -61,7 +61,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 44,
-    "entry_price": 226.65
+    "entry_price": 226.65,
+    "pending_exit_order_id": "2aad7f5f-1cf8-45f9-80d2-4287c5ae3dc6"
   },
   "TSLA_rsi_oversold": {
     "ticker": "TSLA",
@@ -69,7 +70,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 33,
-    "entry_price": 298.32
+    "entry_price": 298.32,
+    "pending_exit_order_id": "e7c9af6e-1312-4b9b-9cdb-d4b54e1bee58"
   },
   "INTC_rsi_oversold": {
     "ticker": "INTC",
@@ -77,7 +79,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 122,
-    "entry_price": 81.88
+    "entry_price": 81.88,
+    "pending_exit_order_id": "f58ef8ce-2950-4178-80a0-7a1eb7c7e750"
   },
   "TXN_rsi_oversold": {
     "ticker": "TXN",
@@ -85,7 +88,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 36,
-    "entry_price": 271.3
+    "entry_price": 271.3,
+    "pending_exit_order_id": "6c988f9c-1646-4015-9abb-67026ce68099"
   },
   "NKE_macd_bull_cross": {
     "ticker": "NKE",
@@ -101,7 +105,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 44,
-    "entry_price": 226.44
+    "entry_price": 226.44,
+    "pending_exit_order_id": "32436a92-0477-4fbd-8733-3b0b8907a18d"
   },
   "TWLO_rsi_oversold": {
     "ticker": "TWLO",
@@ -109,7 +114,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 53,
-    "entry_price": 188.25
+    "entry_price": 188.25,
+    "pending_exit_order_id": "73b157a1-2286-4230-ae60-974831a12dcd"
   },
   "AFRM_rsi_oversold": {
     "ticker": "AFRM",
@@ -117,7 +123,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 142,
-    "entry_price": 70.11
+    "entry_price": 70.11,
+    "pending_exit_order_id": "3b8f8028-43ca-408b-9d02-33f25280281e"
   },
   "SOFI_52w_low_bounce": {
     "ticker": "SOFI",
@@ -133,7 +140,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-13",
     "shares": 655,
-    "entry_price": 15.25
+    "entry_price": 15.25,
+    "pending_exit_order_id": "6ae4abed-9a93-4548-bb3b-811209d8daf4"
   },
   "NVDA_macd_bull_cross_fast": {
     "ticker": "NVDA",
