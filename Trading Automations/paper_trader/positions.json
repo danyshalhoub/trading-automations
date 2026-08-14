@@ -5,7 +5,8 @@
     "entry_date": "2026-07-16",
     "exit_date": "2026-08-14",
     "shares": 10,
-    "entry_price": 945.57
+    "entry_price": 945.57,
+    "pending_exit_order_id": "b99edcf3-076e-4e04-8e54-90cb6ca7e6ca"
   },
   "DIS_macd_bull_cross": {
     "ticker": "DIS",
@@ -13,7 +14,8 @@
     "entry_date": "2026-07-16",
     "exit_date": "2026-08-14",
     "shares": 100,
-    "entry_price": 99.71
+    "entry_price": 99.71,
+    "pending_exit_order_id": "584a6e88-6f7e-4513-9e0a-390d087f4040"
   },
   "MDLZ_macd_bull_cross": {
     "ticker": "MDLZ",
@@ -21,7 +23,8 @@
     "entry_date": "2026-07-16",
     "exit_date": "2026-08-14",
     "shares": 162,
-    "entry_price": 61.42
+    "entry_price": 61.42,
+    "pending_exit_order_id": "82de1291-46d3-4bc5-900a-ee9cdf0e3ba7"
   },
   "GM_macd_bull_cross": {
     "ticker": "GM",
@@ -29,7 +32,8 @@
     "entry_date": "2026-07-16",
     "exit_date": "2026-08-14",
     "shares": 128,
-    "entry_price": 77.72
+    "entry_price": 77.72,
+    "pending_exit_order_id": "ba951e52-57c7-49eb-b3f9-8598952db0da"
   },
   "UWMC_52w_low_bounce": {
     "ticker": "UWMC",
@@ -37,7 +41,8 @@
     "entry_date": "2026-07-16",
     "exit_date": "2026-08-14",
     "shares": 4878,
-    "entry_price": 2.05
+    "entry_price": 2.05,
+    "pending_exit_order_id": "1f7cf64a-513d-458c-ac14-7ea328c46776"
   },
   "PEP_52w_low_bounce": {
     "ticker": "PEP",
@@ -55,42 +60,6 @@
     "shares": 32,
     "entry_price": 309.22
   },
-  "AMZN_rsi_oversold": {
-    "ticker": "AMZN",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 44,
-    "entry_price": 226.65,
-    "pending_exit_order_id": "2aad7f5f-1cf8-45f9-80d2-4287c5ae3dc6"
-  },
-  "TSLA_rsi_oversold": {
-    "ticker": "TSLA",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 33,
-    "entry_price": 298.32,
-    "pending_exit_order_id": "e7c9af6e-1312-4b9b-9cdb-d4b54e1bee58"
-  },
-  "INTC_rsi_oversold": {
-    "ticker": "INTC",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 122,
-    "entry_price": 81.88,
-    "pending_exit_order_id": "f58ef8ce-2950-4178-80a0-7a1eb7c7e750"
-  },
-  "TXN_rsi_oversold": {
-    "ticker": "TXN",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 36,
-    "entry_price": 271.3,
-    "pending_exit_order_id": "6c988f9c-1646-4015-9abb-67026ce68099"
-  },
   "NKE_macd_bull_cross": {
     "ticker": "NKE",
     "strategy": "macd_bull_cross",
@@ -99,33 +68,6 @@
     "shares": 231,
     "entry_price": 43.22
   },
-  "IBM_rsi_oversold": {
-    "ticker": "IBM",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 44,
-    "entry_price": 226.44,
-    "pending_exit_order_id": "32436a92-0477-4fbd-8733-3b0b8907a18d"
-  },
-  "TWLO_rsi_oversold": {
-    "ticker": "TWLO",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 53,
-    "entry_price": 188.25,
-    "pending_exit_order_id": "73b157a1-2286-4230-ae60-974831a12dcd"
-  },
-  "AFRM_rsi_oversold": {
-    "ticker": "AFRM",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 142,
-    "entry_price": 70.11,
-    "pending_exit_order_id": "3b8f8028-43ca-408b-9d02-33f25280281e"
-  },
   "SOFI_52w_low_bounce": {
     "ticker": "SOFI",
     "strategy": "52w_low_bounce",
@@ -133,15 +75,6 @@
     "exit_date": "2026-08-27",
     "shares": 655,
     "entry_price": 15.25
-  },
-  "SOFI_rsi_oversold": {
-    "ticker": "SOFI",
-    "strategy": "rsi_oversold",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-13",
-    "shares": 655,
-    "entry_price": 15.25,
-    "pending_exit_order_id": "6ae4abed-9a93-4548-bb3b-811209d8daf4"
   },
   "NVDA_macd_bull_cross_fast": {
     "ticker": "NVDA",
@@ -270,5 +203,13 @@
     "exit_date": "2026-09-16",
     "shares": 36,
     "entry_price": 272.88
+  },
+  "NVDA_n_day_breakout_40": {
+    "ticker": "NVDA",
+    "strategy": "n_day_breakout_40",
+    "entry_date": "2026-08-14",
+    "exit_date": "2026-09-11",
+    "shares": 44,
+    "entry_price": 227.14
   }
 }
