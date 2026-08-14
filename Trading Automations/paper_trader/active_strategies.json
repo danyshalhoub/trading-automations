@@ -10,6 +10,16 @@
     "added_week": "2026-08-07"
   },
   {
+    "name": "low_52w_bounce_mid",
+    "indicator_type": "low_52w_bounce",
+    "params": {
+      "pct_from_low": 1.05
+    },
+    "hold_days": 18,
+    "thesis": "A middle-ground proximity-to-low band between the two incumbents (1.015 tight / 1.08 loose) to triangulate whether the sweet spot is somewhere in between.",
+    "added_week": "2026-08-14"
+  },
+  {
     "name": "low_52w_bounce_tight",
     "indicator_type": "low_52w_bounce",
     "params": {
@@ -28,16 +38,6 @@
     },
     "hold_days": 25,
     "thesis": "A longer 6-month lookback with a higher outperformance bar for more durable leaders, held longer to let sustained relative strength keep compounding in a trending tape.",
-    "added_week": "2026-08-07"
-  },
-  {
-    "name": "n_day_breakout_40",
-    "indicator_type": "n_day_breakout",
-    "params": {
-      "lookback": 40
-    },
-    "hold_days": 20,
-    "thesis": "A longer 40-day breakout lookback for higher-conviction confirmation, held longer to capture more of the trend \u2014 a second angle on momentum given how supportive current conditions are for trend-following.",
     "added_week": "2026-08-07"
   }
 ]
