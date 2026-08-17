@@ -1,57 +1,32 @@
 {
-  "cd9bf9d4-724f-4f84-a847-b05ebc96b88e": {
-    "ticker": "UNH",
-    "strategy": "relative_strength_spy_long",
-    "hold_days": 25
-  },
-  "879ab854-d22a-4d90-b608-2900f316d9ee": {
-    "ticker": "PG",
-    "strategy": "low_52w_bounce_loose",
-    "hold_days": 22
-  },
-  "f87519ac-b157-4394-94fa-9029921ecba6": {
-    "ticker": "XOM",
-    "strategy": "n_day_breakout_40",
-    "hold_days": 20
-  },
-  "a84c2058-59c1-40e1-9c2e-fb8ab42c6c5d": {
-    "ticker": "BAC",
-    "strategy": "relative_strength_spy_long",
-    "hold_days": 25
-  },
-  "430ec65d-3156-4836-8023-c1614bfded9f": {
-    "ticker": "MRK",
-    "strategy": "n_day_breakout_40",
-    "hold_days": 20
-  },
-  "bc551036-f449-48f2-bb8e-a430f0803d14": {
-    "ticker": "CVX",
-    "strategy": "n_day_breakout_40",
-    "hold_days": 20
-  },
-  "6d456e7e-539f-49e2-85ba-aba46a5473cc": {
+  "59085e9b-eca8-45f7-8581-4b3bc91ec583": {
     "ticker": "PEP",
-    "strategy": "low_52w_bounce_loose",
-    "hold_days": 22
+    "strategy": "low_52w_bounce_mid",
+    "hold_days": 18
   },
-  "67161afc-ec95-4d01-9355-40b86c8d5663": {
+  "387e3a09-9eb5-42a8-8c14-ad4c94a44b47": {
     "ticker": "MCD",
-    "strategy": "low_52w_bounce_loose",
-    "hold_days": 22
+    "strategy": "low_52w_bounce_mid",
+    "hold_days": 18
   },
-  "641ec635-e58f-449f-a831-a91178cc9848": {
-    "ticker": "CSCO",
+  "9df4ddcf-d4aa-4160-a358-c3d198fbfb97": {
+    "ticker": "TXN",
     "strategy": "relative_strength_spy_long",
     "hold_days": 25
   },
-  "899f4ef3-c941-4031-b79c-f17dcd868dc3": {
-    "ticker": "VZ",
-    "strategy": "n_day_breakout_40",
-    "hold_days": 20
+  "3847f5fb-e11a-4f37-8d30-ede27b10d7b5": {
+    "ticker": "NKE",
+    "strategy": "low_52w_bounce_loose",
+    "hold_days": 22
   },
-  "3f1109d0-b2d2-40e2-b650-65afc0b43a4f": {
-    "ticker": "INTC",
-    "strategy": "relative_strength_spy_long",
+  "5bd62ed1-e18b-491f-9023-108a388d03b3": {
+    "ticker": "NKE",
+    "strategy": "low_52w_bounce_mid",
+    "hold_days": 18
+  },
+  "2fd39234-f6ee-48a8-aa91-58237394ac84": {
+    "ticker": "NKE",
+    "strategy": "low_52w_bounce_tight",
     "hold_days": 25
   }
 }
