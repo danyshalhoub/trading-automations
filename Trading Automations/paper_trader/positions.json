@@ -5,7 +5,8 @@
     "entry_date": "2026-07-20",
     "exit_date": "2026-08-18",
     "shares": 73,
-    "entry_price": 135.46
+    "entry_price": 135.46,
+    "pending_exit_order_id": "a6424a92-4684-485a-8d0d-12238d65d4af"
   },
   "TSLA_52w_low_bounce": {
     "ticker": "TSLA",
@@ -254,5 +255,45 @@
     "exit_date": "2026-09-21",
     "shares": 97,
     "entry_price": 102.45
+  },
+  "PEP_low_52w_bounce_mid": {
+    "ticker": "PEP",
+    "strategy": "low_52w_bounce_mid",
+    "entry_date": "2026-08-18",
+    "exit_date": "2026-09-11",
+    "shares": 72,
+    "entry_price": 139.63
+  },
+  "MCD_low_52w_bounce_mid": {
+    "ticker": "MCD",
+    "strategy": "low_52w_bounce_mid",
+    "entry_date": "2026-08-18",
+    "exit_date": "2026-09-11",
+    "shares": 37,
+    "entry_price": 268.34
+  },
+  "TXN_relative_strength_spy_long": {
+    "ticker": "TXN",
+    "strategy": "relative_strength_spy_long",
+    "entry_date": "2026-08-18",
+    "exit_date": "2026-09-22",
+    "shares": 35,
+    "entry_price": 277.25
+  },
+  "NKE_low_52w_bounce_loose": {
+    "ticker": "NKE",
+    "strategy": "low_52w_bounce_loose",
+    "entry_date": "2026-08-18",
+    "exit_date": "2026-09-17",
+    "shares": 255,
+    "entry_price": 39.41
+  },
+  "NKE_low_52w_bounce_mid": {
+    "ticker": "NKE",
+    "strategy": "low_52w_bounce_mid",
+    "entry_date": "2026-08-18",
+    "exit_date": "2026-09-11",
+    "shares": 255,
+    "entry_price": 39.51
   }
 }
