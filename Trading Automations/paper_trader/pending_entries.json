@@ -1,1 +1,12 @@
-{}
+{
+  "e8c77e1d-9c2a-4f6d-9802-676fc9de969b": {
+    "ticker": "META",
+    "strategy": "low_52w_bounce_loose",
+    "hold_days": 22
+  },
+  "944cf9b2-3892-4251-ab9d-320c087fb820": {
+    "ticker": "META",
+    "strategy": "low_52w_bounce_mid",
+    "hold_days": 18
+  }
+}

@@ -1,13 +1,4 @@
 {
-  "PEP_52w_low_bounce": {
-    "ticker": "PEP",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-07-20",
-    "exit_date": "2026-08-18",
-    "shares": 73,
-    "entry_price": 135.46,
-    "pending_exit_order_id": "a6424a92-4684-485a-8d0d-12238d65d4af"
-  },
   "TSLA_52w_low_bounce": {
     "ticker": "TSLA",
     "strategy": "52w_low_bounce",
