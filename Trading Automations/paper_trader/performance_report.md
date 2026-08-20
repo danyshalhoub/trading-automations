@@ -1,47 +1,49 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-08-19_
+_Last updated: 2026-08-20_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 1d |
-| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 1d |
-| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | 1d |
-| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 6d |
-| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 7d |
-| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 7d |
-| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 8d |
-| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 8d |
-| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 13d |
-| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 19d |
-| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 19d |
-| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 19d |
-| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 19d |
-| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 19d |
-| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 19d |
-| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 19d |
-| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 20d |
-| NVDA | n_day_breakout_40 | 2026-08-14 | 2026-09-11 | 23d |
-| PEP | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 23d |
-| MCD | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 23d |
-| NKE | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 23d |
-| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 26d |
-| XOM | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 26d |
-| MRK | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 26d |
-| CVX | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 26d |
-| VZ | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 26d |
-| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 28d |
-| PG | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 28d |
-| PEP | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 28d |
-| MCD | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 28d |
-| NKE | low_52w_bounce_loose | 2026-08-18 | 2026-09-17 | 29d |
-| UNH | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 33d |
-| BAC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 33d |
-| CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 33d |
-| INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 33d |
-| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | 34d |
+| NVDA | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | closes today |
+| HD | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | closes today |
+| INTC | macd_bull_cross_fast | 2026-08-03 | 2026-08-20 | closes today |
+| TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-25 | 5d |
+| LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 6d |
+| CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-26 | 6d |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | 7d |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | 7d |
+| MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 12d |
+| TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 18d |
+| TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 18d |
+| NKE | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 18d |
+| ZTS | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 18d |
+| CCI | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 18d |
+| UBER | macd_bull_cross | 2026-08-10 | 2026-09-07 | 18d |
+| GME | 52w_low_bounce | 2026-08-10 | 2026-09-07 | 18d |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | 19d |
+| NVDA | n_day_breakout_40 | 2026-08-14 | 2026-09-11 | 22d |
+| PEP | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 22d |
+| MCD | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 22d |
+| NKE | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 22d |
+| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 25d |
+| XOM | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 25d |
+| MRK | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 25d |
+| CVX | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 25d |
+| VZ | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 25d |
+| META | low_52w_bounce_mid | 2026-08-20 | 2026-09-15 | 26d |
+| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 27d |
+| PG | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 27d |
+| PEP | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 27d |
+| MCD | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 27d |
+| NKE | low_52w_bounce_loose | 2026-08-18 | 2026-09-17 | 28d |
+| UNH | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 32d |
+| BAC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 32d |
+| CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 32d |
+| INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 32d |
+| META | low_52w_bounce_loose | 2026-08-20 | 2026-09-21 | 32d |
+| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | 33d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 14
