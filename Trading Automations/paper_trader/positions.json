@@ -23,24 +23,6 @@
     "shares": 655,
     "entry_price": 15.25
   },
-  "NVDA_macd_bull_cross_fast": {
-    "ticker": "NVDA",
-    "strategy": "macd_bull_cross_fast",
-    "entry_date": "2026-08-03",
-    "exit_date": "2026-08-20",
-    "shares": 48,
-    "entry_price": 206.64,
-    "pending_exit_order_id": "f83acdca-262f-41ef-9c27-85535888cbcc"
-  },
-  "HD_macd_bull_cross_fast": {
-    "ticker": "HD",
-    "strategy": "macd_bull_cross_fast",
-    "entry_date": "2026-08-03",
-    "exit_date": "2026-08-20",
-    "shares": 29,
-    "entry_price": 340.02,
-    "pending_exit_order_id": "d76fc947-173c-4c06-b771-7d5d5ad49832"
-  },
   "MCD_low_52w_bounce_tight": {
     "ticker": "MCD",
     "strategy": "low_52w_bounce_tight",
@@ -56,15 +38,6 @@
     "exit_date": "2026-09-01",
     "shares": 37,
     "entry_price": 265.23
-  },
-  "INTC_macd_bull_cross_fast": {
-    "ticker": "INTC",
-    "strategy": "macd_bull_cross_fast",
-    "entry_date": "2026-08-03",
-    "exit_date": "2026-08-20",
-    "shares": 109,
-    "entry_price": 91.0,
-    "pending_exit_order_id": "26ec033e-a36f-4828-9906-7d91aceb0fd9"
   },
   "TSLA_macd_bull_cross": {
     "ticker": "TSLA",
