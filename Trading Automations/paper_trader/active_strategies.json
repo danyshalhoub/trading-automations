@@ -1,5 +1,16 @@
 [
   {
+    "name": "rsi_oversold_p21_t35",
+    "indicator_type": "rsi_oversold",
+    "params": {
+      "period": 21,
+      "threshold": 35
+    },
+    "hold_days": 14,
+    "thesis": "A looser, slower RSI to catch the shallow, short-lived dips that happen inside a steady low-vol uptrend, since deep oversold conditions are unlikely to show up right now.",
+    "added_week": "2026-08-23"
+  },
+  {
     "name": "low_52w_bounce_loose",
     "indicator_type": "low_52w_bounce",
     "params": {
@@ -20,24 +31,13 @@
     "added_week": "2026-08-14"
   },
   {
-    "name": "low_52w_bounce_tight",
-    "indicator_type": "low_52w_bounce",
+    "name": "three_red_days_quick",
+    "indicator_type": "three_red_days",
     "params": {
-      "pct_from_low": 1.015
+      "num_days": 3
     },
-    "hold_days": 25,
-    "thesis": "Tighter proximity to the 52-week low is a higher-conviction capitulation signal than the incumbent's 3% band; long hold since these are slow-grinding reversals, not quick bounces.",
-    "added_week": "2026-07-31"
-  },
-  {
-    "name": "relative_strength_spy_long",
-    "indicator_type": "relative_strength_spy",
-    "params": {
-      "lookback_days": 126,
-      "outperform_pct": 0.2
-    },
-    "hold_days": 25,
-    "thesis": "A longer 6-month lookback with a higher outperformance bar for more durable leaders, held longer to let sustained relative strength keep compounding in a trending tape.",
-    "added_week": "2026-08-07"
+    "hold_days": 8,
+    "thesis": "A quick mean-reversion bounce after three consecutive down days, sized for a fast exit since pullbacks inside this uptrend have tended to resolve quickly.",
+    "added_week": "2026-08-23"
   }
 ]
