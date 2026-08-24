@@ -278,5 +278,29 @@
     "exit_date": "2026-09-15",
     "shares": 18,
     "entry_price": 545.32
+  },
+  "MRK_relative_strength_spy_long": {
+    "ticker": "MRK",
+    "strategy": "relative_strength_spy_long",
+    "entry_date": "2026-08-24",
+    "exit_date": "2026-09-28",
+    "shares": 65,
+    "entry_price": 150.54
+  },
+  "LLY_relative_strength_spy_long": {
+    "ticker": "LLY",
+    "strategy": "relative_strength_spy_long",
+    "entry_date": "2026-08-24",
+    "exit_date": "2026-09-28",
+    "shares": 7,
+    "entry_price": 1232.73
+  },
+  "TMO_relative_strength_spy_long": {
+    "ticker": "TMO",
+    "strategy": "relative_strength_spy_long",
+    "entry_date": "2026-08-24",
+    "exit_date": "2026-09-28",
+    "shares": 15,
+    "entry_price": 620.86
   }
 }

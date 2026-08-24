@@ -1,17 +1,1 @@
-{
-  "9189de92-bb1f-46ee-be37-0307a4bfe8fb": {
-    "ticker": "MRK",
-    "strategy": "relative_strength_spy_long",
-    "hold_days": 25
-  },
-  "6b50285f-7ff1-45d8-a3c9-26a332040b13": {
-    "ticker": "LLY",
-    "strategy": "relative_strength_spy_long",
-    "hold_days": 25
-  },
-  "7abc9b67-0485-4092-b3b3-0711a997adf8": {
-    "ticker": "TMO",
-    "strategy": "relative_strength_spy_long",
-    "hold_days": 25
-  }
-}
+{}
