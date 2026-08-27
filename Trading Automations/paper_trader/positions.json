@@ -1,13 +1,4 @@
 {
-  "TSLA_52w_low_bounce": {
-    "ticker": "TSLA",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-07-27",
-    "exit_date": "2026-08-25",
-    "shares": 32,
-    "entry_price": 309.22,
-    "pending_exit_order_id": "60d46608-9842-4d74-a76c-3ba5747bda20"
-  },
   "NKE_macd_bull_cross": {
     "ticker": "NKE",
     "strategy": "macd_bull_cross",
@@ -54,7 +45,8 @@
     "entry_date": "2026-08-10",
     "exit_date": "2026-08-26",
     "shares": 8,
-    "entry_price": 1202.63
+    "entry_price": 1202.63,
+    "pending_exit_order_id": "631a5b90-9385-41a2-b248-08053defde37"
   },
   "TXN_macd_bull_cross": {
     "ticker": "TXN",
@@ -94,7 +86,8 @@
     "entry_date": "2026-08-10",
     "exit_date": "2026-08-26",
     "shares": 132,
-    "entry_price": 75.13
+    "entry_price": 75.13,
+    "pending_exit_order_id": "f5c98868-5b35-4873-898b-787af0797bbe"
   },
   "UBER_macd_bull_cross": {
     "ticker": "UBER",
