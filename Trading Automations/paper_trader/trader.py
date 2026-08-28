@@ -71,6 +71,13 @@ import strategies_lib as lib
 
 POSITION_SIZE = 10_000   # Dollars per trade
 
+# Guardrails against exposure creep: the only capital check used to be Alpaca's
+# own buying_power, which replenishes via margin as equity grows rather than
+# being capped at real cash — the account quietly reached ~2.8x leverage this
+# way. These two caps are checked independently of buying_power.
+MAX_GROSS_EXPOSURE_MULTIPLE = 1.0   # total open+pending position value never exceeds this many multiples of account equity
+MAX_POSITIONS_PER_TICKER = 2        # open+pending positions on the same ticker, summed across all strategies — stops several correlated strategy variants (e.g. low_52w_bounce_tight/mid/loose) from all piling into the same name at once
+
 TERMINAL_FAILURE_STATUSES = {OrderStatus.CANCELED, OrderStatus.EXPIRED, OrderStatus.REJECTED}
 
 # The GitHub Actions runner's system clock is UTC, not US market time. A run
@@ -161,6 +168,10 @@ def get_buying_power(client):
     return float(client.get_account().buying_power)
 
 
+def get_equity(client):
+    return float(client.get_account().equity)
+
+
 # =============================================================================
 # POSITIONS / PENDING-ORDER FILES
 # =============================================================================
@@ -187,6 +198,15 @@ def load_pending_entries():
 def save_pending_entries(pending):
     with open(PENDING_ENTRIES_FILE, "w") as f:
         json.dump(pending, f, indent=2)
+
+
+def ticker_exposure_count(ticker, positions, pending):
+    """How many open+pending positions (across all strategies) already exist
+    on this ticker — the guard against several correlated strategy variants
+    all stacking into the same name at once."""
+    open_count = sum(1 for p in positions.values() if p["ticker"] == ticker)
+    pending_count = sum(1 for info in pending.values() if info["ticker"] == ticker)
+    return open_count + pending_count
 
 
 def log_trade(ticker, strategy, entry_date, exit_date, entry_price, exit_price, shares):
@@ -342,7 +362,12 @@ def main():
     print("── Signal Scan ────────────────────────────────────────────────")
 
     buying_power = get_buying_power(client)
-    print(f"  Buying power: ${buying_power:,.0f}\n")
+    equity = get_equity(client)
+    gross_exposure = sum(p["entry_price"] * p["shares"] for p in positions.values())
+    gross_exposure += POSITION_SIZE * len(pending)  # pending entries reserve capital too
+    print(f"  Buying power: ${buying_power:,.0f}")
+    print(f"  Gross exposure: ${gross_exposure:,.0f} / equity ${equity:,.0f} "
+          f"({gross_exposure / equity:.2f}x, cap {MAX_GROSS_EXPOSURE_MULTIPLE:.2f}x)\n")
 
     active_specs = load_active_strategies()
     print(f"  Active strategies: {', '.join(s['name'] for s in active_specs)}\n")
@@ -364,6 +389,9 @@ def main():
         # Stop if we've run out of capital
         if buying_power < POSITION_SIZE:
             print("  Buying power exhausted — scan stopped.")
+            break
+        if gross_exposure + POSITION_SIZE > MAX_GROSS_EXPOSURE_MULTIPLE * equity:
+            print("  Gross exposure cap reached — scan stopped.")
             break
 
         # Download ~420 days of history (need 200 days for MA warmup)
@@ -405,6 +433,8 @@ def main():
                 continue  # already holding this ticker/strategy combo
             if (ticker, strategy_name) in pending_combos:
                 continue  # already have an unconfirmed entry order out for this combo
+            if ticker_exposure_count(ticker, positions, pending) >= MAX_POSITIONS_PER_TICKER:
+                continue  # already at the per-ticker cap across strategies
 
             if not lib.check_signal_today(df, spec["indicator_type"], spec["params"]):
                 continue  # signal did not trigger today
@@ -421,6 +451,7 @@ def main():
                 }
                 pending_combos.add((ticker, strategy_name))
                 buying_power    -= POSITION_SIZE
+                gross_exposure  += POSITION_SIZE
                 new_entry_orders += 1
 
     # ── Summary ───────────────────────────────────────────────────────────────
@@ -432,6 +463,7 @@ def main():
     print(f"  Open positions             : {len(positions)}")
     print(f"  Orders still awaiting fill : {len(pending) + sum(1 for p in positions.values() if 'pending_exit_order_id' in p)}")
     print(f"  Buying power left          : ${get_buying_power(client):,.0f}")
+    print(f"  Gross exposure now         : ${gross_exposure:,.0f} ({gross_exposure / equity:.2f}x equity)")
 
     if data_skipped > 0:
         print(f"\n  Note: {data_skipped} tickers skipped — market may be closed today "

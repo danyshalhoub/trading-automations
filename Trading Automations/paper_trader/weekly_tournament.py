@@ -147,7 +147,32 @@ def select_next_roster(results, incumbents):
     survivors = [r for r in results if r["verdict"] == "SURVIVED"]
     survivors.sort(key=lambda r: r["test_pnl"], reverse=True)
 
-    roster = survivors[:ROSTER_SIZE]
+    # First pass: at most one strategy per indicator_type, so near-duplicate
+    # parameterizations of the same signal (e.g. low_52w_bounce_tight/mid/loose)
+    # can't all seat on the roster at once and stack correlated, same-ticker
+    # exposure once trader.py runs them live.
+    roster = []
+    seen_types = set()
+    for r in survivors:
+        if len(roster) >= ROSTER_SIZE:
+            break
+        if r["indicator_type"] in seen_types:
+            continue
+        roster.append(r)
+        seen_types.add(r["indicator_type"])
+
+    # Not enough distinct indicator_types survived to fill the roster —
+    # fall back to filling remaining slots by rank, duplicates allowed,
+    # rather than leaving the roster short.
+    if len(roster) < ROSTER_SIZE:
+        chosen_names = {r["name"] for r in roster}
+        for r in survivors:
+            if len(roster) >= ROSTER_SIZE:
+                break
+            if r["name"] not in chosen_names:
+                roster.append(r)
+                chosen_names.add(r["name"])
+
     if len(roster) < ROSTER_SIZE:
         chosen_names = {r["name"] for r in roster}
         for inc in incumbents:
