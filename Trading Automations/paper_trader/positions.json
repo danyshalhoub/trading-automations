@@ -5,7 +5,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-27",
     "shares": 231,
-    "entry_price": 43.22
+    "entry_price": 43.22,
+    "pending_exit_order_id": "caab02ee-1c9e-47dc-9db2-5317fa00dd7e"
   },
   "SOFI_52w_low_bounce": {
     "ticker": "SOFI",
@@ -13,7 +14,8 @@
     "entry_date": "2026-07-29",
     "exit_date": "2026-08-27",
     "shares": 655,
-    "entry_price": 15.25
+    "entry_price": 15.25,
+    "pending_exit_order_id": "6dc43d06-8757-4d39-9d99-720f849c670e"
   },
   "MCD_low_52w_bounce_tight": {
     "ticker": "MCD",
@@ -38,15 +40,6 @@
     "exit_date": "2026-09-07",
     "shares": 30,
     "entry_price": 327.44
-  },
-  "LLY_macd_bull_cross_fast": {
-    "ticker": "LLY",
-    "strategy": "macd_bull_cross_fast",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-08-26",
-    "shares": 8,
-    "entry_price": 1202.63,
-    "pending_exit_order_id": "631a5b90-9385-41a2-b248-08053defde37"
   },
   "TXN_macd_bull_cross": {
     "ticker": "TXN",
@@ -79,15 +72,6 @@
     "exit_date": "2026-09-07",
     "shares": 132,
     "entry_price": 75.29
-  },
-  "CCI_macd_bull_cross_fast": {
-    "ticker": "CCI",
-    "strategy": "macd_bull_cross_fast",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-08-26",
-    "shares": 132,
-    "entry_price": 75.13,
-    "pending_exit_order_id": "f5c98868-5b35-4873-898b-787af0797bbe"
   },
   "UBER_macd_bull_cross": {
     "ticker": "UBER",
@@ -296,5 +280,13 @@
     "exit_date": "2026-09-28",
     "shares": 15,
     "entry_price": 620.86
+  },
+  "AAPL_rsi_oversold_p21_t35": {
+    "ticker": "AAPL",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-08-27",
+    "exit_date": "2026-09-16",
+    "shares": 31,
+    "entry_price": 310.53
   }
 }

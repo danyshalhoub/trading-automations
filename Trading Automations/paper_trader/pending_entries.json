@@ -1,7 +1,1 @@
-{
-  "bc4b6b74-56e8-4577-aa8a-33bad0be908e": {
-    "ticker": "AAPL",
-    "strategy": "rsi_oversold_p21_t35",
-    "hold_days": 14
-  }
-}
+{}
