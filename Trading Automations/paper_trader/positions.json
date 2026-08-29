@@ -1,22 +1,4 @@
 {
-  "NKE_macd_bull_cross": {
-    "ticker": "NKE",
-    "strategy": "macd_bull_cross",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-27",
-    "shares": 231,
-    "entry_price": 43.22,
-    "pending_exit_order_id": "caab02ee-1c9e-47dc-9db2-5317fa00dd7e"
-  },
-  "SOFI_52w_low_bounce": {
-    "ticker": "SOFI",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-07-29",
-    "exit_date": "2026-08-27",
-    "shares": 655,
-    "entry_price": 15.25,
-    "pending_exit_order_id": "6dc43d06-8757-4d39-9d99-720f849c670e"
-  },
   "MCD_low_52w_bounce_tight": {
     "ticker": "MCD",
     "strategy": "low_52w_bounce_tight",

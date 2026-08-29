@@ -6,8 +6,6 @@ _Last updated: 2026-08-28_
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| NKE | macd_bull_cross | 2026-07-29 | 2026-08-27 | overdue by 1d |
-| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-27 | overdue by 1d |
 | MCD | 52w_low_bounce | 2026-08-03 | 2026-09-01 | 4d |
 | TSLA | macd_bull_cross | 2026-08-10 | 2026-09-07 | 10d |
 | TXN | macd_bull_cross | 2026-08-10 | 2026-09-07 | 10d |
@@ -44,33 +42,34 @@ _Last updated: 2026-08-28_
 | TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 31d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 6
+- **Total closed trades:** 8
 - **Win rate:** 50.0%
-- **Average % gain per trade:** +2.38%
-- **Total P&L:** $+1,417.73
-- **Best trade:** TSLA (52w_low_bounce) +10.97%
-- **Worst trade:** LLY (macd_bull_cross_fast) -1.82%
-- **vs S&P 500** (same 6 trades, same entry/exit dates): SPY averaged +1.06%/trade ($+633.98 total) — you beat SPY by +1.32 pts ($+783.75)
+- **Average % gain per trade:** +3.72%
+- **Total P&L:** $+2,963.83
+- **Best trade:** SOFI (52w_low_bounce) +26.05%
+- **Worst trade:** NKE (macd_bull_cross) -10.57%
+- **vs S&P 500** (same 8 trades, same entry/exit dates): SPY averaged +2.16%/trade ($+1,727.67 total) — you beat SPY by +1.56 pts ($+1,236.16)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| 52w_low_bounce | 1 | 100.0% | +10.97% |
+| 52w_low_bounce | 2 | 100.0% | +18.51% |
+| macd_bull_cross | 1 | 0.0% | -10.57% |
 | macd_bull_cross_fast | 5 | 40.0% | +0.66% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 59
-- **Win rate:** 79.7%
-- **Average % gain per trade:** +5.79%
-- **Total P&L:** $+34,068.66
+- **Total closed trades:** 61
+- **Win rate:** 78.7%
+- **Average % gain per trade:** +5.86%
+- **Total P&L:** $+35,614.76
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 59 trades, same entry/exit dates): SPY averaged +2.23%/trade ($+13,165.24 total) — you beat SPY by +3.56 pts ($+20,903.42)
+- **vs S&P 500** (same 61 trades, same entry/exit dates): SPY averaged +2.34%/trade ($+14,258.93 total) — you beat SPY by +3.52 pts ($+21,355.83)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| 52w_low_bounce | 12 | 83.3% | +3.55% |
+| 52w_low_bounce | 13 | 84.6% | +5.28% |
 | bb_lower_touch | 9 | 88.9% | +3.15% |
-| macd_bull_cross | 4 | 100.0% | +4.98% |
+| macd_bull_cross | 5 | 80.0% | +1.87% |
 | macd_bull_cross_fast | 5 | 40.0% | +0.66% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
 
@@ -136,3 +135,5 @@ _Last updated: 2026-08-28_
 | TSLA | 52w_low_bounce | 2026-07-27 | 2026-08-26 | +10.97% | $+1,085.68 |
 | LLY | macd_bull_cross_fast | 2026-08-10 | 2026-08-27 | -1.82% | $-174.80 |
 | CCI | macd_bull_cross_fast | 2026-08-10 | 2026-08-27 | -0.34% | $-33.90 |
+| NKE | macd_bull_cross | 2026-07-29 | 2026-08-28 | -10.57% | $-1,055.64 |
+| SOFI | 52w_low_bounce | 2026-07-29 | 2026-08-28 | +26.05% | $+2,601.74 |
