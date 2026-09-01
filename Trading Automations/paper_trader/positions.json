@@ -13,7 +13,8 @@
     "entry_date": "2026-08-03",
     "exit_date": "2026-09-01",
     "shares": 37,
-    "entry_price": 265.23
+    "entry_price": 265.23,
+    "pending_exit_order_id": "a5fe1312-d81a-4b89-bb12-c35722d50b8f"
   },
   "TSLA_macd_bull_cross": {
     "ticker": "TSLA",
