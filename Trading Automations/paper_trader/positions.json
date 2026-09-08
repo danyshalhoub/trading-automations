@@ -5,61 +5,8 @@
     "entry_date": "2026-08-03",
     "exit_date": "2026-09-08",
     "shares": 37,
-    "entry_price": 265.23
-  },
-  "TSLA_macd_bull_cross": {
-    "ticker": "TSLA",
-    "strategy": "macd_bull_cross",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 30,
-    "entry_price": 327.44,
-    "pending_exit_order_id": "268b3cb9-e4fe-4dfc-b11b-7d4092949308"
-  },
-  "TXN_macd_bull_cross": {
-    "ticker": "TXN",
-    "strategy": "macd_bull_cross",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 34,
-    "entry_price": 286.82,
-    "pending_exit_order_id": "ae4c7fcc-1bc3-409b-9546-f37d2ae8e7f7"
-  },
-  "NKE_52w_low_bounce": {
-    "ticker": "NKE",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 239,
-    "entry_price": 41.79,
-    "pending_exit_order_id": "cd4df987-72c6-436d-a0a9-b6f3f49abdcd"
-  },
-  "ZTS_52w_low_bounce": {
-    "ticker": "ZTS",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 137,
-    "entry_price": 73.16,
-    "pending_exit_order_id": "d4ce772d-fa7f-4f7b-a563-7992422d876e"
-  },
-  "CCI_52w_low_bounce": {
-    "ticker": "CCI",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 132,
-    "entry_price": 75.29,
-    "pending_exit_order_id": "d7d4e8a5-ac2c-419f-9ed5-c856b3ea60f1"
-  },
-  "UBER_macd_bull_cross": {
-    "ticker": "UBER",
-    "strategy": "macd_bull_cross",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 133,
-    "entry_price": 76.97,
-    "pending_exit_order_id": "d046c954-ebe0-4af7-840d-9c468cdb93e1"
+    "entry_price": 265.23,
+    "pending_exit_order_id": "651f99f1-45b5-4dd2-a8fe-40f98ceda485"
   },
   "GME_low_52w_bounce_tight": {
     "ticker": "GME",
@@ -68,15 +15,6 @@
     "exit_date": "2026-09-14",
     "shares": 521,
     "entry_price": 19.49
-  },
-  "GME_52w_low_bounce": {
-    "ticker": "GME",
-    "strategy": "52w_low_bounce",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-07",
-    "shares": 521,
-    "entry_price": 19.38,
-    "pending_exit_order_id": "8040f0a4-1a1a-4ae7-96d5-c9dcdc126333"
   },
   "AMZN_relative_strength_spy_long": {
     "ticker": "AMZN",
