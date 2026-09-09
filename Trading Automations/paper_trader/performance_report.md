@@ -1,65 +1,66 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-09-08_
+_Last updated: 2026-09-09_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-08 | closes today |
-| NVDA | n_day_breakout_40 | 2026-08-14 | 2026-09-11 | 3d |
-| PEP | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 3d |
-| MCD | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 3d |
-| NKE | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 3d |
-| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 6d |
-| XOM | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 6d |
-| MRK | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 6d |
-| CVX | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 6d |
-| VZ | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 6d |
-| META | low_52w_bounce_mid | 2026-08-20 | 2026-09-15 | 7d |
-| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 8d |
-| PG | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 8d |
-| PEP | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 8d |
-| MCD | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 8d |
-| AAPL | rsi_oversold_p21_t35 | 2026-08-27 | 2026-09-16 | 8d |
-| NKE | low_52w_bounce_loose | 2026-08-18 | 2026-09-17 | 9d |
-| UNH | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 13d |
-| BAC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 13d |
-| CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 13d |
-| INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 13d |
-| META | low_52w_bounce_loose | 2026-08-20 | 2026-09-21 | 13d |
-| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | 14d |
-| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 20d |
-| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 20d |
-| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 20d |
+| NVDA | n_day_breakout_40 | 2026-08-14 | 2026-09-11 | 2d |
+| PEP | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 2d |
+| MCD | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 2d |
+| NKE | low_52w_bounce_mid | 2026-08-18 | 2026-09-11 | 2d |
+| GME | low_52w_bounce_tight | 2026-08-10 | 2026-09-14 | 5d |
+| XOM | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 5d |
+| MRK | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 5d |
+| CVX | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 5d |
+| VZ | n_day_breakout_40 | 2026-08-17 | 2026-09-14 | 5d |
+| META | low_52w_bounce_mid | 2026-08-20 | 2026-09-15 | 6d |
+| AMZN | relative_strength_spy_long | 2026-08-12 | 2026-09-16 | 7d |
+| PG | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 7d |
+| PEP | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 7d |
+| MCD | low_52w_bounce_loose | 2026-08-17 | 2026-09-16 | 7d |
+| AAPL | rsi_oversold_p21_t35 | 2026-08-27 | 2026-09-16 | 7d |
+| NKE | low_52w_bounce_loose | 2026-08-18 | 2026-09-17 | 8d |
+| UNH | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 12d |
+| BAC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 12d |
+| CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 12d |
+| INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 12d |
+| META | low_52w_bounce_loose | 2026-08-20 | 2026-09-21 | 12d |
+| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | 13d |
+| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 19d |
+| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 19d |
+| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 19d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 8
-- **Win rate:** 37.5%
-- **Average % gain per trade:** -1.52%
-- **Total P&L:** $-1,216.17
+- **Total closed trades:** 9
+- **Win rate:** 33.3%
+- **Average % gain per trade:** -1.81%
+- **Total P&L:** $-1,620.68
 - **Best trade:** TSLA (macd_bull_cross) +9.85%
 - **Worst trade:** TXN (macd_bull_cross) -9.64%
-- **vs S&P 500** (same 8 trades, same entry/exit dates): SPY averaged -0.68%/trade ($-541.35 total) — you trailed SPY by -0.84 pts ($-674.82)
+- **vs S&P 500** (same 9 trades, same entry/exit dates): SPY averaged -0.53%/trade ($-478.92 total) — you trailed SPY by -1.28 pts ($-1,141.76)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 5 | 40.0% | -1.51% |
+| low_52w_bounce_tight | 1 | 0.0% | -4.12% |
 | macd_bull_cross | 3 | 33.3% | -1.53% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 69
-- **Win rate:** 73.9%
-- **Average % gain per trade:** +5.00%
-- **Total P&L:** $+34,398.59
+- **Total closed trades:** 70
+- **Win rate:** 72.9%
+- **Average % gain per trade:** +4.87%
+- **Total P&L:** $+33,994.08
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 69 trades, same entry/exit dates): SPY averaged +1.99%/trade ($+13,717.57 total) — you beat SPY by +3.01 pts ($+20,681.02)
+- **vs S&P 500** (same 70 trades, same entry/exit dates): SPY averaged +1.97%/trade ($+13,780.00 total) — you beat SPY by +2.90 pts ($+20,214.08)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 18 | 72.2% | +3.40% |
 | bb_lower_touch | 9 | 88.9% | +3.15% |
+| low_52w_bounce_tight | 1 | 0.0% | -4.12% |
 | macd_bull_cross | 8 | 62.5% | +0.59% |
 | macd_bull_cross_fast | 5 | 40.0% | +0.66% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
@@ -136,3 +137,4 @@ _Last updated: 2026-09-08_
 | CCI | 52w_low_bounce | 2026-08-10 | 2026-09-08 | +0.32% | $+31.34 |
 | UBER | macd_bull_cross | 2026-08-10 | 2026-09-08 | -4.80% | $-491.38 |
 | GME | 52w_low_bounce | 2026-08-10 | 2026-09-08 | -0.28% | $-28.36 |
+| MCD | low_52w_bounce_tight | 2026-08-03 | 2026-09-09 | -4.12% | $-404.51 |

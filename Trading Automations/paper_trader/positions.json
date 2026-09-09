@@ -1,13 +1,4 @@
 {
-  "MCD_low_52w_bounce_tight": {
-    "ticker": "MCD",
-    "strategy": "low_52w_bounce_tight",
-    "entry_date": "2026-08-03",
-    "exit_date": "2026-09-08",
-    "shares": 37,
-    "entry_price": 265.23,
-    "pending_exit_order_id": "651f99f1-45b5-4dd2-a8fe-40f98ceda485"
-  },
   "GME_low_52w_bounce_tight": {
     "ticker": "GME",
     "strategy": "low_52w_bounce_tight",
