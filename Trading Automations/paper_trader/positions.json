@@ -21,7 +21,8 @@
     "entry_date": "2026-08-14",
     "exit_date": "2026-09-11",
     "shares": 44,
-    "entry_price": 227.14
+    "entry_price": 227.14,
+    "pending_exit_order_id": "a947ebd1-7cf2-4c3a-910f-11786872590d"
   },
   "UNH_relative_strength_spy_long": {
     "ticker": "UNH",
@@ -117,7 +118,8 @@
     "entry_date": "2026-08-18",
     "exit_date": "2026-09-11",
     "shares": 72,
-    "entry_price": 139.63
+    "entry_price": 139.63,
+    "pending_exit_order_id": "854a4867-c500-4aeb-951f-4349525e60c5"
   },
   "MCD_low_52w_bounce_mid": {
     "ticker": "MCD",
@@ -125,7 +127,8 @@
     "entry_date": "2026-08-18",
     "exit_date": "2026-09-11",
     "shares": 37,
-    "entry_price": 268.34
+    "entry_price": 268.34,
+    "pending_exit_order_id": "892c8472-c317-47ce-ad84-42131d2ded09"
   },
   "TXN_relative_strength_spy_long": {
     "ticker": "TXN",
@@ -149,7 +152,8 @@
     "entry_date": "2026-08-18",
     "exit_date": "2026-09-11",
     "shares": 255,
-    "entry_price": 39.51
+    "entry_price": 39.51,
+    "pending_exit_order_id": "67cfb135-cae2-4cc1-8c26-19ebc76ce538"
   },
   "META_low_52w_bounce_loose": {
     "ticker": "META",
