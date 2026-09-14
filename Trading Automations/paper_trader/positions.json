@@ -5,7 +5,8 @@
     "entry_date": "2026-08-10",
     "exit_date": "2026-09-14",
     "shares": 521,
-    "entry_price": 19.49
+    "entry_price": 19.49,
+    "pending_exit_order_id": "5c9702c7-588b-4ec7-a881-2e6dc1dac96c"
   },
   "AMZN_relative_strength_spy_long": {
     "ticker": "AMZN",
@@ -14,15 +15,6 @@
     "exit_date": "2026-09-16",
     "shares": 36,
     "entry_price": 272.88
-  },
-  "NVDA_n_day_breakout_40": {
-    "ticker": "NVDA",
-    "strategy": "n_day_breakout_40",
-    "entry_date": "2026-08-14",
-    "exit_date": "2026-09-11",
-    "shares": 44,
-    "entry_price": 227.14,
-    "pending_exit_order_id": "a947ebd1-7cf2-4c3a-910f-11786872590d"
   },
   "UNH_relative_strength_spy_long": {
     "ticker": "UNH",
@@ -46,7 +38,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-14",
     "shares": 62,
-    "entry_price": 159.37
+    "entry_price": 159.37,
+    "pending_exit_order_id": "e1a61f4b-45c4-42ba-a796-918485e7fa83"
   },
   "BAC_relative_strength_spy_long": {
     "ticker": "BAC",
@@ -62,7 +55,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-14",
     "shares": 73,
-    "entry_price": 134.94
+    "entry_price": 134.94,
+    "pending_exit_order_id": "cbeee691-d272-438a-8357-20b2ea51a412"
   },
   "CVX_n_day_breakout_40": {
     "ticker": "CVX",
@@ -70,7 +64,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-14",
     "shares": 50,
-    "entry_price": 201.7
+    "entry_price": 201.7,
+    "pending_exit_order_id": "92e61afe-3e70-40e2-9d81-4c9820c75804"
   },
   "PEP_low_52w_bounce_loose": {
     "ticker": "PEP",
@@ -102,7 +97,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-14",
     "shares": 206,
-    "entry_price": 48.35
+    "entry_price": 48.35,
+    "pending_exit_order_id": "21d3e0fa-3c6a-4f91-8323-56bd35fd4782"
   },
   "INTC_relative_strength_spy_long": {
     "ticker": "INTC",
@@ -111,24 +107,6 @@
     "exit_date": "2026-09-21",
     "shares": 97,
     "entry_price": 102.45
-  },
-  "PEP_low_52w_bounce_mid": {
-    "ticker": "PEP",
-    "strategy": "low_52w_bounce_mid",
-    "entry_date": "2026-08-18",
-    "exit_date": "2026-09-11",
-    "shares": 72,
-    "entry_price": 139.63,
-    "pending_exit_order_id": "854a4867-c500-4aeb-951f-4349525e60c5"
-  },
-  "MCD_low_52w_bounce_mid": {
-    "ticker": "MCD",
-    "strategy": "low_52w_bounce_mid",
-    "entry_date": "2026-08-18",
-    "exit_date": "2026-09-11",
-    "shares": 37,
-    "entry_price": 268.34,
-    "pending_exit_order_id": "892c8472-c317-47ce-ad84-42131d2ded09"
   },
   "TXN_relative_strength_spy_long": {
     "ticker": "TXN",
@@ -145,15 +123,6 @@
     "exit_date": "2026-09-17",
     "shares": 255,
     "entry_price": 39.41
-  },
-  "NKE_low_52w_bounce_mid": {
-    "ticker": "NKE",
-    "strategy": "low_52w_bounce_mid",
-    "entry_date": "2026-08-18",
-    "exit_date": "2026-09-11",
-    "shares": 255,
-    "entry_price": 39.51,
-    "pending_exit_order_id": "67cfb135-cae2-4cc1-8c26-19ebc76ce538"
   },
   "META_low_52w_bounce_loose": {
     "ticker": "META",
