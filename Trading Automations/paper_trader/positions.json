@@ -1,13 +1,4 @@
 {
-  "GME_low_52w_bounce_tight": {
-    "ticker": "GME",
-    "strategy": "low_52w_bounce_tight",
-    "entry_date": "2026-08-10",
-    "exit_date": "2026-09-14",
-    "shares": 521,
-    "entry_price": 19.49,
-    "pending_exit_order_id": "5c9702c7-588b-4ec7-a881-2e6dc1dac96c"
-  },
   "AMZN_relative_strength_spy_long": {
     "ticker": "AMZN",
     "strategy": "relative_strength_spy_long",
@@ -32,15 +23,6 @@
     "shares": 69,
     "entry_price": 143.44
   },
-  "XOM_n_day_breakout_40": {
-    "ticker": "XOM",
-    "strategy": "n_day_breakout_40",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-14",
-    "shares": 62,
-    "entry_price": 159.37,
-    "pending_exit_order_id": "e1a61f4b-45c4-42ba-a796-918485e7fa83"
-  },
   "BAC_relative_strength_spy_long": {
     "ticker": "BAC",
     "strategy": "relative_strength_spy_long",
@@ -48,24 +30,6 @@
     "exit_date": "2026-09-21",
     "shares": 155,
     "entry_price": 64.52
-  },
-  "MRK_n_day_breakout_40": {
-    "ticker": "MRK",
-    "strategy": "n_day_breakout_40",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-14",
-    "shares": 73,
-    "entry_price": 134.94,
-    "pending_exit_order_id": "cbeee691-d272-438a-8357-20b2ea51a412"
-  },
-  "CVX_n_day_breakout_40": {
-    "ticker": "CVX",
-    "strategy": "n_day_breakout_40",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-14",
-    "shares": 50,
-    "entry_price": 201.7,
-    "pending_exit_order_id": "92e61afe-3e70-40e2-9d81-4c9820c75804"
   },
   "PEP_low_52w_bounce_loose": {
     "ticker": "PEP",
@@ -90,15 +54,6 @@
     "exit_date": "2026-09-21",
     "shares": 89,
     "entry_price": 112.39
-  },
-  "VZ_n_day_breakout_40": {
-    "ticker": "VZ",
-    "strategy": "n_day_breakout_40",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-14",
-    "shares": 206,
-    "entry_price": 48.35,
-    "pending_exit_order_id": "21d3e0fa-3c6a-4f91-8323-56bd35fd4782"
   },
   "INTC_relative_strength_spy_long": {
     "ticker": "INTC",
@@ -138,7 +93,8 @@
     "entry_date": "2026-08-20",
     "exit_date": "2026-09-15",
     "shares": 18,
-    "entry_price": 545.32
+    "entry_price": 545.32,
+    "pending_exit_order_id": "3b5cdde5-ba3f-4072-a30a-c5d2c5cfe098"
   },
   "MRK_relative_strength_spy_long": {
     "ticker": "MRK",
