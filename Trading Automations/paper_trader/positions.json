@@ -5,7 +5,8 @@
     "entry_date": "2026-08-12",
     "exit_date": "2026-09-16",
     "shares": 36,
-    "entry_price": 272.88
+    "entry_price": 272.88,
+    "pending_exit_order_id": "b6ae241d-6ff0-4aba-b8c2-ca57fac03c7a"
   },
   "UNH_relative_strength_spy_long": {
     "ticker": "UNH",
@@ -21,7 +22,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-16",
     "shares": 69,
-    "entry_price": 143.44
+    "entry_price": 143.44,
+    "pending_exit_order_id": "3ca03141-a871-4262-8fd6-ff6c16041cb3"
   },
   "BAC_relative_strength_spy_long": {
     "ticker": "BAC",
@@ -37,7 +39,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-16",
     "shares": 71,
-    "entry_price": 139.57
+    "entry_price": 139.57,
+    "pending_exit_order_id": "9f22b105-bb23-4ed0-a83f-78272ae26933"
   },
   "MCD_low_52w_bounce_loose": {
     "ticker": "MCD",
@@ -45,7 +48,8 @@
     "entry_date": "2026-08-17",
     "exit_date": "2026-09-16",
     "shares": 36,
-    "entry_price": 269.14
+    "entry_price": 269.14,
+    "pending_exit_order_id": "b4f5fd54-4d02-43f2-9ae6-85df420c927b"
   },
   "CSCO_relative_strength_spy_long": {
     "ticker": "CSCO",
@@ -87,15 +91,6 @@
     "shares": 18,
     "entry_price": 546.24
   },
-  "META_low_52w_bounce_mid": {
-    "ticker": "META",
-    "strategy": "low_52w_bounce_mid",
-    "entry_date": "2026-08-20",
-    "exit_date": "2026-09-15",
-    "shares": 18,
-    "entry_price": 545.32,
-    "pending_exit_order_id": "3b5cdde5-ba3f-4072-a30a-c5d2c5cfe098"
-  },
   "MRK_relative_strength_spy_long": {
     "ticker": "MRK",
     "strategy": "relative_strength_spy_long",
@@ -126,6 +121,7 @@
     "entry_date": "2026-08-27",
     "exit_date": "2026-09-16",
     "shares": 31,
-    "entry_price": 310.53
+    "entry_price": 310.53,
+    "pending_exit_order_id": "d02dee9a-fb9e-4c73-a9bc-280051c82a57"
   }
 }
