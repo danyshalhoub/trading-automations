@@ -1,1 +1,17 @@
-{}
+{
+  "68ffb4f8-a5ef-47bc-96fc-5900ace0fb2d": {
+    "ticker": "UNH",
+    "strategy": "three_red_days_quick",
+    "hold_days": 8
+  },
+  "e96add3c-d734-4f58-a47a-c0ec8d80513e": {
+    "ticker": "HD",
+    "strategy": "rsi_oversold_p21_t35",
+    "hold_days": 14
+  },
+  "b838f5f7-1942-4e88-8906-74276aa593b3": {
+    "ticker": "HD",
+    "strategy": "low_52w_bounce_loose",
+    "hold_days": 22
+  }
+}
