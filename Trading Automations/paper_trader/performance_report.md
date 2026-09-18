@@ -1,34 +1,36 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-09-17_
+_Last updated: 2026-09-18_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| NKE | low_52w_bounce_loose | 2026-08-18 | 2026-09-17 | closes today |
-| UNH | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 4d |
-| BAC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 4d |
-| CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 4d |
-| INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 4d |
-| META | low_52w_bounce_loose | 2026-08-20 | 2026-09-21 | 4d |
-| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | 5d |
-| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 11d |
-| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 11d |
-| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 11d |
+| UNH | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 3d |
+| BAC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 3d |
+| CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 3d |
+| INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-21 | 3d |
+| META | low_52w_bounce_loose | 2026-08-20 | 2026-09-21 | 3d |
+| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | 4d |
+| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 10d |
+| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 10d |
+| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 10d |
+| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | 12d |
+| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 20d |
+| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 32d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 15
-- **Win rate:** 53.3%
-- **Average % gain per trade:** +1.93%
-- **Total P&L:** $+2,857.83
+- **Total closed trades:** 16
+- **Win rate:** 50.0%
+- **Average % gain per trade:** +1.34%
+- **Total P&L:** $+2,113.62
 - **Best trade:** META (low_52w_bounce_mid) +25.55%
 - **Worst trade:** AMZN (relative_strength_spy_long) -8.08%
-- **vs S&P 500** (same 15 trades, same entry/exit dates): SPY averaged -1.46%/trade ($-2,190.67 total) — you beat SPY by +3.39 pts ($+5,048.50)
+- **vs S&P 500** (same 16 trades, same entry/exit dates): SPY averaged -1.42%/trade ($-2,265.72 total) — you beat SPY by +2.76 pts ($+4,379.34)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| low_52w_bounce_loose | 3 | 33.3% | -2.83% |
+| low_52w_bounce_loose | 4 | 25.0% | -3.98% |
 | low_52w_bounce_mid | 4 | 25.0% | +3.61% |
 | low_52w_bounce_tight | 1 | 100.0% | +10.11% |
 | n_day_breakout_40 | 5 | 80.0% | +2.69% |
@@ -36,19 +38,19 @@ _Last updated: 2026-09-17_
 | rsi_oversold_p21_t35 | 1 | 100.0% | +7.48% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 85
-- **Win rate:** 69.4%
-- **Average % gain per trade:** +4.35%
-- **Total P&L:** $+36,851.91
+- **Total closed trades:** 86
+- **Win rate:** 68.6%
+- **Average % gain per trade:** +4.22%
+- **Total P&L:** $+36,107.70
 - **Best trade:** ACN (52w_low_bounce) +32.00%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 85 trades, same entry/exit dates): SPY averaged +1.36%/trade ($+11,589.34 total) — you beat SPY by +2.99 pts ($+25,262.57)
+- **vs S&P 500** (same 86 trades, same entry/exit dates): SPY averaged +1.34%/trade ($+11,514.28 total) — you beat SPY by +2.88 pts ($+24,593.42)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 18 | 72.2% | +3.40% |
 | bb_lower_touch | 9 | 88.9% | +3.15% |
-| low_52w_bounce_loose | 3 | 33.3% | -2.83% |
+| low_52w_bounce_loose | 4 | 25.0% | -3.98% |
 | low_52w_bounce_mid | 4 | 25.0% | +3.61% |
 | low_52w_bounce_tight | 2 | 50.0% | +2.99% |
 | macd_bull_cross | 8 | 62.5% | +0.59% |
@@ -146,3 +148,4 @@ _Last updated: 2026-09-17_
 | PEP | low_52w_bounce_loose | 2026-08-17 | 2026-09-17 | -3.60% | $-356.49 |
 | MCD | low_52w_bounce_loose | 2026-08-17 | 2026-09-17 | -7.30% | $-707.26 |
 | AAPL | rsi_oversold_p21_t35 | 2026-08-27 | 2026-09-17 | +7.48% | $+719.82 |
+| NKE | low_52w_bounce_loose | 2026-08-18 | 2026-09-18 | -7.41% | $-744.21 |

@@ -39,15 +39,6 @@
     "shares": 35,
     "entry_price": 277.25
   },
-  "NKE_low_52w_bounce_loose": {
-    "ticker": "NKE",
-    "strategy": "low_52w_bounce_loose",
-    "entry_date": "2026-08-18",
-    "exit_date": "2026-09-17",
-    "shares": 255,
-    "entry_price": 39.41,
-    "pending_exit_order_id": "f64336f0-3c6c-48d1-b596-06089d9262e5"
-  },
   "META_low_52w_bounce_loose": {
     "ticker": "META",
     "strategy": "low_52w_bounce_loose",
@@ -79,5 +70,29 @@
     "exit_date": "2026-09-28",
     "shares": 15,
     "entry_price": 620.86
+  },
+  "UNH_three_red_days_quick": {
+    "ticker": "UNH",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-09-18",
+    "exit_date": "2026-09-30",
+    "shares": 26,
+    "entry_price": 375.9
+  },
+  "HD_rsi_oversold_p21_t35": {
+    "ticker": "HD",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-09-18",
+    "exit_date": "2026-10-08",
+    "shares": 33,
+    "entry_price": 301.49
+  },
+  "HD_low_52w_bounce_loose": {
+    "ticker": "HD",
+    "strategy": "low_52w_bounce_loose",
+    "entry_date": "2026-09-18",
+    "exit_date": "2026-10-20",
+    "shares": 33,
+    "entry_price": 300.36
   }
 }
