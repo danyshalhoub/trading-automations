@@ -1,56 +1,12 @@
 {
-  "UNH_relative_strength_spy_long": {
-    "ticker": "UNH",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-21",
-    "shares": 24,
-    "entry_price": 397.39,
-    "pending_exit_order_id": "8ed36b12-3f23-469f-ac96-e3c9618157e2"
-  },
-  "BAC_relative_strength_spy_long": {
-    "ticker": "BAC",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-21",
-    "shares": 155,
-    "entry_price": 64.52,
-    "pending_exit_order_id": "be9a3096-248a-4d25-b7ae-9ca2cb782241"
-  },
-  "CSCO_relative_strength_spy_long": {
-    "ticker": "CSCO",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-21",
-    "shares": 89,
-    "entry_price": 112.39,
-    "pending_exit_order_id": "441574d8-d239-40e2-b8f4-7921a5a29dff"
-  },
-  "INTC_relative_strength_spy_long": {
-    "ticker": "INTC",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-17",
-    "exit_date": "2026-09-21",
-    "shares": 97,
-    "entry_price": 102.45,
-    "pending_exit_order_id": "a84f51db-9c6a-4344-aabf-844de544b39f"
-  },
   "TXN_relative_strength_spy_long": {
     "ticker": "TXN",
     "strategy": "relative_strength_spy_long",
     "entry_date": "2026-08-18",
     "exit_date": "2026-09-22",
     "shares": 35,
-    "entry_price": 277.25
-  },
-  "META_low_52w_bounce_loose": {
-    "ticker": "META",
-    "strategy": "low_52w_bounce_loose",
-    "entry_date": "2026-08-20",
-    "exit_date": "2026-09-21",
-    "shares": 18,
-    "entry_price": 546.24,
-    "pending_exit_order_id": "d30a770f-39c2-4d32-90ae-9ab9132c1b14"
+    "entry_price": 277.25,
+    "pending_exit_order_id": "f93e44f6-d489-48f9-b72a-5c47109a1942"
   },
   "MRK_relative_strength_spy_long": {
     "ticker": "MRK",

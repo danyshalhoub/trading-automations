@@ -1,1 +1,27 @@
-{}
+{
+  "897e2ea6-de7f-42cd-8147-613eec94d980": {
+    "ticker": "JNJ",
+    "strategy": "three_red_days_quick",
+    "hold_days": 8
+  },
+  "2d54e82e-94a2-4e3e-9142-e807bd65b567": {
+    "ticker": "BAC",
+    "strategy": "rsi_oversold_p21_t35",
+    "hold_days": 14
+  },
+  "8d803b75-a001-40fa-a368-cf16d40783a6": {
+    "ticker": "CVX",
+    "strategy": "three_red_days_quick",
+    "hold_days": 8
+  },
+  "3f446f7b-3406-4fd4-9c11-da59df11732b": {
+    "ticker": "PEP",
+    "strategy": "rsi_oversold_p21_t35",
+    "hold_days": 14
+  },
+  "bf7ccb26-543d-4122-8868-85571bf8c88b": {
+    "ticker": "PEP",
+    "strategy": "low_52w_bounce_loose",
+    "hold_days": 22
+  }
+}
