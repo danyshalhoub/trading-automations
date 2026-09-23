@@ -1,46 +1,48 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-09-22_
+_Last updated: 2026-09-23_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-22 | closes today |
-| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 6d |
-| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 6d |
-| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 6d |
-| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | 8d |
-| V | three_red_days_quick | 2026-09-21 | 2026-10-01 | 9d |
-| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 16d |
-| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 28d |
+| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 5d |
+| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 5d |
+| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 5d |
+| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | 7d |
+| V | three_red_days_quick | 2026-09-21 | 2026-10-01 | 8d |
+| JNJ | three_red_days_quick | 2026-09-23 | 2026-10-05 | 12d |
+| CVX | three_red_days_quick | 2026-09-23 | 2026-10-05 | 12d |
+| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 15d |
+| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 20d |
+| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 20d |
+| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 27d |
+| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 30d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 17
-- **Win rate:** 58.8%
-- **Average % gain per trade:** +4.53%
-- **Total P&L:** $+7,619.07
+- **Total closed trades:** 13
+- **Win rate:** 38.5%
+- **Average % gain per trade:** +3.33%
+- **Total P&L:** $+4,239.64
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** BAC (relative_strength_spy_long) -10.10%
-- **vs S&P 500** (same 17 trades, same entry/exit dates): SPY averaged -0.87%/trade ($-1,482.39 total) — you beat SPY by +5.40 pts ($+9,101.46)
+- **vs S&P 500** (same 13 trades, same entry/exit dates): SPY averaged -0.35%/trade ($-459.51 total) — you beat SPY by +3.68 pts ($+4,699.15)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | low_52w_bounce_loose | 5 | 40.0% | +3.92% |
 | low_52w_bounce_mid | 1 | 100.0% | +25.55% |
-| low_52w_bounce_tight | 1 | 100.0% | +10.11% |
-| n_day_breakout_40 | 4 | 100.0% | +5.26% |
-| relative_strength_spy_long | 5 | 20.0% | -1.34% |
+| relative_strength_spy_long | 6 | 16.7% | -1.57% |
 | rsi_oversold_p21_t35 | 1 | 100.0% | +7.48% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 91
-- **Win rate:** 67.0%
-- **Average % gain per trade:** +4.39%
-- **Total P&L:** $+39,744.82
+- **Total closed trades:** 92
+- **Win rate:** 66.3%
+- **Average % gain per trade:** +4.31%
+- **Total P&L:** $+39,484.19
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 91 trades, same entry/exit dates): SPY averaged +1.30%/trade ($+11,841.65 total) — you beat SPY by +3.09 pts ($+27,903.17)
+- **vs S&P 500** (same 92 trades, same entry/exit dates): SPY averaged +1.29%/trade ($+11,871.19 total) — you beat SPY by +3.02 pts ($+27,613.00)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
@@ -52,7 +54,7 @@ _Last updated: 2026-09-22_
 | macd_bull_cross | 8 | 62.5% | +0.59% |
 | macd_bull_cross_fast | 5 | 40.0% | +0.66% |
 | n_day_breakout_40 | 5 | 80.0% | +2.69% |
-| relative_strength_spy_long | 5 | 20.0% | -1.34% |
+| relative_strength_spy_long | 6 | 16.7% | -1.57% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
 | rsi_oversold_p21_t35 | 1 | 100.0% | +7.48% |
 
@@ -150,3 +152,4 @@ _Last updated: 2026-09-22_
 | CSCO | relative_strength_spy_long | 2026-08-17 | 2026-09-22 | -2.32% | $-232.35 |
 | INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-22 | +18.15% | $+1,804.03 |
 | META | low_52w_bounce_loose | 2026-08-20 | 2026-09-22 | +35.51% | $+3,491.58 |
+| TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-23 | -2.69% | $-260.63 |
