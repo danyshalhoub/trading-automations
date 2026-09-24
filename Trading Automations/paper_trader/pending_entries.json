@@ -1,7 +1,1 @@
-{
-  "8849672b-b73a-4db4-bec5-2ed35d78dc6a": {
-    "ticker": "JPM",
-    "strategy": "rsi_oversold_p21_t35",
-    "hold_days": 14
-  }
-}
+{}

@@ -94,5 +94,13 @@
     "exit_date": "2026-10-23",
     "shares": 76,
     "entry_price": 131.25
+  },
+  "JPM_rsi_oversold_p21_t35": {
+    "ticker": "JPM",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-09-24",
+    "exit_date": "2026-10-14",
+    "shares": 29,
+    "entry_price": 338.56
   }
 }
