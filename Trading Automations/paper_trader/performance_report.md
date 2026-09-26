@@ -1,39 +1,38 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-09-24_
+_Last updated: 2026-09-25_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 4d |
-| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 4d |
-| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 4d |
-| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | 6d |
-| V | three_red_days_quick | 2026-09-21 | 2026-10-01 | 7d |
-| JNJ | three_red_days_quick | 2026-09-23 | 2026-10-05 | 11d |
-| CVX | three_red_days_quick | 2026-09-23 | 2026-10-05 | 11d |
-| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 14d |
-| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 19d |
-| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 19d |
-| JPM | rsi_oversold_p21_t35 | 2026-09-24 | 2026-10-14 | 20d |
-| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 26d |
-| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 29d |
+| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 3d |
+| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 3d |
+| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | 3d |
+| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | 5d |
+| V | three_red_days_quick | 2026-09-21 | 2026-10-01 | 6d |
+| JNJ | three_red_days_quick | 2026-09-23 | 2026-10-05 | 10d |
+| CVX | three_red_days_quick | 2026-09-23 | 2026-10-05 | 10d |
+| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 13d |
+| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 18d |
+| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 18d |
+| JPM | rsi_oversold_p21_t35 | 2026-09-24 | 2026-10-14 | 19d |
+| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 25d |
+| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 28d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 12
-- **Win rate:** 33.3%
-- **Average % gain per trade:** +1.47%
-- **Total P&L:** $+1,731.52
+- **Total closed trades:** 7
+- **Win rate:** 28.6%
+- **Average % gain per trade:** +3.83%
+- **Total P&L:** $+2,632.28
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** BAC (relative_strength_spy_long) -10.10%
-- **vs S&P 500** (same 12 trades, same entry/exit dates): SPY averaged -0.29%/trade ($-347.40 total) — you beat SPY by +1.76 pts ($+2,078.92)
+- **vs S&P 500** (same 7 trades, same entry/exit dates): SPY averaged +0.40%/trade ($+281.84 total) — you beat SPY by +3.42 pts ($+2,350.44)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| low_52w_bounce_loose | 5 | 40.0% | +3.92% |
-| relative_strength_spy_long | 6 | 16.7% | -1.57% |
-| rsi_oversold_p21_t35 | 1 | 100.0% | +7.48% |
+| low_52w_bounce_loose | 2 | 50.0% | +14.05% |
+| relative_strength_spy_long | 5 | 20.0% | -0.26% |
 
 ## All-Time (cumulative)
 - **Total closed trades:** 92
