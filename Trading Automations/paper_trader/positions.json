@@ -5,7 +5,8 @@
     "entry_date": "2026-08-24",
     "exit_date": "2026-09-28",
     "shares": 65,
-    "entry_price": 150.54
+    "entry_price": 150.54,
+    "pending_exit_order_id": "c9b8895a-8eec-4520-97b2-e10f544c4f2a"
   },
   "LLY_relative_strength_spy_long": {
     "ticker": "LLY",
@@ -13,7 +14,8 @@
     "entry_date": "2026-08-24",
     "exit_date": "2026-09-28",
     "shares": 7,
-    "entry_price": 1232.73
+    "entry_price": 1232.73,
+    "pending_exit_order_id": "df79ff0b-c6cd-45fb-8b46-7cdd459c076f"
   },
   "TMO_relative_strength_spy_long": {
     "ticker": "TMO",
@@ -21,7 +23,8 @@
     "entry_date": "2026-08-24",
     "exit_date": "2026-09-28",
     "shares": 15,
-    "entry_price": 620.86
+    "entry_price": 620.86,
+    "pending_exit_order_id": "eda1b685-c230-47b3-9def-e7aac5187365"
   },
   "UNH_three_red_days_quick": {
     "ticker": "UNH",
