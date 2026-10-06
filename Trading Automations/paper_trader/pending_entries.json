@@ -1,1 +1,17 @@
-{}
+{
+  "2c2088cd-4415-4b43-9071-c17d172a2405": {
+    "ticker": "MRK",
+    "strategy": "rsi_oversold_p21_t35",
+    "hold_days": 14
+  },
+  "f10ea494-f907-43bd-a0c7-d002d47fb097": {
+    "ticker": "MCD",
+    "strategy": "rsi_oversold_p21_t35",
+    "hold_days": 14
+  },
+  "db6c61c2-8729-4876-b28e-c8b82dbf69da": {
+    "ticker": "MCD",
+    "strategy": "low_52w_bounce_loose",
+    "hold_days": 22
+  }
+}

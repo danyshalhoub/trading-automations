@@ -1,38 +1,12 @@
 {
-  "MRK_relative_strength_spy_long": {
-    "ticker": "MRK",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-24",
-    "exit_date": "2026-09-28",
-    "shares": 65,
-    "entry_price": 150.54,
-    "pending_exit_order_id": "c9b8895a-8eec-4520-97b2-e10f544c4f2a"
-  },
-  "LLY_relative_strength_spy_long": {
-    "ticker": "LLY",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-24",
-    "exit_date": "2026-09-28",
-    "shares": 7,
-    "entry_price": 1232.73,
-    "pending_exit_order_id": "df79ff0b-c6cd-45fb-8b46-7cdd459c076f"
-  },
-  "TMO_relative_strength_spy_long": {
-    "ticker": "TMO",
-    "strategy": "relative_strength_spy_long",
-    "entry_date": "2026-08-24",
-    "exit_date": "2026-09-28",
-    "shares": 15,
-    "entry_price": 620.86,
-    "pending_exit_order_id": "eda1b685-c230-47b3-9def-e7aac5187365"
-  },
   "UNH_three_red_days_quick": {
     "ticker": "UNH",
     "strategy": "three_red_days_quick",
     "entry_date": "2026-09-18",
     "exit_date": "2026-09-30",
     "shares": 26,
-    "entry_price": 375.9
+    "entry_price": 375.9,
+    "pending_exit_order_id": "bf4a9bfa-81a9-413d-916d-6c1b05089377"
   },
   "HD_rsi_oversold_p21_t35": {
     "ticker": "HD",
@@ -56,7 +30,8 @@
     "entry_date": "2026-09-21",
     "exit_date": "2026-10-01",
     "shares": 27,
-    "entry_price": 368.82
+    "entry_price": 368.82,
+    "pending_exit_order_id": "767d6ad0-ac87-4703-aef6-e98d5e5d2baa"
   },
   "JNJ_three_red_days_quick": {
     "ticker": "JNJ",
@@ -64,7 +39,8 @@
     "entry_date": "2026-09-23",
     "exit_date": "2026-10-05",
     "shares": 37,
-    "entry_price": 270.45
+    "entry_price": 270.45,
+    "pending_exit_order_id": "4aa5a810-437f-4227-9306-f7c629ea67c7"
   },
   "BAC_rsi_oversold_p21_t35": {
     "ticker": "BAC",
@@ -80,7 +56,8 @@
     "entry_date": "2026-09-23",
     "exit_date": "2026-10-05",
     "shares": 49,
-    "entry_price": 204.44
+    "entry_price": 204.44,
+    "pending_exit_order_id": "5ff65352-e49f-4895-a90f-4d5506c682e0"
   },
   "PEP_rsi_oversold_p21_t35": {
     "ticker": "PEP",

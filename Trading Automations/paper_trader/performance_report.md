@@ -1,47 +1,43 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-09-28_
+_Last updated: 2026-10-05_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | closes today |
-| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | closes today |
-| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-28 | closes today |
-| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | 2d |
-| V | three_red_days_quick | 2026-09-21 | 2026-10-01 | 3d |
-| JNJ | three_red_days_quick | 2026-09-23 | 2026-10-05 | 7d |
-| CVX | three_red_days_quick | 2026-09-23 | 2026-10-05 | 7d |
-| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 10d |
-| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 15d |
-| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 15d |
-| JPM | rsi_oversold_p21_t35 | 2026-09-24 | 2026-10-14 | 16d |
-| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 22d |
-| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 25d |
+| UNH | three_red_days_quick | 2026-09-18 | 2026-09-30 | overdue by 5d |
+| V | three_red_days_quick | 2026-09-21 | 2026-10-01 | overdue by 4d |
+| JNJ | three_red_days_quick | 2026-09-23 | 2026-10-05 | closes today |
+| CVX | three_red_days_quick | 2026-09-23 | 2026-10-05 | closes today |
+| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | 3d |
+| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 8d |
+| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 8d |
+| JPM | rsi_oversold_p21_t35 | 2026-09-24 | 2026-10-14 | 9d |
+| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 15d |
+| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 18d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 6
+- **Total closed trades:** 3
 - **Win rate:** 33.3%
-- **Average % gain per trade:** +5.70%
-- **Total P&L:** $+3,376.49
-- **Best trade:** META (low_52w_bounce_loose) +35.51%
-- **Worst trade:** BAC (relative_strength_spy_long) -10.10%
-- **vs S&P 500** (same 6 trades, same entry/exit dates): SPY averaged +0.55%/trade ($+332.25 total) — you beat SPY by +5.15 pts ($+3,044.24)
+- **Average % gain per trade:** +1.33%
+- **Total P&L:** $+394.22
+- **Best trade:** TMO (relative_strength_spy_long) +8.80%
+- **Worst trade:** LLY (relative_strength_spy_long) -3.88%
+- **vs S&P 500** (same 3 trades, same entry/exit dates): SPY averaged +0.34%/trade ($+103.25 total) — you beat SPY by +0.99 pts ($+290.97)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| low_52w_bounce_loose | 1 | 100.0% | +35.51% |
-| relative_strength_spy_long | 5 | 20.0% | -0.26% |
+| relative_strength_spy_long | 3 | 33.3% | +1.33% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 92
-- **Win rate:** 66.3%
-- **Average % gain per trade:** +4.31%
-- **Total P&L:** $+39,484.19
+- **Total closed trades:** 95
+- **Win rate:** 65.3%
+- **Average % gain per trade:** +4.22%
+- **Total P&L:** $+39,878.41
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 92 trades, same entry/exit dates): SPY averaged +1.29%/trade ($+11,871.19 total) — you beat SPY by +3.02 pts ($+27,613.00)
+- **vs S&P 500** (same 95 trades, same entry/exit dates): SPY averaged +1.26%/trade ($+11,974.44 total) — you beat SPY by +2.96 pts ($+27,903.97)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
@@ -53,7 +49,7 @@ _Last updated: 2026-09-28_
 | macd_bull_cross | 8 | 62.5% | +0.59% |
 | macd_bull_cross_fast | 5 | 40.0% | +0.66% |
 | n_day_breakout_40 | 5 | 80.0% | +2.69% |
-| relative_strength_spy_long | 6 | 16.7% | -1.57% |
+| relative_strength_spy_long | 9 | 22.2% | -0.60% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
 | rsi_oversold_p21_t35 | 1 | 100.0% | +7.48% |
 
@@ -152,3 +148,6 @@ _Last updated: 2026-09-28_
 | INTC | relative_strength_spy_long | 2026-08-17 | 2026-09-22 | +18.15% | $+1,804.03 |
 | META | low_52w_bounce_loose | 2026-08-20 | 2026-09-22 | +35.51% | $+3,491.58 |
 | TXN | relative_strength_spy_long | 2026-08-18 | 2026-09-23 | -2.69% | $-260.63 |
+| MRK | relative_strength_spy_long | 2026-08-24 | 2026-09-29 | -0.93% | $-90.54 |
+| LLY | relative_strength_spy_long | 2026-08-24 | 2026-09-29 | -3.88% | $-335.15 |
+| TMO | relative_strength_spy_long | 2026-08-24 | 2026-09-29 | +8.80% | $+819.91 |
