@@ -1,20 +1,12 @@
 {
-  "UNH_three_red_days_quick": {
-    "ticker": "UNH",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-09-18",
-    "exit_date": "2026-09-30",
-    "shares": 26,
-    "entry_price": 375.9,
-    "pending_exit_order_id": "bf4a9bfa-81a9-413d-916d-6c1b05089377"
-  },
   "HD_rsi_oversold_p21_t35": {
     "ticker": "HD",
     "strategy": "rsi_oversold_p21_t35",
     "entry_date": "2026-09-18",
     "exit_date": "2026-10-08",
     "shares": 33,
-    "entry_price": 301.49
+    "entry_price": 301.49,
+    "pending_exit_order_id": "832df626-deba-400e-a77a-4f25e9eaec60"
   },
   "HD_low_52w_bounce_loose": {
     "ticker": "HD",
@@ -24,24 +16,6 @@
     "shares": 33,
     "entry_price": 300.36
   },
-  "V_three_red_days_quick": {
-    "ticker": "V",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-09-21",
-    "exit_date": "2026-10-01",
-    "shares": 27,
-    "entry_price": 368.82,
-    "pending_exit_order_id": "767d6ad0-ac87-4703-aef6-e98d5e5d2baa"
-  },
-  "JNJ_three_red_days_quick": {
-    "ticker": "JNJ",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-09-23",
-    "exit_date": "2026-10-05",
-    "shares": 37,
-    "entry_price": 270.45,
-    "pending_exit_order_id": "4aa5a810-437f-4227-9306-f7c629ea67c7"
-  },
   "BAC_rsi_oversold_p21_t35": {
     "ticker": "BAC",
     "strategy": "rsi_oversold_p21_t35",
@@ -49,15 +23,6 @@
     "exit_date": "2026-10-13",
     "shares": 177,
     "entry_price": 56.25
-  },
-  "CVX_three_red_days_quick": {
-    "ticker": "CVX",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-09-23",
-    "exit_date": "2026-10-05",
-    "shares": 49,
-    "entry_price": 204.44,
-    "pending_exit_order_id": "5ff65352-e49f-4895-a90f-4d5506c682e0"
   },
   "PEP_rsi_oversold_p21_t35": {
     "ticker": "PEP",
@@ -82,5 +47,29 @@
     "exit_date": "2026-10-14",
     "shares": 29,
     "entry_price": 338.56
+  },
+  "MRK_rsi_oversold_p21_t35": {
+    "ticker": "MRK",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-10-06",
+    "exit_date": "2026-10-26",
+    "shares": 71,
+    "entry_price": 140.72
+  },
+  "MCD_rsi_oversold_p21_t35": {
+    "ticker": "MCD",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-10-06",
+    "exit_date": "2026-10-26",
+    "shares": 42,
+    "entry_price": 233.0
+  },
+  "MCD_low_52w_bounce_loose": {
+    "ticker": "MCD",
+    "strategy": "low_52w_bounce_loose",
+    "entry_date": "2026-10-06",
+    "exit_date": "2026-11-05",
+    "shares": 42,
+    "entry_price": 232.83
   }
 }
