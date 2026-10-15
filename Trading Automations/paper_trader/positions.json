@@ -1,13 +1,4 @@
 {
-  "HD_rsi_oversold_p21_t35": {
-    "ticker": "HD",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-09-18",
-    "exit_date": "2026-10-08",
-    "shares": 33,
-    "entry_price": 301.49,
-    "pending_exit_order_id": "832df626-deba-400e-a77a-4f25e9eaec60"
-  },
   "HD_low_52w_bounce_loose": {
     "ticker": "HD",
     "strategy": "low_52w_bounce_loose",
@@ -22,7 +13,8 @@
     "entry_date": "2026-09-23",
     "exit_date": "2026-10-13",
     "shares": 177,
-    "entry_price": 56.25
+    "entry_price": 56.25,
+    "pending_exit_order_id": "4a6746ed-a9ce-441f-b580-c919aca05680"
   },
   "PEP_rsi_oversold_p21_t35": {
     "ticker": "PEP",
@@ -30,7 +22,8 @@
     "entry_date": "2026-09-23",
     "exit_date": "2026-10-13",
     "shares": 76,
-    "entry_price": 131.35
+    "entry_price": 131.35,
+    "pending_exit_order_id": "3d2fbe80-5438-40ff-a3ec-6fd4924c430d"
   },
   "PEP_low_52w_bounce_loose": {
     "ticker": "PEP",
@@ -46,7 +39,8 @@
     "entry_date": "2026-09-24",
     "exit_date": "2026-10-14",
     "shares": 29,
-    "entry_price": 338.56
+    "entry_price": 338.56,
+    "pending_exit_order_id": "82efed4d-7b8b-42ae-bed3-8a3741fcf313"
   },
   "MRK_rsi_oversold_p21_t35": {
     "ticker": "MRK",
@@ -71,5 +65,37 @@
     "exit_date": "2026-11-05",
     "shares": 42,
     "entry_price": 232.83
+  },
+  "NVDA_three_red_days_quick": {
+    "ticker": "NVDA",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-10-13",
+    "exit_date": "2026-10-23",
+    "shares": 44,
+    "entry_price": 224.62
+  },
+  "NEE_low_52w_bounce_loose": {
+    "ticker": "NEE",
+    "strategy": "low_52w_bounce_loose",
+    "entry_date": "2026-10-13",
+    "exit_date": "2026-11-12",
+    "shares": 127,
+    "entry_price": 78.68
+  },
+  "NEE_low_52w_bounce_mid": {
+    "ticker": "NEE",
+    "strategy": "low_52w_bounce_mid",
+    "entry_date": "2026-10-13",
+    "exit_date": "2026-11-06",
+    "shares": 127,
+    "entry_price": 78.48
+  },
+  "VZ_rsi_oversold_p21_t35": {
+    "ticker": "VZ",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-10-13",
+    "exit_date": "2026-11-02",
+    "shares": 233,
+    "entry_price": 42.95
   }
 }

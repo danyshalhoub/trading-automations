@@ -1,42 +1,45 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-10-12_
+_Last updated: 2026-10-14_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-08 | overdue by 4d |
-| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 1d |
-| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | 1d |
-| JPM | rsi_oversold_p21_t35 | 2026-09-24 | 2026-10-14 | 2d |
-| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 8d |
-| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 11d |
-| MRK | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 14d |
-| MCD | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 14d |
-| MCD | low_52w_bounce_loose | 2026-10-06 | 2026-11-05 | 24d |
+| BAC | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | overdue by 1d |
+| PEP | rsi_oversold_p21_t35 | 2026-09-23 | 2026-10-13 | overdue by 1d |
+| JPM | rsi_oversold_p21_t35 | 2026-09-24 | 2026-10-14 | closes today |
+| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 6d |
+| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 9d |
+| NVDA | three_red_days_quick | 2026-10-13 | 2026-10-23 | 9d |
+| MRK | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 12d |
+| MCD | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 12d |
+| VZ | rsi_oversold_p21_t35 | 2026-10-13 | 2026-11-02 | 19d |
+| MCD | low_52w_bounce_loose | 2026-10-06 | 2026-11-05 | 22d |
+| NEE | low_52w_bounce_mid | 2026-10-13 | 2026-11-06 | 23d |
+| NEE | low_52w_bounce_loose | 2026-10-13 | 2026-11-12 | 29d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 4
-- **Win rate:** 50.0%
-- **Average % gain per trade:** -1.25%
-- **Total P&L:** $-500.96
-- **Best trade:** CVX (three_red_days_quick) +0.78%
-- **Worst trade:** JNJ (three_red_days_quick) -6.40%
-- **vs S&P 500** (same 4 trades, same entry/exit dates): SPY averaged +1.49%/trade ($+594.53 total) — you trailed SPY by -2.73 pts ($-1,095.49)
+- **Total closed trades:** 1
+- **Win rate:** 0.0%
+- **Average % gain per trade:** -2.48%
+- **Total P&L:** $-246.84
+- **Best trade:** HD (rsi_oversold_p21_t35) -2.48%
+- **Worst trade:** HD (rsi_oversold_p21_t35) -2.48%
+- **vs S&P 500** (same 1 trades, same entry/exit dates): SPY averaged +2.14%/trade ($+214.26 total) — you trailed SPY by -4.62 pts ($-461.10)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| three_red_days_quick | 4 | 50.0% | -1.25% |
+| rsi_oversold_p21_t35 | 1 | 0.0% | -2.48% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 99
-- **Win rate:** 64.6%
-- **Average % gain per trade:** +4.00%
-- **Total P&L:** $+39,377.45
+- **Total closed trades:** 100
+- **Win rate:** 64.0%
+- **Average % gain per trade:** +3.93%
+- **Total P&L:** $+39,130.61
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 99 trades, same entry/exit dates): SPY averaged +1.27%/trade ($+12,568.97 total) — you beat SPY by +2.73 pts ($+26,808.48)
+- **vs S&P 500** (same 100 trades, same entry/exit dates): SPY averaged +1.28%/trade ($+12,783.23 total) — you beat SPY by +2.65 pts ($+26,347.38)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
@@ -50,7 +53,7 @@ _Last updated: 2026-10-12_
 | n_day_breakout_40 | 5 | 80.0% | +2.69% |
 | relative_strength_spy_long | 9 | 22.2% | -0.60% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
-| rsi_oversold_p21_t35 | 1 | 100.0% | +7.48% |
+| rsi_oversold_p21_t35 | 2 | 50.0% | +2.50% |
 | three_red_days_quick | 4 | 50.0% | -1.25% |
 
 ## All Trades
@@ -155,3 +158,4 @@ _Last updated: 2026-10-12_
 | V | three_red_days_quick | 2026-09-21 | 2026-10-06 | -0.09% | $-9.39 |
 | JNJ | three_red_days_quick | 2026-09-23 | 2026-10-06 | -6.40% | $-640.15 |
 | CVX | three_red_days_quick | 2026-09-23 | 2026-10-06 | +0.78% | $+78.38 |
+| HD | rsi_oversold_p21_t35 | 2026-09-18 | 2026-10-13 | -2.48% | $-246.84 |
