@@ -7,24 +7,6 @@
     "shares": 33,
     "entry_price": 300.36
   },
-  "BAC_rsi_oversold_p21_t35": {
-    "ticker": "BAC",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-09-23",
-    "exit_date": "2026-10-13",
-    "shares": 177,
-    "entry_price": 56.25,
-    "pending_exit_order_id": "4a6746ed-a9ce-441f-b580-c919aca05680"
-  },
-  "PEP_rsi_oversold_p21_t35": {
-    "ticker": "PEP",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-09-23",
-    "exit_date": "2026-10-13",
-    "shares": 76,
-    "entry_price": 131.35,
-    "pending_exit_order_id": "3d2fbe80-5438-40ff-a3ec-6fd4924c430d"
-  },
   "PEP_low_52w_bounce_loose": {
     "ticker": "PEP",
     "strategy": "low_52w_bounce_loose",
@@ -32,15 +14,6 @@
     "exit_date": "2026-10-23",
     "shares": 76,
     "entry_price": 131.25
-  },
-  "JPM_rsi_oversold_p21_t35": {
-    "ticker": "JPM",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-09-24",
-    "exit_date": "2026-10-14",
-    "shares": 29,
-    "entry_price": 338.56,
-    "pending_exit_order_id": "82efed4d-7b8b-42ae-bed3-8a3741fcf313"
   },
   "MRK_rsi_oversold_p21_t35": {
     "ticker": "MRK",
