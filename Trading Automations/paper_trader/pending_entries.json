@@ -1,17 +1,1 @@
-{
-  "bfafc18b-e4e5-4d82-bbd1-ad733fae388d": {
-    "ticker": "TSLA",
-    "strategy": "three_red_days_quick",
-    "hold_days": 8
-  },
-  "880a5b2d-e76c-44ee-bd3e-98a75ba87f7e": {
-    "ticker": "PEP",
-    "strategy": "low_52w_bounce_mid",
-    "hold_days": 18
-  },
-  "2bf872fc-04ea-444c-9293-2ba3433fa0b1": {
-    "ticker": "CSCO",
-    "strategy": "three_red_days_quick",
-    "hold_days": 8
-  }
-}
+{}

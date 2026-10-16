@@ -70,5 +70,29 @@
     "exit_date": "2026-11-02",
     "shares": 233,
     "entry_price": 42.95
+  },
+  "TSLA_three_red_days_quick": {
+    "ticker": "TSLA",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-10-16",
+    "exit_date": "2026-10-28",
+    "shares": 27,
+    "entry_price": 365.75
+  },
+  "PEP_low_52w_bounce_mid": {
+    "ticker": "PEP",
+    "strategy": "low_52w_bounce_mid",
+    "entry_date": "2026-10-16",
+    "exit_date": "2026-11-11",
+    "shares": 77,
+    "entry_price": 129.17
+  },
+  "CSCO_three_red_days_quick": {
+    "ticker": "CSCO",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-10-16",
+    "exit_date": "2026-10-28",
+    "shares": 91,
+    "entry_price": 109.97
   }
 }
