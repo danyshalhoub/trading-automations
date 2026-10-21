@@ -1,23 +1,23 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-10-19_
+_Last updated: 2026-10-20_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | 1d |
-| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 4d |
-| NVDA | three_red_days_quick | 2026-10-13 | 2026-10-23 | 4d |
-| MRK | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 7d |
-| MCD | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 7d |
-| TSLA | three_red_days_quick | 2026-10-16 | 2026-10-28 | 9d |
-| CSCO | three_red_days_quick | 2026-10-16 | 2026-10-28 | 9d |
-| VZ | rsi_oversold_p21_t35 | 2026-10-13 | 2026-11-02 | 14d |
-| MCD | low_52w_bounce_loose | 2026-10-06 | 2026-11-05 | 17d |
-| NEE | low_52w_bounce_mid | 2026-10-13 | 2026-11-06 | 18d |
-| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | 23d |
-| NEE | low_52w_bounce_loose | 2026-10-13 | 2026-11-12 | 24d |
+| HD | low_52w_bounce_loose | 2026-09-18 | 2026-10-20 | closes today |
+| PEP | low_52w_bounce_loose | 2026-09-23 | 2026-10-23 | 3d |
+| NVDA | three_red_days_quick | 2026-10-13 | 2026-10-23 | 3d |
+| MRK | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 6d |
+| MCD | rsi_oversold_p21_t35 | 2026-10-06 | 2026-10-26 | 6d |
+| TSLA | three_red_days_quick | 2026-10-16 | 2026-10-28 | 8d |
+| CSCO | three_red_days_quick | 2026-10-16 | 2026-10-28 | 8d |
+| VZ | rsi_oversold_p21_t35 | 2026-10-13 | 2026-11-02 | 13d |
+| MCD | low_52w_bounce_loose | 2026-10-06 | 2026-11-05 | 16d |
+| NEE | low_52w_bounce_mid | 2026-10-13 | 2026-11-06 | 17d |
+| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | 22d |
+| NEE | low_52w_bounce_loose | 2026-10-13 | 2026-11-12 | 23d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 4
