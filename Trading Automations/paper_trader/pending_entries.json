@@ -1,1 +1,7 @@
-{}
+{
+  "74749417-7878-4366-875d-e02f2763684f": {
+    "ticker": "AMZN",
+    "strategy": "three_red_days_quick",
+    "hold_days": 8
+  }
+}
