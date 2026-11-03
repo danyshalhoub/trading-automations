@@ -1,20 +1,12 @@
 {
-  "PEP_low_52w_bounce_loose": {
-    "ticker": "PEP",
-    "strategy": "low_52w_bounce_loose",
-    "entry_date": "2026-09-23",
-    "exit_date": "2026-10-23",
-    "shares": 76,
-    "entry_price": 131.25,
-    "pending_exit_order_id": "aa613c07-0412-442d-a1d3-54b244b54b9e"
-  },
   "MRK_rsi_oversold_p21_t35": {
     "ticker": "MRK",
     "strategy": "rsi_oversold_p21_t35",
     "entry_date": "2026-10-06",
     "exit_date": "2026-10-26",
     "shares": 71,
-    "entry_price": 140.72
+    "entry_price": 140.72,
+    "pending_exit_order_id": "47eee555-6a94-4fb5-bd0f-6e717f319c75"
   },
   "MCD_rsi_oversold_p21_t35": {
     "ticker": "MCD",
@@ -22,7 +14,8 @@
     "entry_date": "2026-10-06",
     "exit_date": "2026-10-26",
     "shares": 42,
-    "entry_price": 233.0
+    "entry_price": 233.0,
+    "pending_exit_order_id": "80d97d45-15bc-447a-a558-acd4b5dba4df"
   },
   "MCD_low_52w_bounce_loose": {
     "ticker": "MCD",
@@ -31,15 +24,6 @@
     "exit_date": "2026-11-05",
     "shares": 42,
     "entry_price": 232.83
-  },
-  "NVDA_three_red_days_quick": {
-    "ticker": "NVDA",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-10-13",
-    "exit_date": "2026-10-23",
-    "shares": 44,
-    "entry_price": 224.62,
-    "pending_exit_order_id": "1d0e2dfc-11aa-4ecd-ae47-0a8b76d3e503"
   },
   "NEE_low_52w_bounce_loose": {
     "ticker": "NEE",
@@ -63,7 +47,8 @@
     "entry_date": "2026-10-13",
     "exit_date": "2026-11-02",
     "shares": 233,
-    "entry_price": 42.95
+    "entry_price": 42.95,
+    "pending_exit_order_id": "37f91c5c-0a11-4170-9f09-2d43e317acd1"
   },
   "TSLA_three_red_days_quick": {
     "ticker": "TSLA",
@@ -71,7 +56,8 @@
     "entry_date": "2026-10-16",
     "exit_date": "2026-10-28",
     "shares": 27,
-    "entry_price": 365.75
+    "entry_price": 365.75,
+    "pending_exit_order_id": "6f2af9e4-5fbd-421e-8b87-08c75dc0955a"
   },
   "PEP_low_52w_bounce_mid": {
     "ticker": "PEP",
@@ -87,6 +73,15 @@
     "entry_date": "2026-10-16",
     "exit_date": "2026-10-28",
     "shares": 91,
-    "entry_price": 109.97
+    "entry_price": 109.97,
+    "pending_exit_order_id": "91df6c05-f650-436e-9f33-32ddc8b7bf2c"
+  },
+  "AMZN_three_red_days_quick": {
+    "ticker": "AMZN",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-10-26",
+    "exit_date": "2026-11-05",
+    "shares": 40,
+    "entry_price": 249.39
   }
 }

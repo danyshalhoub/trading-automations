@@ -1,7 +1,17 @@
 {
-  "74749417-7878-4366-875d-e02f2763684f": {
-    "ticker": "AMZN",
+  "420e91c9-a8cd-4826-a165-86c673d00e5c": {
+    "ticker": "MSFT",
     "strategy": "three_red_days_quick",
     "hold_days": 8
+  },
+  "5db84ede-b018-4f81-9937-7553cd267cd0": {
+    "ticker": "GOOGL",
+    "strategy": "rsi_oversold_p21_t35",
+    "hold_days": 14
+  },
+  "4753e400-4234-4b62-a12b-de9e1bf34e47": {
+    "ticker": "GOOGL",
+    "strategy": "low_52w_bounce_loose",
+    "hold_days": 22
   }
 }
