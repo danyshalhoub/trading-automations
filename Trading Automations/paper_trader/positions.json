@@ -1,29 +1,12 @@
 {
-  "MRK_rsi_oversold_p21_t35": {
-    "ticker": "MRK",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-10-06",
-    "exit_date": "2026-10-26",
-    "shares": 71,
-    "entry_price": 140.72,
-    "pending_exit_order_id": "47eee555-6a94-4fb5-bd0f-6e717f319c75"
-  },
-  "MCD_rsi_oversold_p21_t35": {
-    "ticker": "MCD",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-10-06",
-    "exit_date": "2026-10-26",
-    "shares": 42,
-    "entry_price": 233.0,
-    "pending_exit_order_id": "80d97d45-15bc-447a-a558-acd4b5dba4df"
-  },
   "MCD_low_52w_bounce_loose": {
     "ticker": "MCD",
     "strategy": "low_52w_bounce_loose",
     "entry_date": "2026-10-06",
     "exit_date": "2026-11-05",
     "shares": 42,
-    "entry_price": 232.83
+    "entry_price": 232.83,
+    "pending_exit_order_id": "e9f7fd62-b60c-4a27-8848-b69d2df4c360"
   },
   "NEE_low_52w_bounce_loose": {
     "ticker": "NEE",
@@ -39,25 +22,8 @@
     "entry_date": "2026-10-13",
     "exit_date": "2026-11-06",
     "shares": 127,
-    "entry_price": 78.48
-  },
-  "VZ_rsi_oversold_p21_t35": {
-    "ticker": "VZ",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-10-13",
-    "exit_date": "2026-11-02",
-    "shares": 233,
-    "entry_price": 42.95,
-    "pending_exit_order_id": "37f91c5c-0a11-4170-9f09-2d43e317acd1"
-  },
-  "TSLA_three_red_days_quick": {
-    "ticker": "TSLA",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-10-16",
-    "exit_date": "2026-10-28",
-    "shares": 27,
-    "entry_price": 365.75,
-    "pending_exit_order_id": "6f2af9e4-5fbd-421e-8b87-08c75dc0955a"
+    "entry_price": 78.48,
+    "pending_exit_order_id": "ea49444f-9be0-4fa1-af5b-7b4db085d294"
   },
   "PEP_low_52w_bounce_mid": {
     "ticker": "PEP",
@@ -67,21 +33,37 @@
     "shares": 77,
     "entry_price": 129.17
   },
-  "CSCO_three_red_days_quick": {
-    "ticker": "CSCO",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-10-16",
-    "exit_date": "2026-10-28",
-    "shares": 91,
-    "entry_price": 109.97,
-    "pending_exit_order_id": "91df6c05-f650-436e-9f33-32ddc8b7bf2c"
-  },
   "AMZN_three_red_days_quick": {
     "ticker": "AMZN",
     "strategy": "three_red_days_quick",
     "entry_date": "2026-10-26",
     "exit_date": "2026-11-05",
     "shares": 40,
-    "entry_price": 249.39
+    "entry_price": 249.39,
+    "pending_exit_order_id": "fb46f412-c7db-4d09-b592-4eda4d838305"
+  },
+  "MSFT_three_red_days_quick": {
+    "ticker": "MSFT",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-11-03",
+    "exit_date": "2026-11-13",
+    "shares": 19,
+    "entry_price": 509.84
+  },
+  "GOOGL_rsi_oversold_p21_t35": {
+    "ticker": "GOOGL",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-03",
+    "exit_date": "2026-11-23",
+    "shares": 35,
+    "entry_price": 280.38
+  },
+  "GOOGL_low_52w_bounce_loose": {
+    "ticker": "GOOGL",
+    "strategy": "low_52w_bounce_loose",
+    "entry_date": "2026-11-03",
+    "exit_date": "2026-12-03",
+    "shares": 35,
+    "entry_price": 280.89
   }
 }
