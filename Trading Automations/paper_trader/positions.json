@@ -1,29 +1,12 @@
 {
-  "MCD_low_52w_bounce_loose": {
-    "ticker": "MCD",
-    "strategy": "low_52w_bounce_loose",
-    "entry_date": "2026-10-06",
-    "exit_date": "2026-11-05",
-    "shares": 42,
-    "entry_price": 232.83,
-    "pending_exit_order_id": "e9f7fd62-b60c-4a27-8848-b69d2df4c360"
-  },
   "NEE_low_52w_bounce_loose": {
     "ticker": "NEE",
     "strategy": "low_52w_bounce_loose",
     "entry_date": "2026-10-13",
     "exit_date": "2026-11-12",
     "shares": 127,
-    "entry_price": 78.68
-  },
-  "NEE_low_52w_bounce_mid": {
-    "ticker": "NEE",
-    "strategy": "low_52w_bounce_mid",
-    "entry_date": "2026-10-13",
-    "exit_date": "2026-11-06",
-    "shares": 127,
-    "entry_price": 78.48,
-    "pending_exit_order_id": "ea49444f-9be0-4fa1-af5b-7b4db085d294"
+    "entry_price": 78.68,
+    "pending_exit_order_id": "c333c4f0-018d-4e51-b061-1eea37e09bfb"
   },
   "PEP_low_52w_bounce_mid": {
     "ticker": "PEP",
@@ -33,22 +16,14 @@
     "shares": 77,
     "entry_price": 129.17
   },
-  "AMZN_three_red_days_quick": {
-    "ticker": "AMZN",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-10-26",
-    "exit_date": "2026-11-05",
-    "shares": 40,
-    "entry_price": 249.39,
-    "pending_exit_order_id": "fb46f412-c7db-4d09-b592-4eda4d838305"
-  },
   "MSFT_three_red_days_quick": {
     "ticker": "MSFT",
     "strategy": "three_red_days_quick",
     "entry_date": "2026-11-03",
     "exit_date": "2026-11-13",
     "shares": 19,
-    "entry_price": 509.84
+    "entry_price": 509.84,
+    "pending_exit_order_id": "ce3bfa54-e6b4-4596-a1e9-a70a728ad755"
   },
   "GOOGL_rsi_oversold_p21_t35": {
     "ticker": "GOOGL",
@@ -65,5 +40,37 @@
     "exit_date": "2026-12-03",
     "shares": 35,
     "entry_price": 280.89
+  },
+  "NVDA_rsi_oversold_p21_t35": {
+    "ticker": "NVDA",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-10",
+    "exit_date": "2026-11-30",
+    "shares": 55,
+    "entry_price": 171.79
+  },
+  "CVX_three_red_days_quick": {
+    "ticker": "CVX",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-11-10",
+    "exit_date": "2026-11-20",
+    "shares": 47,
+    "entry_price": 207.83
+  },
+  "CSCO_rsi_oversold_p21_t35": {
+    "ticker": "CSCO",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-10",
+    "exit_date": "2026-11-30",
+    "shares": 101,
+    "entry_price": 96.91
+  },
+  "ADBE_three_red_days_quick": {
+    "ticker": "ADBE",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-11-10",
+    "exit_date": "2026-11-20",
+    "shares": 42,
+    "entry_price": 234.31
   }
 }
