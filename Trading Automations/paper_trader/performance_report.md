@@ -1,50 +1,52 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-11-16_
+_Last updated: 2026-11-17_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 5d |
-| NEE | low_52w_bounce_loose | 2026-10-13 | 2026-11-12 | overdue by 4d |
-| MSFT | three_red_days_quick | 2026-11-03 | 2026-11-13 | overdue by 3d |
-| CVX | three_red_days_quick | 2026-11-10 | 2026-11-20 | 4d |
-| ADBE | three_red_days_quick | 2026-11-10 | 2026-11-20 | 4d |
-| GOOGL | rsi_oversold_p21_t35 | 2026-11-03 | 2026-11-23 | 7d |
-| NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 14d |
-| CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 14d |
-| GOOGL | low_52w_bounce_loose | 2026-11-03 | 2026-12-03 | 17d |
+| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 6d |
+| CVX | three_red_days_quick | 2026-11-10 | 2026-11-20 | 3d |
+| ADBE | three_red_days_quick | 2026-11-10 | 2026-11-20 | 3d |
+| GOOGL | rsi_oversold_p21_t35 | 2026-11-03 | 2026-11-23 | 6d |
+| VZ | three_red_days_quick | 2026-11-17 | 2026-11-27 | 10d |
+| NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 13d |
+| CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 13d |
+| GOOGL | low_52w_bounce_loose | 2026-11-03 | 2026-12-03 | 16d |
+| META | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 20d |
+| CRM | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 20d |
+| NVDA | low_52w_bounce_loose | 2026-11-17 | 2026-12-17 | 30d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 3
+- **Total closed trades:** 5
 - **Win rate:** 100.0%
-- **Average % gain per trade:** +12.88%
-- **Total P&L:** $+3,811.77
+- **Average % gain per trade:** +9.41%
+- **Total P&L:** $+4,648.92
 - **Best trade:** MCD (low_52w_bounce_loose) +20.93%
-- **Worst trade:** AMZN (three_red_days_quick) +7.61%
-- **vs S&P 500** (same 3 trades, same entry/exit dates): SPY averaged -3.12%/trade ($-937.32 total) — you beat SPY by +16.00 pts ($+4,749.09)
+- **Worst trade:** MSFT (three_red_days_quick) +0.93%
+- **vs S&P 500** (same 5 trades, same entry/exit dates): SPY averaged -3.63%/trade ($-1,813.50 total) — you beat SPY by +13.03 pts ($+6,462.42)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| low_52w_bounce_loose | 1 | 100.0% | +20.93% |
+| low_52w_bounce_loose | 2 | 100.0% | +14.20% |
 | low_52w_bounce_mid | 1 | 100.0% | +10.09% |
-| three_red_days_quick | 1 | 100.0% | +7.61% |
+| three_red_days_quick | 2 | 100.0% | +4.27% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 114
-- **Win rate:** 64.9%
+- **Total closed trades:** 116
+- **Win rate:** 65.5%
 - **Average % gain per trade:** +3.96%
-- **Total P&L:** $+44,871.95
+- **Total P&L:** $+45,709.10
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 114 trades, same entry/exit dates): SPY averaged +0.95%/trade ($+10,792.67 total) — you beat SPY by +3.01 pts ($+34,079.28)
+- **vs S&P 500** (same 116 trades, same entry/exit dates): SPY averaged +0.85%/trade ($+9,916.49 total) — you beat SPY by +3.11 pts ($+35,792.61)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | 52w_low_bounce | 18 | 72.2% | +3.40% |
 | bb_lower_touch | 9 | 88.9% | +3.15% |
-| low_52w_bounce_loose | 8 | 62.5% | +6.12% |
+| low_52w_bounce_loose | 9 | 66.7% | +6.27% |
 | low_52w_bounce_mid | 5 | 40.0% | +4.91% |
 | low_52w_bounce_tight | 2 | 50.0% | +2.99% |
 | macd_bull_cross | 8 | 62.5% | +0.59% |
@@ -53,7 +55,7 @@ _Last updated: 2026-11-16_
 | relative_strength_spy_long | 9 | 22.2% | -0.60% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
 | rsi_oversold_p21_t35 | 8 | 62.5% | +2.22% |
-| three_red_days_quick | 8 | 50.0% | +0.14% |
+| three_red_days_quick | 9 | 55.6% | +0.23% |
 
 ## All Trades
 | Ticker | Strategy | Entry Date | Exit Date | % Gain | $ P&L |
@@ -172,3 +174,5 @@ _Last updated: 2026-11-16_
 | MCD | low_52w_bounce_loose | 2026-10-06 | 2026-11-10 | +20.93% | $+2,046.52 |
 | NEE | low_52w_bounce_mid | 2026-10-13 | 2026-11-10 | +10.09% | $+1,006.06 |
 | AMZN | three_red_days_quick | 2026-10-26 | 2026-11-10 | +7.61% | $+759.19 |
+| NEE | low_52w_bounce_loose | 2026-10-13 | 2026-11-17 | +7.47% | $+746.65 |
+| MSFT | three_red_days_quick | 2026-11-03 | 2026-11-17 | +0.93% | $+90.50 |

@@ -1,22 +1,7 @@
 {
-  "74b91d20-7929-4854-b59b-0d6dc557d95b": {
-    "ticker": "META",
+  "c26ff4e8-052c-41e6-9904-8bd4d6c7fd1e": {
+    "ticker": "NFLX",
     "strategy": "rsi_oversold_p21_t35",
     "hold_days": 14
-  },
-  "ef6c6491-1467-4c2f-93da-652f2f243c10": {
-    "ticker": "NVDA",
-    "strategy": "low_52w_bounce_loose",
-    "hold_days": 22
-  },
-  "de09f826-ab4b-4642-8b2f-c0d6f363af7d": {
-    "ticker": "CRM",
-    "strategy": "rsi_oversold_p21_t35",
-    "hold_days": 14
-  },
-  "8ad3accf-e666-489e-b0e3-02647ba8c7e0": {
-    "ticker": "VZ",
-    "strategy": "three_red_days_quick",
-    "hold_days": 8
   }
 }

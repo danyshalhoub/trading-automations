@@ -1,13 +1,4 @@
 {
-  "NEE_low_52w_bounce_loose": {
-    "ticker": "NEE",
-    "strategy": "low_52w_bounce_loose",
-    "entry_date": "2026-10-13",
-    "exit_date": "2026-11-12",
-    "shares": 127,
-    "entry_price": 78.68,
-    "pending_exit_order_id": "c333c4f0-018d-4e51-b061-1eea37e09bfb"
-  },
   "PEP_low_52w_bounce_mid": {
     "ticker": "PEP",
     "strategy": "low_52w_bounce_mid",
@@ -15,15 +6,6 @@
     "exit_date": "2026-11-11",
     "shares": 77,
     "entry_price": 129.17
-  },
-  "MSFT_three_red_days_quick": {
-    "ticker": "MSFT",
-    "strategy": "three_red_days_quick",
-    "entry_date": "2026-11-03",
-    "exit_date": "2026-11-13",
-    "shares": 19,
-    "entry_price": 509.84,
-    "pending_exit_order_id": "ce3bfa54-e6b4-4596-a1e9-a70a728ad755"
   },
   "GOOGL_rsi_oversold_p21_t35": {
     "ticker": "GOOGL",
@@ -72,5 +54,37 @@
     "exit_date": "2026-11-20",
     "shares": 42,
     "entry_price": 234.31
+  },
+  "META_rsi_oversold_p21_t35": {
+    "ticker": "META",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-17",
+    "exit_date": "2026-12-07",
+    "shares": 15,
+    "entry_price": 623.47
+  },
+  "NVDA_low_52w_bounce_loose": {
+    "ticker": "NVDA",
+    "strategy": "low_52w_bounce_loose",
+    "entry_date": "2026-11-17",
+    "exit_date": "2026-12-17",
+    "shares": 64,
+    "entry_price": 156.76
+  },
+  "CRM_rsi_oversold_p21_t35": {
+    "ticker": "CRM",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-17",
+    "exit_date": "2026-12-07",
+    "shares": 46,
+    "entry_price": 207.44
+  },
+  "VZ_three_red_days_quick": {
+    "ticker": "VZ",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-11-17",
+    "exit_date": "2026-11-27",
+    "shares": 215,
+    "entry_price": 46.24
   }
 }
