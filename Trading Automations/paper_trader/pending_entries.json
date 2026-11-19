@@ -1,7 +1,7 @@
 {
-  "c26ff4e8-052c-41e6-9904-8bd4d6c7fd1e": {
-    "ticker": "NFLX",
-    "strategy": "rsi_oversold_p21_t35",
-    "hold_days": 14
+  "24836198-7d99-4ed4-b40d-4b6e63cff230": {
+    "ticker": "META",
+    "strategy": "three_red_days_quick",
+    "hold_days": 8
   }
 }

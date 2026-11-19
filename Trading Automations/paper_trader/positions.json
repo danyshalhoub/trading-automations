@@ -86,5 +86,13 @@
     "exit_date": "2026-11-27",
     "shares": 215,
     "entry_price": 46.24
+  },
+  "NFLX_rsi_oversold_p21_t35": {
+    "ticker": "NFLX",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-18",
+    "exit_date": "2026-12-08",
+    "shares": 167,
+    "entry_price": 59.95
   }
 }
