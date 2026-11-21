@@ -1,23 +1,24 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-11-18_
+_Last updated: 2026-11-20_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 7d |
-| CVX | three_red_days_quick | 2026-11-10 | 2026-11-20 | 2d |
-| ADBE | three_red_days_quick | 2026-11-10 | 2026-11-20 | 2d |
-| GOOGL | rsi_oversold_p21_t35 | 2026-11-03 | 2026-11-23 | 5d |
-| VZ | three_red_days_quick | 2026-11-17 | 2026-11-27 | 9d |
-| NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 12d |
-| CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 12d |
-| GOOGL | low_52w_bounce_loose | 2026-11-03 | 2026-12-03 | 15d |
-| META | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 19d |
-| CRM | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 19d |
-| NFLX | rsi_oversold_p21_t35 | 2026-11-18 | 2026-12-08 | 20d |
-| NVDA | low_52w_bounce_loose | 2026-11-17 | 2026-12-17 | 29d |
+| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 9d |
+| CVX | three_red_days_quick | 2026-11-10 | 2026-11-20 | closes today |
+| ADBE | three_red_days_quick | 2026-11-10 | 2026-11-20 | closes today |
+| GOOGL | rsi_oversold_p21_t35 | 2026-11-03 | 2026-11-23 | 3d |
+| VZ | three_red_days_quick | 2026-11-17 | 2026-11-27 | 7d |
+| NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 10d |
+| CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 10d |
+| META | three_red_days_quick | 2026-11-19 | 2026-12-01 | 11d |
+| GOOGL | low_52w_bounce_loose | 2026-11-03 | 2026-12-03 | 13d |
+| META | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 17d |
+| CRM | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 17d |
+| NFLX | rsi_oversold_p21_t35 | 2026-11-18 | 2026-12-08 | 18d |
+| NVDA | low_52w_bounce_loose | 2026-11-17 | 2026-12-17 | 27d |
 
 ## This Week (last 7 days)
 - **Total closed trades:** 2

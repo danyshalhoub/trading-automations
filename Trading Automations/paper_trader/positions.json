@@ -37,7 +37,8 @@
     "entry_date": "2026-11-10",
     "exit_date": "2026-11-20",
     "shares": 47,
-    "entry_price": 207.83
+    "entry_price": 207.83,
+    "pending_exit_order_id": "8862fc0f-0bf7-40ae-b123-b9fd111a9984"
   },
   "CSCO_rsi_oversold_p21_t35": {
     "ticker": "CSCO",
@@ -53,7 +54,8 @@
     "entry_date": "2026-11-10",
     "exit_date": "2026-11-20",
     "shares": 42,
-    "entry_price": 234.31
+    "entry_price": 234.31,
+    "pending_exit_order_id": "43c781bf-edcc-4585-b5f5-c3bf08d99337"
   },
   "META_rsi_oversold_p21_t35": {
     "ticker": "META",
@@ -94,5 +96,13 @@
     "exit_date": "2026-12-08",
     "shares": 167,
     "entry_price": 59.95
+  },
+  "META_three_red_days_quick": {
+    "ticker": "META",
+    "strategy": "three_red_days_quick",
+    "entry_date": "2026-11-19",
+    "exit_date": "2026-12-01",
+    "shares": 16,
+    "entry_price": 624.07
   }
 }
