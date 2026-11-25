@@ -7,7 +7,6 @@ _Last updated: 2026-11-24_
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
 | PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 13d |
-| GOOGL | rsi_oversold_p21_t35 | 2026-11-03 | 2026-11-23 | overdue by 1d |
 | VZ | three_red_days_quick | 2026-11-17 | 2026-11-27 | 3d |
 | NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 6d |
 | CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 6d |
@@ -20,27 +19,28 @@ _Last updated: 2026-11-24_
 | NVDA | low_52w_bounce_loose | 2026-11-17 | 2026-12-17 | 23d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 4
-- **Win rate:** 50.0%
-- **Average % gain per trade:** +0.23%
-- **Total P&L:** $+102.11
+- **Total closed trades:** 5
+- **Win rate:** 40.0%
+- **Average % gain per trade:** +0.08%
+- **Total P&L:** $+52.16
 - **Best trade:** NEE (low_52w_bounce_loose) +7.47%
 - **Worst trade:** ADBE (three_red_days_quick) -6.75%
-- **vs S&P 500** (same 4 trades, same entry/exit dates): SPY averaged -4.03%/trade ($-1,613.05 total) — you beat SPY by +4.27 pts ($+1,715.16)
+- **vs S&P 500** (same 5 trades, same entry/exit dates): SPY averaged -4.17%/trade ($-2,084.58 total) — you beat SPY by +4.25 pts ($+2,136.74)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
 | low_52w_bounce_loose | 1 | 100.0% | +7.47% |
+| rsi_oversold_p21_t35 | 1 | 0.0% | -0.51% |
 | three_red_days_quick | 3 | 33.3% | -2.18% |
 
 ## All-Time (cumulative)
-- **Total closed trades:** 118
-- **Win rate:** 64.4%
-- **Average % gain per trade:** +3.83%
-- **Total P&L:** $+44,974.06
+- **Total closed trades:** 119
+- **Win rate:** 63.9%
+- **Average % gain per trade:** +3.80%
+- **Total P&L:** $+44,924.11
 - **Best trade:** META (low_52w_bounce_loose) +35.51%
 - **Worst trade:** UWMC (52w_low_bounce) -25.20%
-- **vs S&P 500** (same 118 trades, same entry/exit dates): SPY averaged +0.78%/trade ($+9,179.62 total) — you beat SPY by +3.06 pts ($+35,794.44)
+- **vs S&P 500** (same 119 trades, same entry/exit dates): SPY averaged +0.73%/trade ($+8,708.08 total) — you beat SPY by +3.07 pts ($+36,216.03)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
@@ -54,7 +54,7 @@ _Last updated: 2026-11-24_
 | n_day_breakout_40 | 5 | 80.0% | +2.69% |
 | relative_strength_spy_long | 9 | 22.2% | -0.60% |
 | rsi_oversold | 29 | 79.3% | +8.54% |
-| rsi_oversold_p21_t35 | 8 | 62.5% | +2.22% |
+| rsi_oversold_p21_t35 | 9 | 55.6% | +1.91% |
 | three_red_days_quick | 11 | 45.5% | -0.49% |
 
 ## All Trades
@@ -178,3 +178,4 @@ _Last updated: 2026-11-24_
 | MSFT | three_red_days_quick | 2026-11-03 | 2026-11-17 | +0.93% | $+90.50 |
 | CVX | three_red_days_quick | 2026-11-10 | 2026-11-23 | -0.73% | $-70.94 |
 | ADBE | three_red_days_quick | 2026-11-10 | 2026-11-23 | -6.75% | $-664.10 |
+| GOOGL | rsi_oversold_p21_t35 | 2026-11-03 | 2026-11-24 | -0.51% | $-49.95 |

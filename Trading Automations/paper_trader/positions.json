@@ -7,15 +7,6 @@
     "shares": 77,
     "entry_price": 129.17
   },
-  "GOOGL_rsi_oversold_p21_t35": {
-    "ticker": "GOOGL",
-    "strategy": "rsi_oversold_p21_t35",
-    "entry_date": "2026-11-03",
-    "exit_date": "2026-11-23",
-    "shares": 35,
-    "entry_price": 280.38,
-    "pending_exit_order_id": "a31bf81c-4cce-43bc-a04d-3826d9b9077a"
-  },
   "GOOGL_low_52w_bounce_loose": {
     "ticker": "GOOGL",
     "strategy": "low_52w_bounce_loose",
