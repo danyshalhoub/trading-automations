@@ -1,12 +1,1 @@
-{
-  "3df17146-636b-432e-97ac-b91564096965": {
-    "ticker": "UNH",
-    "strategy": "rsi_oversold_p21_t35",
-    "hold_days": 14
-  },
-  "2f10c959-e269-4f3e-9982-eb1627e61049": {
-    "ticker": "XOM",
-    "strategy": "rsi_oversold_p21_t35",
-    "hold_days": 14
-  }
-}
+{}

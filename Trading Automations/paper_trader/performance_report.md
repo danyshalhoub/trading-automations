@@ -1,37 +1,38 @@
 # Paper Trading Performance Report
 
-_Last updated: 2026-11-24_
+_Last updated: 2026-11-25_
 
 ## Open Positions
 
 | Ticker | Strategy | Entry Date | Exit Date | Days Until Close |
 |---|---|---|---|---|
-| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 13d |
-| VZ | three_red_days_quick | 2026-11-17 | 2026-11-27 | 3d |
-| NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 6d |
-| CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 6d |
-| META | three_red_days_quick | 2026-11-19 | 2026-12-01 | 7d |
-| GOOGL | low_52w_bounce_loose | 2026-11-03 | 2026-12-03 | 9d |
-| JPM | three_red_days_quick | 2026-11-23 | 2026-12-03 | 9d |
-| META | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 13d |
-| CRM | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 13d |
-| NFLX | rsi_oversold_p21_t35 | 2026-11-18 | 2026-12-08 | 14d |
-| NVDA | low_52w_bounce_loose | 2026-11-17 | 2026-12-17 | 23d |
+| PEP | low_52w_bounce_mid | 2026-10-16 | 2026-11-11 | overdue by 14d |
+| VZ | three_red_days_quick | 2026-11-17 | 2026-11-27 | 2d |
+| NVDA | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 5d |
+| CSCO | rsi_oversold_p21_t35 | 2026-11-10 | 2026-11-30 | 5d |
+| META | three_red_days_quick | 2026-11-19 | 2026-12-01 | 6d |
+| GOOGL | low_52w_bounce_loose | 2026-11-03 | 2026-12-03 | 8d |
+| JPM | three_red_days_quick | 2026-11-23 | 2026-12-03 | 8d |
+| META | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 12d |
+| CRM | rsi_oversold_p21_t35 | 2026-11-17 | 2026-12-07 | 12d |
+| NFLX | rsi_oversold_p21_t35 | 2026-11-18 | 2026-12-08 | 13d |
+| UNH | rsi_oversold_p21_t35 | 2026-11-25 | 2026-12-15 | 20d |
+| XOM | rsi_oversold_p21_t35 | 2026-11-25 | 2026-12-15 | 20d |
+| NVDA | low_52w_bounce_loose | 2026-11-17 | 2026-12-17 | 22d |
 
 ## This Week (last 7 days)
-- **Total closed trades:** 5
-- **Win rate:** 40.0%
-- **Average % gain per trade:** +0.08%
-- **Total P&L:** $+52.16
-- **Best trade:** NEE (low_52w_bounce_loose) +7.47%
+- **Total closed trades:** 3
+- **Win rate:** 0.0%
+- **Average % gain per trade:** -2.66%
+- **Total P&L:** $-784.99
+- **Best trade:** GOOGL (rsi_oversold_p21_t35) -0.51%
 - **Worst trade:** ADBE (three_red_days_quick) -6.75%
-- **vs S&P 500** (same 5 trades, same entry/exit dates): SPY averaged -4.17%/trade ($-2,084.58 total) — you beat SPY by +4.25 pts ($+2,136.74)
+- **vs S&P 500** (same 3 trades, same entry/exit dates): SPY averaged -4.03%/trade ($-1,208.41 total) — you beat SPY by +1.37 pts ($+423.42)
 
 | Strategy | Trades | Win Rate | Avg % Gain |
 |---|---|---|---|
-| low_52w_bounce_loose | 1 | 100.0% | +7.47% |
 | rsi_oversold_p21_t35 | 1 | 0.0% | -0.51% |
-| three_red_days_quick | 3 | 33.3% | -2.18% |
+| three_red_days_quick | 2 | 0.0% | -3.74% |
 
 ## All-Time (cumulative)
 - **Total closed trades:** 119

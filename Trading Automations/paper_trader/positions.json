@@ -86,5 +86,21 @@
     "exit_date": "2026-12-03",
     "shares": 32,
     "entry_price": 318.62
+  },
+  "UNH_rsi_oversold_p21_t35": {
+    "ticker": "UNH",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-25",
+    "exit_date": "2026-12-15",
+    "shares": 29,
+    "entry_price": 340.45
+  },
+  "XOM_rsi_oversold_p21_t35": {
+    "ticker": "XOM",
+    "strategy": "rsi_oversold_p21_t35",
+    "entry_date": "2026-11-25",
+    "exit_date": "2026-12-15",
+    "shares": 63,
+    "entry_price": 157.74
   }
 }
