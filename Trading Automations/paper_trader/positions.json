@@ -61,7 +61,8 @@
     "entry_date": "2026-11-17",
     "exit_date": "2026-11-27",
     "shares": 215,
-    "entry_price": 46.24
+    "entry_price": 46.24,
+    "pending_exit_order_id": "ded9d7fb-a4fa-41e2-973e-bba0ee7f0670"
   },
   "NFLX_rsi_oversold_p21_t35": {
     "ticker": "NFLX",
